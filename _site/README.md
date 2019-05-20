@@ -8,3 +8,5 @@ uses the theme [dinky](https://github.com/pages-themes/dinky),
 For each week of class, create a subdirectory `weekZZ` (where `ZZ` is the week
 of the class) and place any `.ipynb` and `.md` files in that directory.
 Lectures can utilize the layout `lecture`, which will present them in revealjs.
+
+For basic class info, modify _data/class.yml, _includes/class_info.html and _config.yml

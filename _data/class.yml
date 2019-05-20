@@ -1,21 +1,21 @@
 instructor: 
   name: Jill P. Naiman
   email: jnaiman@illinois.edu
-  office: 2040 NCSA Building
+  office: TBD
   office_hours: TBD
 tas:
   -
-    name: Ming Jiang
-    email: mjiang17@illinois.edu
+    name: TBD
+    email: TBD
     office: TBA
     office_hours: TBA
 course:
-  name: Data Visualization
-  number: LIS590DVO
-  semester: Spring 2019
-  location: online
-  time: Thursday, 5:30-7:30pm
-  credit_hours: 4
+  name: Intro to Scientific Computing and Data Viz
+  number: CSCI P-14100
+  semester: Summer 2019
+  location: Campus
+  time: M/T/W/Th/F, 12-3pm
+  credit_hours: NA
 urls:
   -
     name: Jupyterhub
