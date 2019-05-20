@@ -1,5 +1,7 @@
 # Course Template
 
+You have reached the github repo for CSCI P-14110, taught in the Summer of 2019 at the Harvard Pre-College Program.
+
 This repository is a template for managing coursework using GitHub pages.  It
 uses the theme [dinky](https://github.com/pages-themes/dinky),
 [nbviewer.js](https://github.com/kokes/nbviewer.js), and
@@ -21,6 +23,6 @@ Lectures can utilize the layout `lecture`, which will present them in revealjs.
 
 ## To build:
 
-General instructions about how to build websites locally using jekyll can be found [Right Here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+General instructions about how to build websites locally using jekyll can be found [right here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/).
 
 Key build command (to be run in repo directory): __bundle exec jekyll serve__
