@@ -6,15 +6,21 @@ uses the theme [dinky](https://github.com/pages-themes/dinky),
 [reveal.js](https://revealjs.com/) for presenting material.
 
 
-## Instructions to get started
+## Instructions to get started:
 
 For basic class info, modify: _data/class.yml, _includes/class_info.html and _config.yml
 
 For your github repo -  make sure to turn on github pages and make sure it shows the correct github.io location.  For example, this one is USERNAME.github.io/CLASSNUMBER.
 
 
-## For each day:
+## For each lesson:
 
-For each week of class, create a subdirectory `lessonZZ` (where `ZZ` is the day
+For each day or week (a single lesson) of class, create a subdirectory `lessonZZ` (where `ZZ` is the day
 of the class) and place any `.ipynb` and `.md` files in that directory.
 Lectures can utilize the layout `lecture`, which will present them in revealjs.
+
+## To build:
+
+General instructions about how to build websites locally using jekyll can be found [Right Here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+
+Key build command (to be run in repo directory): __bundle exec jekyll serve__
