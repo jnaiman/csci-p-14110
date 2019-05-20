@@ -1,0 +1,28 @@
+instructor: 
+  name: Jill P. Naiman
+  email: jnaiman@illinois.edu
+  office: 2040 NCSA Building
+  office_hours: TBD
+tas:
+  -
+    name: Ming Jiang
+    email: mjiang17@illinois.edu
+    office: TBA
+    office_hours: TBA
+course:
+  name: Data Visualization
+  number: LIS590DVO
+  semester: Spring 2019
+  location: online
+  time: Thursday, 5:30-7:30pm
+  credit_hours: 4
+urls:
+  -
+    name: Jupyterhub
+    url: https://jupyterhub.ischool.illinois.edu/
+  -
+    name: Slack
+    url: https://is590dv-spring2019.slack.com/
+  - 
+    name: Moodle
+    url: https://courses.ischool.illinois.edu/course/view.php?id=3644
