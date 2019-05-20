@@ -15,6 +15,6 @@ For your github repo -  make sure to turn on github pages and make sure it shows
 
 ## For each day:
 
-For each week of class, create a subdirectory `dayZZ` (where `ZZ` is the day
+For each week of class, create a subdirectory `lessonZZ` (where `ZZ` is the day
 of the class) and place any `.ipynb` and `.md` files in that directory.
 Lectures can utilize the layout `lecture`, which will present them in revealjs.
