@@ -12,7 +12,8 @@ uses the theme [dinky](https://github.com/pages-themes/dinky),
 
 For basic class info, modify: _data/class.yml, _includes/class_info.html and _config.yml
 
-For your github repo -  make sure to turn on github pages and make sure it shows the correct github.io location.  For example, this one is USERNAME.github.io/CLASSNUMBER:
+For your github repo -  make sure to turn on github pages and make sure it shows the correct github.io location.  
+Do this under __Settings__ for this repo. For example, this one is USERNAME.github.io/CLASSNUMBER:
 ![](assets/ghpages.png)
 
 

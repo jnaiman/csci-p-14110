@@ -18,11 +18,8 @@ course:
   credit_hours: NA
 urls:
   -
-    name: Jupyterhub
-    url: https://jupyterhub.ischool.illinois.edu/
+    name: Canvas Page
+    url: https://canvas.harvard.edu/courses/57025
   -
     name: Slack
-    url: https://is590dv-spring2019.slack.com/
-  - 
-    name: Moodle
-    url: https://courses.ischool.illinois.edu/course/view.php?id=3644
+    url: https://cscip14110sum-arr8217.slack.com

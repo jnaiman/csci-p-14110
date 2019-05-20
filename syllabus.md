@@ -3,286 +3,68 @@ layout: syllabus
 title: Syllabus
 ---
 
+# DRAFT
+
 # Course Description
 
-Data visualization is crucial to conveying information drawn from models,
-observations or investigations. This course will provide an overview of
-historical and modern techniques for visualizing data, drawing on
-quantitative, statistical, and network-focused datasets. Topics will include
-construction of communicative visualizations, the modern software ecosystem
-of visualization, and techniques for aggregation and interpretation of data
-through visualization.Particular attention will be paid to the Python
-ecosystem and multi-dimensional quantitative datasets. 
+This course is an introduction to programming methods as they pertain to numerical solutions to the astrophysics problem of motion under the influence of multiple gravitating bodies and the visualization of this information. The increasing prevalence of massive data sets and falling computational barriers have rendered computational modeling and data visualization necessary in most of the contemporary sciences. With this in mind, this course prepares students to select and properly undertake commonly encountered modeling and visualizing tasks. The course first teaches relevant concepts from programming using hands-on activities. Students then apply their new programming skills to guided problems of orbital motions of multiple planetary systems (like that around our Sun and other stars) and end the course with both two and three dimensional interactive movies of their datasets.	
 
-## Course Overview
+## Statement of Learning Philosophy				
+Because there are many ways to approach a problem, there are thus many ways to learn effective problem solving techniques in a particular field.  With this in mind, we will be cultivating a “growth mindset” in this class with predominantly inquiry based activities - in other words, we will spend a little bit of time talking about science but a lot more time actually doing science because this is how we will improve our skills.  
 
-This course is designed to give practical advice to students on
-communicating data through visualization.  This will involve a considerable
-amount of programming, and typically this programming will be done in Python.
-For the most part, our data will be quantitative and multi-dimensional.  The
-course will aim to provide both an understanding of what data visualizations
-communicate and a set of tools for constructing them yourself.
 
-The course will follow a common pattern within each three-hour instructional
-session.  The first 60-90 minutes will be focused on lecture, where concepts
-and tools will be introduced; typically, each class will focus on one type of
-visualization or class of visualization.  The remaining time will include
-exploration of a dataset, which may be independent or in groups, and then a
-wrap-up session at the end.
+## Prerequisites					
+A good working knowledge of geometry, trigonometry, and algebra. Students must bring a full-sized laptop computer (not a netbook) to each class meeting. No previous programming experience is required.
 
-Students are expected to have laptops with them, as well as access to Python
-installations, and will be encouraged to participate in class.  Homework will
-be assigned and collected utilizing the Jupyter nbgrader extension or through
-other methods specified at time of submission.
+## Course Schedule
+Days will be split into two parts, with the first spent on astrophysical or data visualization concepts and the second spent on programming with these concepts.  All days except the first day of the first week will follow this basic structure.	
 
-## Pre- and Co-requisites
 
-None, although basic Python programming experience is assumed.  A brief
-introduction to Python will be presented during the course.
+# Learning Outcomes
 
-# Land Acknowledgment
+Students will demonstrate an understanding of computational physics as it relates to calculating the orbits planets around stars and/or motion of stars in galaxies and visualizing these orbits with a variety of methods.  By the end of the course, students will have a basic understanding of how objects move under the force of gravity and basic concepts behind data visualization.  In particular, each student will be able to:	
 
-As a land-grant institution, the University of Illinois at Urbana-Champaign has
-a responsibility to acknowledge the historical context in which it exists. In
-order to remind ourselves and our community, we will begin this event with the
-following statement. We are currently on the lands of the Peoria, Kaskaskia,
-Peankashaw, Wea, Miami, Mascoutin, Odawa, Sauk, Mesquaki, Kickapoo, Potawatomi,
-Ojibwe, and Chickasaw Nations. It is necessary for us to acknowledge these
-Native Nations and for us to work with them as we move forward as an
-institution. Over the next 150 years, we will be a vibrant community inclusive
-of all our differences, with Native peoples at the core of our efforts.
-
-[More information can be found on the Chancellor's
-Website.](https://chancellor.illinois.edu/land_acknowledgement.html)
-
-# Course Overview
-
-The central themes of the course are:
-
-1. What are the components of an effective visualization of quantitative data?
-2. What tools and ecosystems are available for visualizing data?
-3. What systems can be put in place to generate visualizations rapidly and with
-   high-fidelity representation?
+ * Understand how to use the programming language Python to perform calculations
+Solve for the motion of two stars analytically (“by hand” or “with pen and paper”) through their physical understanding of gravity.
+ * Have a basic understanding of how a computer solves equations that we cannot do analytically and be able to manipulate different computer solvers to do so.
+ * Use a computer to calculate the orbits of 2 or more bodies under the influence of their gravitational forces, and in the case of 2 bodies, understand why this calculation may not always match the real, analytical solution, and what this means for the accuracy of any scientific computation.
+ * Have a basic understanding of some of the considerations that go into making a scientific visualization - computer memory considerations, color, time sampling, etc
+ * Make 2 and 3 dimensional movies from their scientific calculations
+* Have a basic understanding of the tools available to share both scientific and other forms of data visualization on the web
 
 # Course Materials
 
 There is no textbook for this course.  All course materials will be posted to
-the GitHub repository at https://github.com/UIUC-iSchool-DataViz/fall2018 .
+the GitHub repository at https://github.com/jnaiman/csci-p-14110.
 
 As the course progresses, a list of recommended readings will be generated for
-each class.  These will be included in the course materials repository, and
-students are encouraged to fork that repository and issue pull requests to add
-suggested readings.
+each class.  
+
 
 # About Your Instructor
 
-Jill Naiman's background is in theoretical and computational astrophysics with a current research emphasis on scientific data visualization.  She is currently a Visiting Scholar at the Advanced Visualization Lab at the National Center for Supercomputing Applications.  She is currently involved in projects related to increasing access to industry-standard special effects software for scientists - more info can be found <a href="http://ytini.com">here</a> and <a href="http://astroblend.com">here</a>.  Information about her astrophysical research and outreach efforts can be found <a href="http://astronaiman.com">here</a>.
-
-# Library Resources
-| http://www.library.illinois.edu/lis/
-| lislib@library.illinois.edu 
-| Phone: (217) 300-8439
-
-# Writing and Bibliographic Style Resources
-The campus-wide Writers Workshop provides free consultations. For more
-information see <http://www.cws.illinois.edu/workshop/> The iSchool
-has a Writing Resources Moodle site
-<https://courses.ischool.illinois.edu/course/view.php?id=1705> and
-iSchool writing coaches also offer free consultations.
+Dr. Jill Naiman's background is in theoretical and computational astrophysics with a current research emphasis on scientific data visualization.  She is currently a Visiting Scholar at the Advanced Visualization Lab at the National Center for Supercomputing Applications.  She is currently involved in projects related to increasing access to industry-standard special effects software for scientists - more info can be found <a href="http://ytini.com">here</a> and <a href="http://astroblend.com">here</a>.  Information about her astrophysical research and outreach efforts can be found <a href="http://astronaiman.com">here</a>.
 
 
-# Academic Integrity
 
-Please review and reflect on the academic integrity policy of the University of Illinois,
-<http://admin.illinois.edu/policy/code/article1_part4_1-401.html> to which we subscribe.
-By turning in materials for review, you certify that all work presented is your own and
-has been done by you independently, or as a member of a designated group for group assignments.
-If, in the course of your writing, you use the words or ideas of another writer, proper
-acknowledgment must be given (using APA, Chicago, or MLA style). Not to do so is to commit
-plagiarism, a form of academic dishonesty. If you are not absolutely clear on what constitutes
-plagiarism and how to cite sources appropriately, now is the time to learn. Please ask me!
-Please be aware that the consequences for plagiarism or other forms of academic dishonesty
-will be severe. Students who violate university standards of academic integrity are
-subject to disciplinary action, including a reduced grade, failure in the course, and
-suspension or dismissal from the University.
+# Class Participation Policy	
 
-# Statement of Inclusion
+Leaders are expected to clearly articulate issues and problems and how analytical tools can help. The way we foster this in the course is that you must participate in the classroom discussion. You are not required to “speak up” during every class session, but you do need to attend and contribute to the class and/or forum discussion over the semester.  
 
-[Inclusive Illinois Committee Diversity Statement](http://www.inclusiveillinois.illinois.edu/supporting_docs/Inclusive%20Illinois%20Diversity%20Statement.pdf)
+Leaders are also expected to foster productive environments for those around them. Those in this class come from a variety of backgrounds and comfort levels with the material and programming - it is expected that all students (and instructor!) will remain cognizant of this fact at all times and any demeaning language or behavior will not be tolerated.
+										
+# Academic Integrity	
 
-As the state's premier public university, the University of Illinois
-at Urbana-Champaign's core mission is to serve the interests of the
-diverse people of the state of Illinois and beyond. The institution
-thus values inclusion and a pluralistic learning and research
-environment, one which we respect the varied perspectives and lived
-experiences of a diverse community and global workforce. We support
-diversity of worldviews, histories, and cultural knowledge across a
-range of social groups including race, ethnicity, gender identity,
-sexual orientation, abilities, economic class, religion, and their
-intersections.
+Please review and reflect on the academic integrity policy of Harvard Summer School, https://www.summer.harvard.edu/resources-policies/student-responsibilities to which we subscribe. By turning in materials for review, you certify that all work presented is your own and has been done by you independently. 
 
-# Accessibility Statement
-To obtain accessibility-related academic adjustments and/or auxiliary
-aids, students with disabilities must contact the course instructor
-and the [Disability Resources and Educational Services](http://disability.illinois.edu/) (DRES) as soon
-as possible.  To contact DRES you may visit 1207 S. Oak St.,
-Champaign, call (217) 333-4603 (V/TTY), or e-mail a message to
-disability@illinois.edu.
+If, in the course of your writing, you use the words or ideas of another writer or programmer, proper acknowledgement must be given. Not to do so is to commit plagiarism, a form of academic dishonesty. If you are not absolutely clear on what constitutes plagiarism and how to cite sources appropriately, now is the time to learn. Please ask me!
 
-# Assignments and Evaluation
+Please be aware that the consequences for plagiarism or other forms of academic dishonesty will be severe. Students who violate university standards of academic integrity are subject to disciplinary action.
+					
+					
+# Accessibility Statement	
 
-Students will be graded based on a combination of assignments (70%) and a final
-project (30%).  The final project will be a capstone to the course, and will
-have greater flexibility in software packages and data sources.  This project
-will be introduced in Week 8.
+To obtain accessibility-related academic adjustments and/or auxiliary aids (academic and physical) students must contact the Accessibility Services Office. Please see their website for more information: https://www.summer.harvard.edu/resources-policies/accessibility-services		
+			
+			 		
 
-Assignments in this course will be a mixture of coding/visualization work and
-written work.  These two may not be distinct assignments; students will be
-asked to describe their code and justify choices for making decisions with
-respect to visualizations.
-
-Students are expected, unless otherwise instructed, to be the principal authors
-of their code.  This does not mean they may not investigate resources such as
-StackOverflow, package documentation, etc; however, they *must* cite when
-resources (especially StackOverflow and other "recipe" sites) are utilized.
-
-Assignments will take two forms, and will be given at the end of each class.
-Students will have until the following class to turn these in; assignments will
-be collected electronically.
-
- * The first type of assignment will be a written document, constituting 
-   either a brief literature review or an analysis of a visualization or
-   set of visualizations.  The parameters for these assignments will be given
-   during class, but will typically involve a critique of a visualization,
-   including citing relevant works in the visualization literature.
- * The second type of assignment will be a hands-on, code-based assignment.
-   Students will be provided either a dataset *or* a class of datasets from
-   which they can choose, and construct one or multiple mechanisms of drawing
-   information out of this visually.  These will be submitted in the form of
-   Jupyter notebooks.  Each visualization must be accompanied by narrative
-   description from the student describing why design decisions were made.
-
-The submission process for homeworks will be described by example during class
-before any homeworks are to be submitted.
-
-Each assignment will be 50% "correctness" and 50% the narrative description of
-the process.  "Correctness" in this case indicates that the code runs without
-issue, results are produced, and each component of the assignment is completed.
-The narrative description of the process will be graded on grammar and
-completeness.
-
-### Grading Policy
-
-All assignments are required for all students. Completing all assignments is
-not a guarantee of a passing grade.  All work must be completed in order to
-pass this class. Late or incomplete assignments will not be given full credit
-unless the student has contacted the instructor prior to the due date of the
-assignment (or in the case of emergencies, as soon as practicable).
-
-**Grading Scale:**
-
-| 94-100 = A
-| 90-93 = A-
-| 87-89 = B+
-| 83-86 = B
-| 80-82 = B-
-| 77-79 = C+
-| 73-76 = C
-| 70-72 = C-
-| 67-69 = D+
-| 63-66 = D
-| 60-62 = D-
-| 59 and below = F
-
-### Incompletes
-
-Students must request an incomplete grade from the instructor. The instructor
-and student will agree on a due date for completion of coursework and the
-student must file an Incomplete Form signed by the student, the instructor, and
-the student’s academic advisor with the School’s records representative. More
-information on incompletes is available here:
-<http://webdocs.ischool.illinois.edu/registration/incomplete_grade_form.pdf>
-
-### Late Assignments
-
-Students are required to attend each class, and if they are unable to do so
-much notify the instructor and TA in advance and request an excused absence.
-Participation in class -- in the form of comments, questions, and discussion --
-is expected.
-
-# Semester Calendar
-
-This is the first semester that this course is being taught.  As such, the
-course outline below is subject to some flexibilty; students will be encouraged
-to provide feedback on the topics covered, particularly toward the end.  Topics
-that are of particular interest will be emphasized.
-
- * Week 1 (Jan 17): Introduction, syllabus, examples, and some basics
- * Week 2 (Jan 24): Operational palette, structured python, and files
- * Week 3 (Jan 31): Quantitative plots, plot components
- * Week 4 (Feb 7): Histograms and distributions
- * Week 5 (Feb 14): R and ggplot
- * Week 6 (Feb 21): Images: color, colormaps
- * Week 7 (Feb 28): Comparisons between datasets
- * Week 8 (Mar 7): Comparisons between different datasets
- * Week 9 (Mar 14): Network visualization
- * Week 10 (Mar 28): Principles of interactive visualization
- * Week 11 (Apr 4): Interactive visualization with Python
- * Week 12 (Apr 11): Scientific visualization
- * Week 13 (Apr 18): Advanced topics
- * Week 14 (Apr 25): Advanced topics
-
-## Emergency Response: Run, Hide, Fight
-
-Emergencies can happen anywhere and at any time. It is important that
-we take a minute to prepare for a situation in which our safety or
-even our lives could depend on our ability to react quickly. When
-we’re faced with any kind of emergency – like fire, severe weather or
-if someone is trying to hurt you – we have three options: Run, hide or
-fight.
-
-
-### Run
-
-Leaving the area quickly is the best option if it is safe to do so.
-
-- Take time now to learn the different ways to leave your building.
-- Leave personal items behind.
-- Assist those who need help, but consider whether doing so puts
-  yourself at risk.
-- Alert authorities of the emergency when it is safe to do so.
-
-### Hide
-
-When you can’t or don’t want to run, take shelter indoors.
-
-- Take time now to learn different ways to seek shelter in your building.
-- If severe weather is imminent, go to the nearest indoor storm refuge area.
-- If someone is trying to hurt you and you can’t evacuate, get to a place
-  where you can’t be seen, lock or barricade your area, silence your
-  phone, don’t make any noise and don’t come out until you receive an
-  Illini-Alert indicating it is safe to do so.
-
-### Fight
-
-As a last resort, you may need to fight to increase your chances of
-survival.
-
-- Think about what kind of common items are in your area which you
-  can use to defend yourself.
-- Team up with others to fight if the situation allows.
-- Mentally prepare yourself – you may be in a fight for your life.
-
-Please be aware of persons with disabilities who may need additional
-assistance in emergency situations.
-
-
-### Other resources
-
-- [police.illinois.edu/safe](http://police.illinois.edu/safe) for more
-  information on how to prepare for emergencies, including how to run,
-  hide or fight and building floor plans that can show you safe areas.
-- [emergency.illinois.edu](http://emergency.illinois.edu) to sign up for
-  Illini-Alert text messages.
-- Follow the University of Illinois Police Department on Twitter and
-  Facebook to get regular updates about campus safety.
