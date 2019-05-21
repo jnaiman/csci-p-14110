@@ -12,7 +12,9 @@ Slack site is: [https://cscip14110sum-arr8217.slack.com](https://cscip14110sum-a
 Below, you will find the materials for each lesson, as well as a syllabus that
 includes contact information and a course outline.
 
-## References
+
+
+# References
 
 Some handy references you might appreciate:
 
