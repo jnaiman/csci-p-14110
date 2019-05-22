@@ -11,8 +11,17 @@ We will also install a lot of stuff!
 
 # Installation Notes
 
-**General Install Notes here**
-
+1. Go to the [Anaconda Navigator downloads page](https://www.anaconda.com/distribution/#download-section)
+1. Download the version appropriate for your operating system (Mac, Windows, Linux) - __make sure you select Python 3 (not 2)__
+1. Click on the .exe or package file that gets downloaded and run the install program
+1. For Windows - search for Jupyter Notebook, click and run; For Mac - in Applications folder, click on Anaconda Navigator, click on the Jupyter Notebook link once the Navigator opens
+1. Open a new notebook by clicking "New" in the upper left corner and selecting Python 3
+1. Test your installation with the following commands:
+ * ```import matplotlib```
+ * ```import matplotlib.pyplot as plt```
+ * ```plt.plot([5,6])```
+ 
+Make sure to press ```SHIFT+ENTER``` after each line. You should see a simple line plot appear.
 
 ## Mac OSX
 
