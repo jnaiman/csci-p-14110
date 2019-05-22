@@ -19,6 +19,20 @@ A good working knowledge of geometry, trigonometry, and algebra. Students must b
 ## Course Schedule
 Days will be split into two parts, with the first spent on astrophysical or data visualization concepts and the second spent on programming with these concepts.  All days except the first day of the first week will follow this basic structure.	
 
+Below is a draft schedule - subject to slight changes depending on class pace/interests.
+
+| Day   | Topics
+|-------|---------
+| Day 1 | Intro to class <br> Intro to gravity <br> Intro to programming
+| Day 2 | More on gravity <br> The 2 body problem <br> More on intro to programming
+| Day 3 | Compare 2 body analytically and numerically
+| Day 4 | The Multi-body problem in 2D - planetary simulations <br> Different numerical solvers
+| Day 5 | The Multi-body problem in 3D - planetary and galactic simulations
+| Day 6 | What is data visualization? What is scientific visualization? <br> Simple 2D movies
+| Day 7 | Overview of visualization concepts - audience, colors/textures/sizes, scientific integrity <br> 2D and 3D Movies
+| Day 8 | "Good" vs. "Bad" visualizations <br> Graphical concepts <br> 3D Movies and interactions
+| Day 9 | Online, sharable visualizations <br> Online interactive 3D Movies with Sketchfab
+| Day 10 | Review, finalization of visualizations <br> Viz party!
 
 # Learning Outcomes
 
