@@ -24,3 +24,8 @@ Movie of this process:
 
 ## Windows 10
 
+Movie of this process:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wWgZihAWiQc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ * Link is [on youtube here](https://www.youtube.com/watch?v=wWgZihAWiQc&feature=youtu.be).  Note: play this back at as high resolution as possible.
