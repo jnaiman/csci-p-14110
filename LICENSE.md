@@ -1,7 +1,9 @@
 BSD 3-Clause License
 
 Copyright (c) 2019, Jill Palmer Naiman
+
 Copyright (c) 2018, Matthew Turk
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
