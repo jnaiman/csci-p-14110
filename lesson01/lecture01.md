@@ -337,85 +337,133 @@ notes: Homework & quizzes will be turned in on the canvas webpage
    * For now - just download this file, we'll talk about how to use it later in class
    * __Make sure you download Python version 3 not 2!!__
    
-**SLACK CHANNEL???**
-
-notes: We will be using the Anaconda package manager to install the programming language Python as well as any additional libraries we might need, as well as to launch jupyter notebooks with
+notes: We will be using the Anaconda package manager to install the programming language Python as well as any additional libraries we might need, as well as to launch jupyter pages with
 
 If all those words seem confusing to you, don't worry!  We'll go over them more later in class
 
 Right now - please go to the webpage listed and download Anaconda for Python 3 (should say 3.7 or something like this)
 
 We'll go over how to install later in class, but lets all get it downloaded first since it may take a while
-  
----
 
-** we will model planetary systems and galaxies **
-
-* but first: some book keeping:  slack, basic usage, syllabus, class basics; outline of class - lecture in beginning, coding in 1/2 half (more coding, less lectures as week goes on and you are working on projects)
-
-* class vibe: kind, constructive, inquiry based, non-competitive - no lone wolfs - these don't exist in science
-
-* will start with programming on our own, then will form groups to work on code together
-
-* then: lets learn about astronomy - the basics of how we got here, what are planets, stars, galaxies
-* then: lets learn about orbital motion, kepler's laws and conservation of energy and momentum
-* then: lets learn about the basics of programming
 
 ---
 
-## Syllabus
+## Resources:
 
-notes: go over syllabus
+1. Class webpage: https://jnaiman.github.io/csci-p-14110/ 
+   * lecture slides
+   * coding "notebooks"
+   * external resources
+1. Canvas Page: https://canvas.harvard.edu/courses/57025
+   * This is where quizzes and homeworks will be assigned and turned in.
+1. Anaconda: [https://www.anaconda.com/distribution/#download-section](https://www.anaconda.com/distribution/#download-section)
+   * For now - just download this file, we'll talk about how to use it later in class
+   * __Make sure you download Python version 3 not 2!!__
+1. Slack channel: https://cscip14110sum-arr8217.slack.com
+   * Use as professional adults
+
+notes: We'll alos have a slack channel - use this as adults, so no bad words, no put-downs, etc
 
 ---
 
-# Class Mission
+## Slack 
 
-notes: class mission
+ * Use the `@` sign appropriately: `@[person]`, `@here`, `@channel`
+ * Web client, standalone client and mobile devices can access this team.
+ * At the end of the course, the team will be discontinued.
+ * Please think carefully before direct messaging if you could ask in a public
+   forum instead.
+ * Conduct will be held to same standards as any educational venue.
+
+notes:
+Please use slack as much as you need!  You can use it to share items and
+articles with the class, to collaborate, to discuss and ask questions and get
+feedback.  However, please do behave in a professional fashion.
+
+---
+
+## Class outline: Syllabus
+
+### Computational Physics Week
+
+ * Day 1: Introduction, syllabus, examples, and some basics about Astro, Physics, Programming
+ * Day 2: Gravity, calculating 2-body orbits, more programming
+ * Day 3: Numerical and analytical solutions of orbits for 2-body problem
+ * Day 4: Multi-body problem in 2D
+ * Day 5: Multi-body problem in 3D
+
+---
+
+## Class outline: Syllabus
+
+### Computational Physics Week
+
+ * Day 1: Introduction, syllabus, examples, and some basics about Astro, Physics, Programming
+ * Day 2: Gravity, calculating 2-body orbits, more programming
+ * Day 3: Numerical and analytical solutions of orbits for 2-body problem
+ * Day 4: Multi-body problem in 2D
+ * Day 5: Multi-body problem in 3D
+ 
+### Data Visualization Week
+
+ * Day 1: Intro to data viz, simple 2D movies
+ * Day 2: Visualization concepts overview, 2D & 3D movies
+ * Day 3: Graphical concepts, "good" vs. "bad" viz, 3D movies and interactions
+ * Day 4: Web-viz, 3D online movies
+ * Day 5: Review, finalization of projects, viz party!
+
+notes: this schedule is a little "loose" - i.e. we have some time to go 
+into more/less details on things that folks are not into/super interested in
+
+---
+
+## Class outline: Syllabus
+
+### Day structure
+
+First "half":
+ * Lecture style covering concepts
+ * Physics/Math/Astro practice problems
+ * HW discussions
+ 
+Second "half":
+ * Hands-on programming
+ * Group programming
+
+notes:
+Also, we'll in general have morning sessions devoted to physics/math/astro/viz concepts, and this will be more "lecture style"
+
+In the afternoon's we'll do more hands-on coding and group work
+
+See that i've got "half" in quotes - this is because somedays (like today) will be more lecture heavy, while others will be more programming heavy - this will espeically be true as we move later in the week and you're all working on projects
+
+---
+
+## Teaching philosophy
+
+ * Non-competative, group learning environment
+ * There are no "lone wolfs" in science - [Path to Newton](https://drive.google.com/file/d/1-WSmMd7TJsWeNAZB_wZYeemlLnkRFuHa/view)
+   * More info here: https://predictionx.org/path_to_newton
+ * Inquiry based approach to learning - basically, we are actually going to do some computational astrophysics!
 
 ---
 
 # The Things I Want You To Take Away
+1. Coding is not magic, and neither is astrophysics
+1. Numerical solutions are only so precise, but we can measure their inaccuracy
+1. There are a variety of methods and codes to use for numerical science 
+1. There are a variety of systems, tools, and ecosystems available for visualizing data
+1. How not to lie with data viz (and how to detect when someone is lying to you!)
+1. How to share scientific results online with data viz tools
 
-
-
----
-
-## Overview - Themes and Goals
-
-1. What are the components of an effective visualization of quantitative data?
-1. What tools and ecosystems are available for visualizing data?
-1. What systems can be put in place to generate visualizations rapidly and with high-fidelity representation?
-
----
-
-## Structure of Class
-
- * Topic introduction and lecture (~60 minutes)
- * Hands-on, collaborative coding
- * Wrap-up
-
-(Today will be a little lecture heavy)
-
-notes:
-This structure will likely be deviated from during the course, but in general
-we will start with lecture, take a break, then continue with collaborative or
-hands-on exercises using group coding.
-
-During the group coding, I might lead the class in some visualization in
-Python, Javascript, or something else.  During this section, I expect that
-students will *follow along* with what is going on -- typing in the specific
-commands, and maybe even trying different things as we go.  It is not meant to
-simply be a "performance" of coding, but instead an opportunity to learn.
 
 ---
 
 ## Assignments
 
  * Daily, assigned in class, collected following class
- * Prose assignments: 
- * Coding assignments: 
- * Physics assignments:
+ * These will consist of prose, math, reading, and coding assignments
+ * There will also be a few online videos with quizzes (on the Canvas webpage)
 
 ---
 
@@ -445,83 +493,18 @@ your own.  Always cite, and be reasonable in what you utilize.
  * Slack
 
 notes:
-You will be expected to write code in Python, and to learn the very basics of
-Javascript.  Your projects may be turned in via git.  We will also utilize
-Slack for class communication.
+You will be expected to write code in Python.  Slack will be used for communications.
+
+We'll also cover a bit of javascript, html for online viz, but that will mostly be "for your interest" and not something you need to dig deep into.
+
+
 
 ---
 
-## Jupyterhub when it is working...
+## Github (not required, but just FYI)
 
-![](images/jh_arch.svg)
-
-notes:
-Jupyterhub is a software system for launching multiple independent notebooks
-that can share access to data and installed software.  Ours is administered by
-the iSchool.
-
----
-
-## Jupyterhub Guidelines
-
- * [jupyterhub.ischool.illinois.edu](https://jupyterhub.ischool.illinois.edu/)
- * Please store your notebooks on- and off-site
-<!-- * Submissions will be via `nbgrader`-->
-<!-- * Data will be available at `/home/shared/spr18-is590dv/data/`-->
-<!-- * Previous lectures will be in `/home/shared/spr18-is590dv/fall2018/`-->
- * You will have access to conda, etc, but I may rebuild images to add packages.
- * There will be shared data directories, but again, this depends on jupyterhub
- being online.
-
-notes:
-It is possible that your JupyterHub instance may be lost -- don't store mission
-critical data there without a backup.  It should be possible to share data
-between people on the system, but I won't pretend to know the right way to do
-that.
-
----
-
-## Slack
-
-We will be sharing a slack channel with the in-person class, so feel free to
-converse with them as well!
-
- * Team channel at `https://is590dv-spring2019.slack.com`
-   * `#general` : General announcements
-   * `#assignments` : Help with assignments
-   * `#help` : General help with Python, Javascript, visualization, etc
-   * `#_classroom-lectures` : Folks in the live lecture will post questions here during class
-   * `#online_specific_chat` : Can be used to ask online specific questions, but all "in class"
-   questions should be posted in the Blackboard Collaborate chat, or asked over a mic
-
----
-
-## Slack (cont)
-
- * Use the `@` sign appropriately: `@[person]`, `@here`, `@channel`
- * Web client, standalone client and mobile devices can access this team.
- * At the end of the semester, the team will be discontinued.
- * Please think carefully before direct messaging if you could ask in a public
-   forum instead.
- * Conduct will be held to same standards as any educational venue.
-
-As always, you can also post questions to the Moodle forum as well.
-
-notes:
-Please use slack as much as you need!  You can use it to share items and
-articles with the class, to collaborate, to discuss and ask questions and get
-feedback.  However, please do behave in a professional fashion.
-
----
-
-## Github
-
- * Course repo is at [UIUC-iSchool-DataViz/spring2019online](https://github.com/UIUC-iSchool-DataViz/spring2019online/)
- * Automatically built to [uiuc-ischool-dataviz.github.io/spring2019online/](https://uiuc-ischool-dataviz.github.io/spring2019online/)
- * When/if JupyterHub is up and running: Lecture notes will be placed there, and available in your JupyterHub
-   instances in `shared/sp19-is590dv/spring2019online`
- * Copy the notebooks to your directory before using them.
- * Supplemental materials can be found at [UIUC-iSchool-DataViz/support-files](https://github.com/UIUC-iSchool-DataViz/support-files)
+ * Course repo is at [https://github.com/jnaiman/csci-p-14110](https://jnaiman.github.io/csci-p-14110/)
+ * Automatically built to [https://jnaiman.github.io/csci-p-14110/](https://jnaiman.github.io/csci-p-14110/)
 
 notes:
 All the materials for this course will be stored in github, and are available
@@ -533,8 +516,61 @@ to use any information in it in the future.
 
 ---
 
-## Assignment 1
+## Questions:
 
- * Words
+* Who are you?
+* What are we doing?
+* How are we going to do it?
+
+---
+
+## Questions:
+
+* ~~Who are you?~~
+* ~~What are we doing?~~
+* ~~How are we going to do it?~~
+
+notes: so now we've covered all our who what hows! Lets get into the first bit of knowledge that we need - a bit of background about astronomy
+
+---
+
+## Astronomy
+
+The size of stuff:
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/JeMXuE5KUYQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+(Actually not largest star - we know of several more larger!)
+
+notes: so this just gives you a sort of size scale of the things we'll be talking about - we'll be dealing with planets and planetary systems (ours is called the solar system!)
+
+---
+
+<img src="images/kindsOfPlanets.jpg" alt="planets" width="800"/>
+
+---
+
+<img src="images/kepler2015.jpg" alt="planets" width="800"/>
+
+
+---
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/Td_YeAdygJE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+more info: http://astro.uchicago.edu/~fabrycky/kepler/
+
+---
+
+
+## STUFF: we will model planetary systems and galaxies 
+
+
+
+
+* then: lets learn about astronomy - the basics of how we got here, what are planets, stars, galaxies
+* then: lets learn about orbital motion, kepler's laws and conservation of energy and momentum
+* then: lets learn about the basics of programming
+
+
 
 
