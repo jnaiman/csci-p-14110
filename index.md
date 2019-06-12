@@ -22,5 +22,6 @@ Some handy references you might appreciate:
  * [python tutorial](https://docs.python.org/3.6/tutorial/)
  * [Markdown Cheat Sheet](https://www.ibm.com/support/knowledgecenter/SSQNUZ_current/com.ibm.icpdata.doc/dsx/markd-jupyter.html)
  * [Jupyter Cheat Sheet](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
+ * [Windows-to-Mac Commands Conversion Cheat Sheet](https://www.lemoda.net/windows/windows2unix/windows2unix.html)
 
  * [Shared Slack Channel](https://cscip14110sum-arr8217.slack.com)

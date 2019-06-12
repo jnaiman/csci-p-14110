@@ -9,6 +9,10 @@ This week, we will go over the general structure of this course, our motivations
 
 We will also install a lot of stuff!
 
+For reference, I will use some Unix-like commands.  We'll only cover a few, but just in case you want to know more, here is a Windows-to-Unix conversion cheetsheet:
+ * [Windows-to-Mac Commands Conversion Cheat Sheet](https://www.lemoda.net/windows/windows2unix/windows2unix.html)
+
+
 # Installation Notes
 
 1. Go to the [Anaconda Navigator downloads page](https://www.anaconda.com/distribution/#download-section)
