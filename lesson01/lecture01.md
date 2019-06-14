@@ -564,13 +564,145 @@ more info: http://astro.uchicago.edu/~fabrycky/kepler/
 
 ## STUFF: we will model planetary systems and galaxies 
 
-
-
-
 * then: lets learn about astronomy - the basics of how we got here, what are planets, stars, galaxies
 * then: lets learn about orbital motion, kepler's laws and conservation of energy and momentum
 * then: lets learn about the basics of programming
 
 
 
+---
+
+## Let's open up Python!
+
+notes: lets now open up Python through anaconda and get coding!
+
+---
+
+## A bit more about Flow Control...
+
+notes: now lets start thinking about some more fancy things we can do with programming...
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.001.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.002.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.003.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.004.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.005.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.006.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.007.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.008.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.009.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.010.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.011.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.012.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.013.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.014.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.015.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.016.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.017.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.018.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.019.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.020.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.021.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.022.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.023.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.024.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.025.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.026.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.027.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.028.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.029.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.030.jpeg" alt="slide1" width="800"/>
+
+---
+
+<img src="images/flowControlSlides/day1_programingIntro.031.jpeg" alt="slide1" width="800"/>
 
