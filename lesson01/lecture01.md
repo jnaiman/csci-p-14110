@@ -532,6 +532,8 @@ to use any information in it in the future.
 
 notes: so now we've covered all our who what hows! Lets get into the first bit of knowledge that we need - a bit of background about astronomy
 
+A lot of this might be review for folks, but its good that we all have the same basic knowledge about exactly where we are in space and time.
+
 ---
 
 ## Astronomy
@@ -546,21 +548,174 @@ notes: so this just gives you a sort of size scale of the things we'll be talkin
 
 ---
 
-<img src="images/kindsOfPlanets.jpg" alt="planets" width="800"/>
+## Astronomy 
+
+A reminder of where we are:
+
+<img src="https://eoimages.gsfc.nasa.gov/images/imagerecords/9000/9063/Atlantic_GOES_2008247_lrg.jpg" alt="planets" width="600"/>
+
+notes: So, here is where we are.  This Earth, Boston approximately *there*
 
 ---
+
+## Astronomy 
+
+A reminder of where we are:
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Solar-System.pdf/page1-900px-Solar-System.pdf.jpg" width="800"/>
+
+notes: the Earth is part of the solar system with several planets/planetismals, and other things orbiting our own neighborhood star, the sun
+
+In this image, the planets are to scale, but the distances are not
+
+---
+
+## Astronomy 
+
+A reminder of where we are:
+
+<img src="https://images.fineartamerica.com/images-medium-large-5/solar-system-distances-to-scale-mark-garlick.jpg" width="800"/>
+
+notes: in this image, the distances are now to scale, but the size of planets are not - if the planets were on the correct size scale then we wouldn't be able to see them because they would be much much smaller than the Sun
+
+notice how small the orbits of the inner planets like earth and mars are compared to the outer planets
+
+---
+
+## Astronomy 
+
+A reminder of where we are:
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/df/3_Solar_Interstellar_Neighborhood_%28ELitU%29.png" width="800"/>
+
+notes: if we zoom out even further, we see that our solar system that is orbiting our local star, the Sun is just one of several stars nearby, here just focusing on the brightest ones
+
+---
+
+## Astronomy 
+
+A reminder of where we are:
+
+<img src="https://www.universetoday.com/wp-content/uploads/2013/10/milky_way.jpg" width="800"/>
+
+notes: if we zoom out even further we find that these local group of stars is actually collected in an object called a "galaxy", and our galaxy is called the "Milky Way"
+
+The milky Way has about 250 billion stars in it.
+
+This is of course just a guess at what the milky way looks like - in reality we are sitting about 1/2 way out in the disk and so we can't see what the whole thing looks like we can only see the disk "edge on" which is what the bright strip of sky looks like if you go out to an area without many artificial lights at night 
+
+---
+
+## Astronomy 
+
+A reminder of where we are:
+
+<img src="https://astrotourismwa.com.au/wp-content/uploads/2018/12/Milky-Way-Galaxy-1080x675.jpg" width="800"/>
+
+notes: this is what it looks like if you've never had an opportunity to see it before in a very dark area
+
+---
+
+## Astronomy 
+
+A reminder of where we are:
+
+<img src="https://i.4pcdn.org/tg/1395685391422.png" width="800"/>
+
+notes: if we zoom out even further we find that that our milky way is surrounded by a lot of little, relatively star-less galaxies called "dwarf galaxies" and it has a neighbor called the Andromeda galaxy
+
+Our Milky Way will actually collide with the Andromeda galaxy in about 4.5 billion years, but fun fact - nearly none of the individual stars will not collide with eachother!
+
+---
+
+## Astronomy 
+
+A reminder of where we are:
+
+<img src="https://compote.slate.com/images/2b8d91da-37b4-4710-bb3f-40d9ef227de4.jpg" width="800"/>
+
+notes: and if we keep zooming out we see that there are actually trillions of galaxies in the Universe!  This is an actual image taken with the Hubble space telelscope of a very very small little bit of the sky and all of these points of light are actually galaxies
+
+---
+
+## Astronomy 
+
+A bit more about planets:
+
+<img src="images/kindsOfPlanets.jpg" alt="planets" width="800"/>
+
+notes: so, lets step back in in scale and look back again at planets in a bit more detail
+
+It turns out as far as well can tell, a good number of stars besides our own contain planetary systems that orbit them
+
+There are 2 basic types of planets - terresstrial that are rocky and earth-like, and Jovian that are like our Jupiter that are mostly gas planets
+
+---
+
+## Astronomy 
+
+A bit more about planets:
 
 <img src="images/kepler2015.jpg" alt="planets" width="800"/>
 
+notes: notice that this is actually an older figure and there are actually many more planets that we've found with the Kepler telescope than is plotted here
+
+On the y-axis here we have plotted the size in earth-radii of these planets found in a *log* scale - so at the top we are plotting objects that have sizes about the size of jupiter
+
+On the bottom we have plotted the orbital time in days, again in a log scale.  So the earth would be right about *here*
+
+You can see that there is a gab in the plot there and you might wonder if this is because Earths are rare.  But in fact its likely a function of how we measure these things - with Kepler we are looking for "dips" in the brightness of stars due to planets...
 
 ---
+
+## Astronomy 
+
+A bit more about planets:
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/3Wxd3fDFmO4?start=55" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+notes: ...so this means that bigger planets closer to their stars will be seen more easily
+
+---
+
+## Astronomy 
+
+A bit more about planets:
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/Td_YeAdygJE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 more info: http://astro.uchicago.edu/~fabrycky/kepler/
 
+notes: you can see this more with this nice visualization of planetary systems here - it seems like there are a lot of big, close in things, but again, this is likely because of the way we are measuring things
+
 ---
 
+## Astronomy 
+
+How can we test this hypothesis that we are "missing" Earth-like planets with our telescope?
+ * Is the Solar System unusual?  Unstable?
+ * How easy is it to "make" other habitable planetary systems?
+ 
+Simulate planetary systems on the computer!
+ 
+notes: to make educated guesses about what kinds of planetary systems might be plausable we can model them on computers 
+
+We can see for how long, how many millions and billions of years, a particular system might live by seeing if any planets fall into the sun or are thrown out of a planetary system of a given configuration
+
+We'll in fact do this in this class!
+
+---
+
+## Astronomy
+
+* a bit more about galaxies - different kinds, why -> we can use simulations to figure this out
+
+---
+
+* to do these kinds of simulations, first we need to understand the physics behind them
+* we can make this nearly infinitely complicated, but right now we'll focus on whats makeing stars orbit eachother in galaxies and makes planets orbit around stars -> our good friend, an my personal favorite force - gravity!
+
+---
 
 ## STUFF: we will model planetary systems and galaxies 
 
