@@ -24,4 +24,4 @@ Some handy references you might appreciate:
  * [Jupyter Cheat Sheet](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
  * [Windows-to-Mac Commands Conversion Cheat Sheet](https://www.lemoda.net/windows/windows2unix/windows2unix.html)
 
- * [Shared Slack Channel](https://cscip14110sum-arr8217.slack.com)
+<!-- * [Shared Slack Channel](https://cscip14110sum-arr8217.slack.com) -->
