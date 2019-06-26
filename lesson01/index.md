@@ -13,7 +13,7 @@ For reference, I will use some Unix-like commands.  We'll only cover a few, but 
  * [Windows-to-Mac Commands Conversion Cheat Sheet](https://www.lemoda.net/windows/windows2unix/windows2unix.html)
 
 
-# Installation Notes
+# Installation Notes for Programming
 
 1. Go to the [Anaconda Navigator downloads page](https://www.anaconda.com/distribution/#download-section)
 1. Download the version appropriate for your operating system (Mac, Windows, Linux) - __make sure you select Python 3 (not 2)__
@@ -42,3 +42,15 @@ Movie of this process:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wWgZihAWiQc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
  * Link is [on youtube here](https://www.youtube.com/watch?v=wWgZihAWiQc&feature=youtu.be).  Note: play this back at as high resolution as possible.
+
+
+# Resources
+
+## Ellipses and Conic sections
+
+Optional reading/activities:
+1. [Reading from Lumen Learning](https://courses.lumenlearning.com/waymakercollegealgebra/chapter/equations-of-ellipses/)
+1. [Intro to Conic sections from Khan Academy](https://www.khanacademy.org/math/precalculus/conics-precalc)
+   * [Subsection: Khan Academy Intro to Ellipses](https://www.khanacademy.org/math/precalculus/conics-precalc/center-and-radii-of-an-ellipse/v/conic-sections-intro-to-ellipses)
+1. [Intro to Circular Motion](https://www.khanacademy.org/science/ap-physics-1/ap-centripetal-force-and-gravitation)
+   * [Subsection: Angular Motion Variables](https://www.khanacademy.org/science/ap-physics-1/ap-centripetal-force-and-gravitation/introduction-to-uniform-circular-motion-ap/v/angular-motion-variables)

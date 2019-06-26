@@ -81,4 +81,10 @@ Please be aware that the consequences for plagiarism or other forms of academic 
 To obtain accessibility-related academic adjustments and/or auxiliary aids (academic and physical) students must contact the Accessibility Services Office. Please see their website for more information: https://www.summer.harvard.edu/resources-policies/accessibility-services		
 			
 			 		
+# Sources
 
+No curriculum develops in a vacuum.  Here are some sources to check out that were used in this one's development:
+
+* [Khan Academy](https://www.khanacademy.org/science/ap-physics-1/ap-centripetal-force-and-gravitation/newtons-law-of-gravitation-ap/e/gravity-and-orbits-ap1)
+* [Astronomy Crash Course](https://www.youtube.com/watch?v=0rHUDWjR5gg&list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL)
+* [Physics Crash Course](https://www.youtube.com/watch?v=ZM8ECpBuQYE)

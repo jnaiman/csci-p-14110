@@ -1,121 +1,9 @@
-<!doctype html>
-<html>
-  <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-<title>Lecture 1</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/white.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-<!-- Theme used for syntax highlighting of code -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-
-<!-- Printing and PDF exports -->
-<script>
-    var link = document.createElement( 'link' );
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ?  '/revealjs/css/print/pdf.css' : '/revealjs/css/print/paper.css';
-    document.getElementsByTagName( 'head' )[0].appendChild( link );
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
-
-
-<style type="text/css">
-.reveal section.present {
-  text-align: left;
-}
-.centered {
-  text-align: center;
-}
-.reveal {
-  font-size: 30px;
-  font-family: 'Questrial', sans-serif;
-}
-.reveal section img {
-  box-shadow: none;
-  border: 0px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.reveal bigtext {
-  font-size: 800%;
-}
-
-.reveal h1, .reveal h2, .reveal h3 {
-  text-transform: none;
-}
-
-.reveal .titleslide h1 {
-  text-align: center;
-}
-.reveal .titleslide h2 {
-  text-align: right;
-}
-
-.vertical_center section {
-  vertical-align: middle;
-}
-
-.left_abs {
-  left:0%;
-  text-align: left;
-  float: left;
-  width:50%;
-  z-index:-10;
-}
-
-.left {
-  left:-8.33%;
-  text-align: left;
-  float: left;
-  width:50%;
-  z-index:-10;
-}
-
-.right {
-  left:31.25%;
-  top: 75px;
-  float: right;
-  text-align: right;
-  z-index:-10;
-  width:50%;
-}
-
-.reveal table td {
-  text-align: left;
-  padding: 0.2em 0.5em 0.2em 0.5em;
-  border: solid; 
-}
-
-.reveal table tbody tr:last-child th,
-.reveal table tbody tr:last-child td {
-  border-bottom: solid; }
-
-.reveal .table-hl {
-  background: #aaa;
-}
-
-
-
-</style>
-  </head>
-
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section data-markdown
-           data-separator="^\n---\n"
-           data-separator-vertical="^\n----\n"
-           data-separator-notes="notes?:"
-           >
-          <script type="text/template">
+---
+title: Lecture 1
+layout: lecture
+visible_lec: true
+visible_n: true
+---
 <!-- .slide: class="titleslide" -->
 
 # Intro to Scientific Computing & Data Viz
@@ -989,7 +877,7 @@ notes:
 
 ---
 
-## Astronomy
+## Astronomy, cont.
 
 To check the accuracy of our simulations of physics we actually need to know some physics.  
 
@@ -999,7 +887,7 @@ To do this, we also need to know something about how circular motion works in ge
 
 ---
 
-## Astronomy
+## Astronomy -> Ellipses and Conic Sections
 
 To check the accuracy of our simulations of physics we actually need to know some physics.  
 
@@ -1008,6 +896,59 @@ We can make almost infintely complicated simulations, but let's start with somet
 To do this, we also need to know something about how circular motion works in general.
 
 And to know how circular motion works, we better know something about circles and ellipses!
+
+---
+
+## Ellipses
+
+Planetary orbits follow **elliptical** paths.
+
+What is an ellipse?
+
+<img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/896/2016/11/03202213/CNX_Precalc_Figure_10_01_0032.jpg" width="400"/>
+
+notes: the first way we can think of an ellipse is how we can draw one by hand: if you take 2 tacks and a length of string, you can draw an ellipse by placing a pencil in the string and drawing around the tacks
+
+think about - how does it look if the tacks are very close together?  What about far apart?
+
+---
+
+## Ellipses
+
+There is a lot of other terminology you might run into with ellipses.
+
+<img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/896/2016/11/03202215/CNX_Precalc_Figure_10_01_0042.jpg" width="600"/>
+
+notes: for example, we call the largest axis of this object the "major" axis and the smaller axis the "minor" axis
+
+"major" is usually denoted with an "a" and "minor" with a "b" but you should always double check this
+
+There are 2 focuses or "foci" that are basically where we would put the tacks if we were drawing this by hand
+
+---
+
+## Ellipses
+
+There are many ways to write this ellipse shape as a formula.  In cartesian, or rectangular coordinates:
+
+$$ \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$$
+
+<img src="https://www.mathsisfun.com/geometry/images/ellipse-axes.svg" width="600"/>
+
+notes: these are for ellipses that are centered at the origin
+
+How does this equation change if the center of the ellipse is at a different position?  Lets say x0 and y0?
+*draw this*
+
+
+
+--- 
+
+## Ellipses
+
+Non-centered ellipse:
+
+$$ \frac{(x-x_0)^2}{a^2} + \frac{(y-y_0)^2}{b^2} = 1$$
 
 ---
 
@@ -1030,41 +971,4 @@ And to know how circular motion works, we better know something about circles an
 ## Let's open up Python!
 
 notes: lets now open up Python through anaconda and get coding!
-
-
-          </script>
-        </section>
-      </div>
-    </div>
-<script>
-    // More info about config & dependencies:
-    // - https://github.com/hakimel/reveal.js#configuration
-    // - https://github.com/hakimel/reveal.js#dependencies
-    Reveal.initialize({
-        dependencies: [
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js' },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.min.js' },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.min.js', async: true },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-            { src: '/reveal.js-plugins/chalkboard/chalkboard.js' },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/math/math.min.js', async: true }
-        ],
-		keyboard: {
-			67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
-			66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
-			46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
-			 8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
-			68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
-		},
-        center: false,
-        transition: 'none',
-        backgroundTransition: 'none',
-        showNotes: true,
-        progress: false,
-	slideNumber: true,
-
-    });
-</script>
-  </body>
-</html>
 
