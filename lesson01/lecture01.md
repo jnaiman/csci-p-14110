@@ -708,66 +708,31 @@ notice - lets talk about galaxies when we get to them
 
 ---
 
-## Astronomy
+## First glance at programming
 
-To check the accuracy of our simulations of physics we actually need to know some physics.  
+To simulate anything with a computer, we need to understand some basics of programming - so let's got to it!
 
-We can make almost infintely complicated simulations, but let's start with something simple - how gravity causes things to orbit one another.
+notes: now we will start with some basics of how to install/open things and learn some basics of data structures
 
-notes:
-
-* to do these kinds of simulations, first we need to understand the physics behind them
-* we can make this nearly infinitely complicated, but right now we'll focus on whats makeing stars orbit eachother in galaxies and makes planets orbit around stars -> our good friend, an my personal favorite force - gravity!
+This will be review for folks who have done some programming before, and it will seem strange and new.  Both things are ok!  Everybody can learn something new here.
 
 ---
 
-## Astronomy
+# To Python!
 
-To check the accuracy of our simulations of physics we actually need to know some physics.  
-
-We can make almost infintely complicated simulations, but let's start with something simple - how gravity causes things to orbit one another.
-
-To do this, we also need to know something about how circular motion works in general.
-
----
-
-## Astronomy
-
-To check the accuracy of our simulations of physics we actually need to know some physics.  
-
-We can make almost infintely complicated simulations, but let's start with something simple - how gravity causes things to orbit one another.
-
-To do this, we also need to know something about how circular motion works in general.
-
-And to know how circular motion works, we better know something about circles and ellipses!
-
----
-
-* ellipses, parabolas, hyperbolas
-  * equations
-  * plotting simple things on graphs
-  * this will be gone over in more detail with programming exercises
-
----
-
-## STUFF: we will model planetary systems and galaxies 
-
-* then: lets learn about orbital motion, kepler's laws and conservation of energy and momentum
-* then: lets learn about the basics of programming
+notes: *now open up python part 1*
 
 
-
----
-
-## Let's open up Python!
-
-notes: lets now open up Python through anaconda and get coding!
 
 ---
 
 ## A bit more about Flow Control...
 
-notes: now lets start thinking about some more fancy things we can do with programming...
+notes: we've covered some basics, now lets start thinking about some more fancy things we can do with programming...
+
+Again, this might be new to some folks and there is nothing wrong with that!  While this may seem weird at the begnning it will get easier to understand as we practice more!
+
+We're going to tackle some stuff we'll put under the umbrella of "flow control" - i.e. how to make our code more efficient and easier to read/write
 
 ---
 
@@ -892,4 +857,65 @@ notes: now lets start thinking about some more fancy things we can do with progr
 ---
 
 <img src="images/flowControlSlides/day1_programingIntro.031.jpeg" alt="slide1" width="800"/>
+
+notes: ok, lets go back now to python and put this into practice
+
+*go to part 2*
+
+---
+
+## Astronomy, cont.
+
+Knowing some coding is great, but to check the accuracy of our simulations of physics we actually need to know some physics.  
+
+We can make almost infintely complicated simulations, but let's start with something simple - how gravity causes things to orbit one another.
+
+notes:
+
+* to do these kinds of simulations, first we need to understand the physics behind them
+* we can make this nearly infinitely complicated, but right now we'll focus on whats makeing stars orbit eachother in galaxies and makes planets orbit around stars -> our good friend, an my personal favorite force - gravity!
+
+---
+
+## Astronomy
+
+To check the accuracy of our simulations of physics we actually need to know some physics.  
+
+We can make almost infintely complicated simulations, but let's start with something simple - how gravity causes things to orbit one another.
+
+To do this, we also need to know something about how circular motion works in general.
+
+---
+
+## Astronomy
+
+To check the accuracy of our simulations of physics we actually need to know some physics.  
+
+We can make almost infintely complicated simulations, but let's start with something simple - how gravity causes things to orbit one another.
+
+To do this, we also need to know something about how circular motion works in general.
+
+And to know how circular motion works, we better know something about circles and ellipses!
+
+---
+
+* ellipses, parabolas, hyperbolas
+  * equations
+  * plotting simple things on graphs
+  * this will be gone over in more detail with programming exercises
+
+---
+
+## STUFF: we will model planetary systems and galaxies 
+
+* then: lets learn about orbital motion, kepler's laws and conservation of energy and momentum
+* then: lets learn about the basics of programming
+
+
+
+---
+
+## Let's open up Python!
+
+notes: lets now open up Python through anaconda and get coding!
 
