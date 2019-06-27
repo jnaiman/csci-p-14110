@@ -1,5 +1,5 @@
 ---
-title: Lecture 1, Part 2 - Ellipses
+title: Lecture 1, Part 2 - Ellipses, Linear and Circular Motion
 layout: lecture
 visible_lec: true
 visible_n: true
@@ -130,7 +130,9 @@ To understand those: we need a bit of physics knowledge.
 
 ---
 
-## A Quick Physics Crash Course (or a Quick review)
+## A Quick Physics Crash Course
+
+## ...(or a Quick review)
 
 
 notes: some folks have had a physics class and some have not
@@ -147,8 +149,134 @@ In a proper physics class, you may spend several weeks on these topics, so if th
 
 ---
 
-$$ \vec{v} $$ is the orbital velocity
-$$ | \vec{v} |$ is the orbital speed
+## A Quick Physics Crash Course: Important vectors
+
+$\vec{x}$ or $\vec{r}$ is the displacement vector - measures where things are
+
+notes: usually we denote the displacement vector as vec(x) but sometimes you might see it as vec(r)
+
+the displacement vector gives a 3D position (or 2D or 1D) of where you are in space, given an origin
+
+For example, where I am if the center of the room is the origin
+
+---
+
+## A Quick Physics Crash Course: Important vectors
+
+$\vec{x}$ or $\vec{r}$ is the displacement vector - measures where things are
+
+$\vec{v}$ is the velocity vector - measures how fast things are moving 
+
+notes: vec(v) is the velocity - how fast, and in what direction an object or person is moving at any instant
+
+so if I'm walking around the classroom, my velocity points right out in front of me
+
+this is a way of measuring how my **displacement** vector is changing
+
+---
+
+## A Quick Physics Crash Course: Important vectors
+
+$\vec{x}$ or $\vec{r}$ is the displacement vector - measures where things are
+
+$\vec{v}$ is the velocity vector - measures how fast things are moving 
+
+$\vec{a}$ is the acceleration vector - measures how much the velocity changes in magnitude (speed) **or** direction
+
+notes: finally, the acceleration, vec(a) measures how the velocity vector is changing - both in magnitude and direction
+
+so, if I'm running in a straight line faster and faster, my acceleration vector also points in the direction of motion
+
+BUT if I'm changing direction, even if my velocity is constant, there is an acceleration present becasue my velocity direction is changing
+
+Think of if you are walking and you turn a corner - you feel a bit of force on your shoe this is because it takes some work to make this turn.  Think of what happens if you try to run at the same speed around a corner!
+
+---
+
+## A Quick Physics Crash Course: Important vectors
+
+$\vec{x}$ or $\vec{r}$ is the displacement vector - measures where things are
+ * location: units are $[m]$
+
+$\vec{v}$ is the velocity vector - measures how fast things are moving 
+ * change of location with time: units are $[m/s]$
+
+$\vec{a}$ is the acceleration vector - measures how much the velocity changes in magnitude (speed) **or** direction
+ * change of velocity with time: units are $[m/s^2]$
+
+notes: we'll usually use cgs-like units in the class, so things like meters, sections, kg, g, etc
+
+displacement is measured in meters
+
+velocity is the change of displacement in time so has units of meters per second
+
+acceleration is the change of velocity (in meters/second) with time, another "per second" so has units of meters per second per second, or meters per second squared
+
+---
+
+## A Quick Physics Crash Course: Important vectors
+
+Another way to think of these vectors is with respect to how they **change**.
+
+This change is denoted with a $\Delta$:
+
+$$ \Delta \vec{x} = \vec{x}\_{final} - \vec{x}\_{initial} $$
+
+![](images/displacementVector.png)
+
+notes: *take some time to walk through this diagram*
+
+---
+
+## A Quick Physics Crash Course: Important vectors
+
+Another way to think of these vectors is with respect to how they **change**.
+
+This change is denoted with a $\Delta$:
+
+$$ \Delta \vec{x} = \vec{x}\_{final} - \vec{x}\_{initial} $$
+
+$$ \Delta \vec{v} = \vec{v}\_{final} - \vec{v}\_{initial} = \frac{\Delta \vec{x}}{\Delta t}$$
+
+$$ \Delta \vec{a} = \vec{a}\_{final} - \vec{a}\_{initial} = \frac{\Delta \vec{v}}{\Delta t}$$
+
+notes: notice that we can express velocity as a change in position divided by a change (delta t) in time, where time is a *scalar* i.e. does not have direction in space
+
+similarly, acceleration is a change in velocity divided by a change in time
+
+---
+
+## A Quick Physics Crash Course: Important vectors
+
+You'll often see these same things expressed in different ways.
+
+$$ \vec{v}\_{final} = \vec{v}\_{initial} + \frac{\Delta \vec{x}}{\Delta t} = \vec{v}\_{initial} + \frac{\vec{x}\_{final} - \vec{x}\_{initial}}{t\_{final} - t\_{initial}} $$
+
+and
+
+$$ \vec{a}\_{final} = \vec{a}\_{initial} + \frac{\Delta \vec{v}}{\Delta t} = \vec{a}\_{initial} + \frac{\vec{v}\_{final} - \vec{v}\_{initial}}{t\_{final} - t\_{initial}} $$
+
+notes: this is just a simple re-arranging of the equations on the previous slide
+
+we moved the initial velocity to the other side of our difinition equation
+
+and same for the acceleration
+
+---
+
+## A Quick Physics Crash Course: Important vectors
+
+For reference - the Kinematic Equations:
+
+$$ \langle \vec{v} \rangle = \vec{v}\_{initial} + \langle \vec{a} \rangle \times t $$
+
+$$ \langle \vec{x} \rangle = \vec{x}\_{initial} + \langle \vec{v} \rangle \times t + \frac{1}{2} \langle \vec{a} \rangle \times t^2 $$
+
+notes: while we won't use these a lot explicitly, you either have seen them in physics already or will see them soon!
+
+notice that I've dropped the subscripts here and put brackets around the values - this is to indicate these are average values.  You can write the *instantaneous* forms of these equations quite similarly, and you have probably seen them before if you've taken calculus.
+
+Anyway, this is mostly an aside and you don't need to worry to much about it right now!
 
 ---
 
