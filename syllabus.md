@@ -88,3 +88,4 @@ No curriculum develops in a vacuum.  Here are some sources to check out that wer
 * [Khan Academy](https://www.khanacademy.org/science/ap-physics-1/ap-centripetal-force-and-gravitation/newtons-law-of-gravitation-ap/e/gravity-and-orbits-ap1)
 * [Astronomy Crash Course](https://www.youtube.com/watch?v=0rHUDWjR5gg&list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL)
 * [Physics Crash Course](https://www.youtube.com/watch?v=ZM8ECpBuQYE)
+* [Circular Motion Jupyter Notebook](http://www.astrojack.com/uniform-circular-motion-animation-in-python/)
