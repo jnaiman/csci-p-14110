@@ -199,7 +199,7 @@ How does this equation change if the center of the ellipse is at a different pos
 
 Non-centered ellipse:
 
-$$ \frac{(x-x_0)^2}{a^2} + \frac{(y-y_0)^2}{b^2} = 1$$
+$$ \frac{(x-x\_0)^2}{a^2} + \frac{(y-y\_0)^2}{b^2} = 1$$
 
 ---
 
@@ -207,7 +207,7 @@ $$ \frac{(x-x_0)^2}{a^2} + \frac{(y-y_0)^2}{b^2} = 1$$
 
 Non-centered ellipse:
 
-$$ \frac{(x-x_0)^2}{a^2} + \frac{(y-y_0)^2}{b^2} = 1$$
+$$ \frac{(x-x\_0)^2}{a^2} + \frac{(y-y\_0)^2}{b^2} = 1$$
 
 Area of an ellipse:
 
@@ -260,7 +260,7 @@ In a proper physics class, you may spend several weeks on these topics, so if th
 
 ---
 
-## A Quick Physics Crash Course: Important vectors
+## A Quick Physics Crash Course: Important vectors - Linear Motion
 
 $\vec{x}$ or $\vec{r}$ is the displacement vector - measures where things are
 
@@ -272,7 +272,7 @@ For example, where I am if the center of the room is the origin
 
 ---
 
-## A Quick Physics Crash Course: Important vectors
+## A Quick Physics Crash Course: Important vectors - Linear Motion
 
 $\vec{x}$ or $\vec{r}$ is the displacement vector - measures where things are
 
@@ -286,7 +286,7 @@ this is a way of measuring how my **displacement** vector is changing
 
 ---
 
-## A Quick Physics Crash Course: Important vectors
+## A Quick Physics Crash Course: Important vectors - Linear Motion
 
 $\vec{x}$ or $\vec{r}$ is the displacement vector - measures where things are
 
@@ -304,7 +304,7 @@ Think of if you are walking and you turn a corner - you feel a bit of force on y
 
 ---
 
-## A Quick Physics Crash Course: Important vectors
+## A Quick Physics Crash Course: Important vectors - Linear Motion
 
 $\vec{x}$ or $\vec{r}$ is the displacement vector - measures where things are
  * location: units are $[m]$
@@ -325,7 +325,7 @@ acceleration is the change of velocity (in meters/second) with time, another "pe
 
 ---
 
-## A Quick Physics Crash Course: Important vectors
+## A Quick Physics Crash Course: Important vectors - Linear Motion
 
 Another way to think of these vectors is with respect to how they **change**.
 
@@ -339,7 +339,7 @@ notes: *take some time to walk through this diagram*
 
 ---
 
-## A Quick Physics Crash Course: Important vectors
+## A Quick Physics Crash Course: Important vectors - Linear Motion
 
 Another way to think of these vectors is with respect to how they **change**.
 
@@ -357,7 +357,7 @@ similarly, acceleration is a change in velocity divided by a change in time
 
 ---
 
-## A Quick Physics Crash Course: Important vectors
+## A Quick Physics Crash Course: Important vectors - Linear Motion
 
 You'll often see these same things expressed in different ways.
 
@@ -375,7 +375,7 @@ and same for the acceleration
 
 ---
 
-## A Quick Physics Crash Course: Important vectors
+## A Quick Physics Crash Course: Important vectors - Linear Motion
 
 For reference - the Kinematic Equations:
 
@@ -385,9 +385,111 @@ $$ \langle \vec{x} \rangle = \vec{x}\_{initial} + \langle \vec{v} \rangle \times
 
 notes: while we won't use these a lot explicitly, you either have seen them in physics already or will see them soon!
 
-notice that I've dropped the subscripts here and put brackets around the values - this is to indicate these are average values.  You can write the *instantaneous* forms of these equations quite similarly, and you have probably seen them before if you've taken calculus.
+notice that I've dropped the subscripts here and put brackets around the values - this is to indicate these are time-averaged values.  You can write the *instantaneous* forms of these equations quite similarly, and you have probably seen them before if you've taken calculus.
 
 Anyway, this is mostly an aside and you don't need to worry to much about it right now!
+
+---
+
+## A Quick Physics Crash Course: Important vectors - Angular Motion
+
+There are cross-overs in definitions between the more familiar linear motion and angular motion.
+
+<img src="http://xaktly.com/Images/Physics/AngularVelocity/Linear_vs_AngularVelocityFigure.png" width="300"/>
+
+notes: for example linear velocity, which is distance in a change time can be thought of as equivalent to angular velocity, which is a change in angle in a change in time
+
+---
+
+## A Quick Physics Crash Course: Important vectors - Angular Motion
+
+$$ \vec{v} = \frac{\Delta \vec{x}}{\Delta t} \rightarrow \vec{\omega} = \frac{\Delta \vec{\theta}}{\Delta t} $$
+
+<img src="http://xaktly.com/Images/Physics/AngularVelocity/Linear_vs_AngularVelocityFigure.png" width="300"/>
+
+
+notes: we denote by "omega" - i.e. a change in angle in a change in time
+
+notice that there are vector symbols over the omega and the theta -> but which way do they point?
+
+We use the "right hand rule"!  Or you can just remember that counter-clockwise is positive, clockwise is negative for both angle and angular velocity
+
+---
+
+## A Quick Physics Crash Course: Important vectors - Angular Motion
+
+Angular motion definitions:
+
+$ \vec{\theta} $ is the angular displacement
+ * units are [radians]
+ * recall: $180^\circ = \pi$ radians
+ * $\Delta \theta = \theta\_{final} - \theta\_{initial}$
+ 
+$ \vec{\omega} $ is the angular velocity
+ * units are [radians/sec]
+ * $\Delta \omega = \frac{\Delta \theta}{\Delta t}$
+ 
+$ \vec{\alpha} $ is the angular acceleration
+ * units are [radians/sec/sec] or [radians/$s^2$]
+ * $\Delta \alpha = \frac{\Delta \omega}{\Delta t}$
+
+---
+
+## A Quick Physics Crash Course: Angular Motion
+
+There are a few other definitions that are specific to angular motion.
+
+$T$ is the period - i.e. how long it takes for one full cycle
+ * units are seconds [s]
+ 
+$f$ is the frequency of the circular motion 
+ * units are $Hz$ where $Hz = s^{-1}$
+
+---
+
+## A Quick Physics Crash Course: Angular Motion
+
+There are some useful relationships between these angular definitions and their linear compatriots.
+
+<img src="http://1.bp.blogspot.com/-uSspXgj_kIU/TaVjhaqbvlI/AAAAAAAAACI/qFpr_XsUCyE/s1600/avel.gif" width="400" />
+
+notes: so we looked a bit at the angular quantities shown here in black
+
+notice there is another thing shown here - theta = S/r -> here "S" is the arc length, or the distance along the perimeter of this circle, and r is the radius of the circle.  What we see here is that the angle is equal to the arc length divided by the radius of the circle.  This is closely related to the trig identities you've seen before.
+
+At each point in the circular motion, there is also a linear velocity for an object there -> this is the velocity the object would have if it got "let loose":
+
+Think of a ball attached to a string being swong around your head - if someone cuts the string, the ball goes flying off - the velocity with which it will fly off is v and the direction is given as perpendicular to the radius vector.
+
+---
+
+## A Quick Physics Crash Course: Angular Motion
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/rwOv5HfBazQ?rel=0&autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+notes: you can see it in this experiment here - there is a small string attached to this scooter on a (nearly) frictionless surface.  There is a flame being held at the 90deg angle that cuts this string.
+
+The blue arrows show the linear velocity, the red arrows show the acceleration vectors - these show that there is a "force" allowing for circular motion - the tension on the string.  Once that "force" is removed by cutting the string - no more circular motion!
+
+---
+
+**HERE: python things with circular motion**
+
+---
+
+## A Quick Physics Crash Course: Angular Motion
+
+<img src="https://image.slidesharecdn.com/newtonslawofmotion-180215162757/95/newtons-law-of-motion-6-638.jpg?cb=1518712151" width="600" />
+
+notes: ok, I just used a new word, what is this "force" thing?
+
+---
+
+## A Quick Physics Crash Course: Angular Motion
+
+<img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/222/2014/12/20103410/Figure_11_01_03a.jpg" width="500" />
+
+notes: lets take a moment to think about this more
 
 ---
 

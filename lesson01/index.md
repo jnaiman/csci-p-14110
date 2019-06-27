@@ -52,5 +52,6 @@ Optional reading/activities:
 1. [Reading from Lumen Learning](https://courses.lumenlearning.com/waymakercollegealgebra/chapter/equations-of-ellipses/)
 1. [Intro to Conic sections from Khan Academy](https://www.khanacademy.org/math/precalculus/conics-precalc)
    * [Subsection: Khan Academy Intro to Ellipses](https://www.khanacademy.org/math/precalculus/conics-precalc/center-and-radii-of-an-ellipse/v/conic-sections-intro-to-ellipses)
+1. [Physics Crash Course - intro to linear motion](https://www.youtube.com/watch?v=ZM8ECpBuQYE)
 1. [Intro to Circular Motion](https://www.khanacademy.org/science/ap-physics-1/ap-centripetal-force-and-gravitation)
    * [Subsection: Angular Motion Variables](https://www.khanacademy.org/science/ap-physics-1/ap-centripetal-force-and-gravitation/introduction-to-uniform-circular-motion-ap/v/angular-motion-variables)
