@@ -428,17 +428,7 @@ $\vec{v} = \vec{\omega} \times \vec{r} $ - this just gives us the direction of v
 
 Some simple examples:
 
-If $\vec{omega} = 2 \, rad/s$ in the counter clockwise direction then after 2 seconds, what is the total angle traveled?
-
----
-
-## A Quick Physics Crash Course: Angular Motion
-
-Some simple examples:
-
-If $\vec{omega} = 2 \, rad/s$ in the counter clockwise direction then after 2 seconds, what is the total angle traveled?
-
-We know $ \vec{\theta}  > 0$ because counter clockwise motion, so: $| \vec{\theta} = 2 rad/s \times 2 s$ = $4 rad$ which is almost 2 full rotations.
+If $\vec{\omega} = 2 \, rad/s$ in the counter clockwise direction then after 2 seconds, what is the total angle traveled?
 
 ---
 
@@ -448,7 +438,17 @@ Some simple examples:
 
 If $\vec{\omega} = 2 \, rad/s$ in the counter clockwise direction then after 2 seconds, what is the total angle traveled?
 
-We know $ \vec{\theta}  > 0$ because counter clockwise motion, so: $| \vec{\theta} = 2 rad/s \times 2 s$ = $4 rad$ which is almost 2 full rotations.
+We know $ \vec{\theta}  > 0$ because counter clockwise motion, so: $| \vec{\theta} | = 2 rad/s \times 2 s$ = $4 rad$ which is almost 2 full rotations.
+
+---
+
+## A Quick Physics Crash Course: Angular Motion
+
+Some simple examples:
+
+If $\vec{\omega} = 2 \, rad/s$ in the counter clockwise direction then after 2 seconds, what is the total angle traveled?
+
+We know $ \vec{\theta}  > 0$ because counter clockwise motion, so: $| \vec{\theta} | = 2 rad/s \times 2 s$ = $4 rad$ which is almost 2 full rotations.
 
 If we make this rotation at a radius of 2 meters, what is our linear velocity?
 
@@ -460,7 +460,7 @@ Some simple examples:
 
 If $\vec{\omega} = 2 \, rad/s$ in the counter clockwise direction then after 2 seconds, what is the total angle traveled?
 
-We know $ \vec{\theta}  > 0$ because counter clockwise motion, so: $| \vec{\theta} = 2 rad/s \times 2 s$ = $4 rad$ which is almost 2 full rotations.
+We know $ \vec{\theta}  > 0$ because counter clockwise motion, so: $| \vec{\theta} | = 2 rad/s \times 2 s$ = $4 rad$ which is almost 2 full rotations.
 
 If we make this rotation at a radius of 2 meters, what is our linear velocity?
 
@@ -474,17 +474,21 @@ Notice the "rad" units drop out - this is a feature not a bug!  If we had used d
 
 But what if we moved 5 rad/s for 0.3 seconds counter clockwise, then 0.3 rad/s clockwise for 2.5 seconds, then 10 rad/s clockwise for 5.5 seconds then...
 
-Our calculation of what our final $| \vec{\omega} |$ gets more complicated.
+Our calculation of what our final $| \vec{\theta} |$ gets more complicated.
+
+---
+
+## A Quick Physics Crash Course: Angular Motion
+
+But what if we moved 5 rad/s for 0.3 seconds counter clockwise, then 0.3 rad/s clockwise for 2.5 seconds, then 10 rad/s clockwise for 5.5 seconds then...
+
+Our calculation of what our final $| \vec{\theta} |$ gets more complicated.
+
+Numerical methods to the rescue!
 
 ---
 
 # Let's play with circular motion in Python!
-
-But what if we moved 5 rad/s for 0.3 seconds counter clockwise, then 0.3 rad/s clockwise for 2.5 seconds, then 10 rad/s clockwise for 5.5 seconds then...
-
-Our calculation of what our final $| \vec{\omega} |$ gets more complicated.
-
-Numerical methods to the rescue!
 
 notes: let's think about what to do if $\omega$ is not constant - how can we find what $\theta$ we have traveled through
 
