@@ -73,12 +73,10 @@ Gravity is the force "holding" objects to the Earth as they orbit.
 
 Gravity is the force "holding" objects to the Earth as they orbit.
 
-<div>
 <img align="left" src="http://bigbangcosmology.files.wordpress.com/2008/01/image015.jpg" width="400" />
 
 <img aligh="right" src="https://eschooltoday.com/science/forces/images/GRAVITATIONAL-FORCE.jpg" width="400" />
 
-</div>
 
 $\vec{F} = - \frac{G M\_1 M\_2}{| \vec{r}\_1 - \vec{r}\_2 |^2} \hat{r} $
 
@@ -98,15 +96,23 @@ Newton's Second Law
 
 $$\vec{F} = - \frac{G M\_1 M\_2}{| \vec{r}\_1 - \vec{r}\_2 |^2} \hat{r} $$
 
-
 notes: this gravitational force that pulls in stuff towards the earth, this acts like the string tension in our examples before
 
---- 
+---
 
 ## A Quick Physics Crash Course: Gravity
 
-Let's measure the force of gravity with Python!
+**Let's measure the force of gravity with Python!**
+
+<div align="center">
+<iframe align="center" width="560" height="315" src="https://www.youtube.com/embed/xQ4znShlK5A?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+</div>
+
+Warning: strobe lights
+
+
+notes: you can watch this on your own - there are flashing strobe lights and I know some folks can have sensitivities, you don't need to watch to do the next part of the course
 
 
