@@ -459,7 +459,71 @@ For one massive star at the center of the system, orbits can be written as:
 
 $$ r(\theta) = \frac{a (1-e^2)}{1 + e cos(\theta)} $$
 
+$$ e = \sqrt{1 - \frac{b^2}{a^2}} $$
+
 Beware: $r(\theta)$ is trivial, but $r(t)$ and $\theta(t)$ are not easy to calculate and require numerical methods!
+
+---
+
+## Kepler's Laws for Multi-body systems?
+
+For one massive star at the center of the system, orbits can be written as:
+
+$ r(\theta) = \frac{a (1-e^2)}{1 + e cos(\theta)} $, $ e = \sqrt{1 - \frac{b^2}{a^2}} $
+
+---
+
+## Kepler's Laws for Multi-body systems?
+
+For one massive star at the center of the system, orbits can be written as:
+
+$ r(\theta) = \frac{a (1-e^2)}{1 + e cos(\theta)} $, $ e = \sqrt{1 - \frac{b^2}{a^2}} $
+
+Recall:
+
+$\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
+
+$\vec{v}\_{i+1} = \vec{v}\_i + \vec{a}\_i \Delta t$ = $\vec{v}\_i - \frac{G M\_{star}}{| \vec{r\_{i}} |^2} \Delta t$
+
+
+---
+
+## Kepler's Laws for Multi-body systems?
+
+For one massive star at the center of the system, orbits can be written as:
+
+$ r(\theta) = \frac{a (1-e^2)}{1 + e cos(\theta)} $, $ e = \sqrt{1 - \frac{b^2}{a^2}} $
+
+Recall:
+
+$\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
+
+$\vec{v}\_{i+1} = \vec{v}\_i + \vec{a}\_i \Delta t$ = $\vec{v}\_i - \frac{G M\_{star}}{| \vec{r\_{i}} |^2} \Delta t$
+
+So we need initial $\vec{r}\_0$ and $\vec{v}\_0$ to solve these equations.
+
+---
+
+## Kepler's Laws for Multi-body systems?
+
+So we need initial $\vec{r}\_0$ and $\vec{v}\_0$ to solve these equations.  We'll use $\vec{r}\_0 = \vec{r}\_p$ and $\vec{v}\_0 = \vec{v}\_p$.
+
+<img src="http://ffden-2.phys.uaf.edu/webproj/211_fall_2016/Mikayla_Grunin/mikayla_grunin/Photo3.html.gif" width="500" />
+
+
+---
+
+## Kepler's Laws for Multi-body systems?
+
+So we need initial $\vec{r}\_0$ and $\vec{v}\_0$ to solve these equations.  We'll use $\vec{r}\_0 = \vec{r}\_p$ and $\vec{v}\_0 = \vec{v}\_p$.
+
+<img src="http://ffden-2.phys.uaf.edu/webproj/211_fall_2016/Mikayla_Grunin/mikayla_grunin/Photo3.html.gif" width="500" />
+
+We can use a few more relations for $e$ and position and velocity at perihelion, $r\_p$ and $v\_p$:
+
+$ e = \frac{ r\_p v\_p^2 }{G (m\_{planet} + M\_{star} )} - 1 \approx \frac{ r\_p v\_p^2 }{G M\_{star} } - 1 $, $ a = \frac{r\_p}{1 - e} $
+
+notes: here, I'm using shorthand $| \vec{r}\_p | = r\_p$
 
 ---
 
