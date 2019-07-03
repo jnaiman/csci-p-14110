@@ -116,6 +116,136 @@
            data-separator-notes="notes?:"
            >
           <script type="text/template">
+## Euler's Method with Gravity
+
+To summarize, we used Euler's Method to derive:
+
+$v\_{i} = \frac{\Delta y\_i}{\Delta t} = \frac{y\_{i+1} - y\_{i}}{\Delta t} $
+
+$a\_i = \frac{\Delta v\_i}{\Delta t} = \frac{v\_{i+1} - v\_i}{\Delta t}$
+
+---
+
+## Euler's Method with Gravity
+
+To summarize, we used Euler's Method to derive:
+
+$v\_{i} = \frac{\Delta y\_i}{\Delta t} = \frac{y\_{i+1} - y\_{i}}{\Delta t} $
+
+$a\_i = \frac{\Delta v\_i}{\Delta t} = \frac{v\_{i+1} - v\_i}{\Delta t}$
+
+we can swap these:
+
+$y\_{i+1} = y\_i + v\_i \Delta t$
+
+$v\_{i+1} = v\_i + a\_i \Delta t$
+
+---
+
+## Euler's Method with Gravity
+
+To summarize, we used Euler's Method to derive:
+
+$v\_{i} = \frac{\Delta y\_i}{\Delta t} = \frac{y\_{i+1} - y\_{i}}{\Delta t} $
+
+$a\_i = \frac{\Delta v\_i}{\Delta t} = \frac{v\_{i+1} - v\_i}{\Delta t}$
+
+we can swap these:
+
+$y\_{i+1} = y\_i + v\_i \Delta t$
+
+$v\_{i+1} = v\_i + a\_i \Delta t$
+
+If we are at the surface of the Earth:
+
+$a\_i = g = 9.8 \, m/s^2$
+
+---
+
+## Euler's Method with Gravity
+
+If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet to generalize:
+
+$\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
+
+$\vec{v}\_{i+1} = \vec{v}\_i + \vec{a}\_i \Delta t$
+
+---
+
+## Euler's Method with Gravity
+
+If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet to generalize:
+
+$\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
+
+$\vec{v}\_{i+1} = \vec{v}\_i + \vec{a}\_i \Delta t$
+
+If we are at the surface of the Earth:
+
+$\vec{a}\_i = g = 9.8 \, m/s^2$ pointed toward the center of the Earth
+
+---
+
+## Euler's Method with Gravity
+
+If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet to generalize:
+
+$\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
+
+$\vec{v}\_{i+1} = \vec{v}\_i + \vec{a}\_i \Delta t$
+
+If we are at the surface of the Earth:
+
+$\vec{a}\_i = g = 9.8 \, m/s^2$ pointed toward the center of the Earth
+
+For planets around stars we can use $\vec{F} = m\_{planet} \vec{a}$ and Newton's law of gravitation to derive:
+
+$\vec{a} = - \frac{G M\_{star}}{| \vec{r} |^2}$
+
+---
+
+## Euler's Method with Gravity
+
+If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet to generalize:
+
+$\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
+
+$\vec{v}\_{i+1} = \vec{v}\_i + \vec{a}\_i \Delta t$
+
+If we are at the surface of the Earth:
+
+$\vec{a}\_i = g = 9.8 \, m/s^2$ pointed toward the center of the Earth
+
+For planets around stars we can use $\vec{F} = m\_{planet} \vec{a}$ and Newton's law of gravitation to derive:
+
+$\vec{a} = - \frac{G M\_{star}}{| \vec{r} |^2}$ or, discretized $\vec{a}\_{i} = - \frac{G M\_{star}}{| \vec{r\_{i}} |^2}$
+
+
+---
+
+## Euler's Method with Gravity
+
+If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet to generalize:
+
+$\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
+
+$\vec{v}\_{i+1} = \vec{v}\_i + \vec{a}\_i \Delta t$
+
+If we are at the surface of the Earth:
+
+$\vec{a}\_i = g = 9.8 \, m/s^2$ pointed toward the center of the Earth
+
+For planets around stars we can use $\vec{F} = m\_{planet} \vec{a}$ and Newton's law of gravitation to derive:
+
+$\vec{a} = - \frac{G M\_{star}}{| \vec{r} |^2}$ or, discretized $\vec{a}\_{i} = - \frac{G M\_{star}}{| \vec{r\_{i}} |^2}$
+
+**We can go ahead and use Python to calculate orbits, but how do we know they are correct?**
+
+notes: we need to use a few more law's called "Kepler's Laws" to help us generate analytical orbits that we can check our simulations against
+
+
+---
+
 ## Kepler's Laws
 
 <img src="http://slideplayer.com/slide/2878322/10/images/1/JOHANNES+KEPLER+BORN+IN+WEIL+DER+STADT+NEAR+PRESENT+DAY+STUTTGART.+HE+WAS+BORN+PREMATURELY+AND+WAS+PHYSICALLY+WEAK..jpg" width="800" />
