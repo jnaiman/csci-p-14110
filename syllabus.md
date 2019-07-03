@@ -90,3 +90,4 @@ No curriculum develops in a vacuum.  Here are some sources to check out that wer
 * [Physics Crash Course](https://www.youtube.com/watch?v=ZM8ECpBuQYE)
 * [Circular Motion Jupyter Notebook](http://www.astrojack.com/uniform-circular-motion-animation-in-python/)
 * [Gravity Experiment Notebook](https://nbviewer.jupyter.org/github/engineersCode/EngComp3_tourdynamics/blob/master/notebooks_en/1_Catch_Motion.ipynb) from [a larger computational engineering class](https://github.com/engineersCode/EngComp3_tourdynamics)
+* [Kepler's Orbits](https://github.com/katiebreivik/Keplers_Laws/blob/master/Keplers_Laws.ipynb) and [more info available here](http://gk12.ciera.northwestern.edu/classroom/2018/Python%20and%20Keplers%20Laws.pdf)
