@@ -8,6 +8,7 @@ visible: false
 ## Downloads
 
 * [Integrators Article](downloads/integrators.pdf)
+* [Hermite Library - hermite_library.py](hermite_library.py)
 
 ## Links
 
