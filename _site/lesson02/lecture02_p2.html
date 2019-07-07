@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>Lecture 2, Part 2 - stuff</title>
+<title>Lecture 2, Part 2 - Higher order solvers</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/white.min.css">
@@ -116,173 +116,119 @@
            data-separator-notes="notes?:"
            >
           <script type="text/template">
-## Recall: One Star + Planetary System
+## Numerical Solutions: Can we do better?
 
-1. Gravitational Force - Newton's Laws
-1. Circular motion
-1. Kepler's Laws - elliptical orbits
+<img src="images/loop_animation.png" width="700" />
 
----
+notes: as we saw, our simulations are not numerically stable - i.e. they do not conserve mass and momentum
 
-## Recall: One Star + Planetary System
+this is a feature of *all* numerical models
 
-For one massive star at the center of the system, orbits can be written as:
-
-$ r(\theta) = \frac{a (1-e^2)}{1 + e cos(\theta)} $, $ e = \sqrt{1 - \frac{b^2}{a^2}} $
-
-Recall:
-
-$\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
-
-$\vec{v}\_{i+1} = \vec{v}\_i + \vec{a}\_i \Delta t$ = $\vec{v}\_i - \frac{G M\_{star}}{| \vec{r\_{i}} |^2} \Delta t$
-
-$ e = \frac{ r\_p v\_p^2 }{G (m\_{planet} + M\_{star} )} - 1 \approx \frac{ r\_p v\_p^2 }{G M\_{star} } - 1 $, $ a = \frac{r\_p}{1 - e} $
-
-notes: here, I'm using shorthand $| \vec{r}\_p | = r\_p$
+but we can play some numerical tricks to make our solutions more accurate
 
 ---
 
-## Two Body Motion for any masses
+## Numerical Solutions: Can we do better?
 
-What if $M\_{star} \approx M\_{planet}$ - i.e. we have two stars orbiting each other.
+<img src="images/loop_animation.png" width="700" />
 
-Planetary orbits:
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Orbit4.gif" width="400"/>
-
-notes: in detail, we've been basically assuming the star's mass is so much bigger than the planet's mass so we can assume there is no motion of the star
-
-in reality even in planet-star systems, the star gets a little "wiggle" from more massive planets
-
-this is actually how we can discover exoplanets!
-
----
-
-## Two Body Motion for any masses
-
-<img align="right" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Orbit4.gif" width="400"/>
-
-<img align="left" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Orbit1.gif" width="400" />
-
-notes: if we have two similar mass things, they actually orbit their common **center of mass**
-
----
-
-## Two Body Motion for any masses
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Orbit5.gif" width="600" />
-
-$$ R\_{CM} = \frac{1}{M\_1 + M\_2} (M\_1 \vec{r\_1} + M\_2 \vec{r\_2} ) $$
-
-notes: in most binary systems, there is actually ellptical motion, but around the common center of mass!
-
----
-
-## Two Body Motion for any masses
-
-**Kepler's Law #1**: Elliptical motion around center of mass
-
-<img src="http://hosting.astro.cornell.edu/academics/courses/astro201/images/mbin1.gif" width="500" />
-
----
-
-## Two Body Motion for any masses
-
-**Kepler's Law #2**: Equal areas in equal times - for each star
-
-<img src="http://hosting.astro.cornell.edu/academics/courses/astro201/images/mbin2.gif" width="500" />
-
-<img src="http://hosting.astro.cornell.edu/academics/courses/astro201/images/mbin3.gif" width="500" />
-
----
-
-## Two Body Motion for any masses
-
-**Kepler's Law #3**: Period semi-major axis relationships are *almost* the same
-
-$$ T^2 = \frac{4 \pi^2 a^3}{G (M\_1 + M\_2)} $$
-
-where $a$ is now the mean seperation between the two masses.
-
-<!--$$ T^2 = \frac{4 \pi ^2}{\mu\_1}a\_1^3, \, \, \, T^2 = \frac{4 \pi^2}{\mu\_2} a\_2^3 $$
-
-where
-
-$$ \mu\_1 = \frac{G M\_2^3}{(M\_1 + M\_2)^2}, \, \, \,  \mu\_2 = \frac{G M\_1^3}{(M\_1 + M\_2)^2} $$-->
-
----
-
-## Two Body Motion for any masses
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Orbit5.gif" width="600" />
-
-How can we check our work?
- * analytical solutions - gets a little more complicated
- * **conserved quantities**
+Increase accuracy with:
+ 1. smaller time steps
+ 1. a *higher order* solver
  
-notes: we can certainly use an analytical solution again, the math gets slightly more complicated, but it is doable
+notes: we saw that we could increase the accuracy of our solutions by increasing the number of steps per period or 
+decreasing the time step length
 
-but we should probably develop other methods - when we move to more than 2 bodys, there are no analytical solutions!
-
-we'll look at some things called conserved quantities - these are things that should stay the same during the entire motion
-
----
-
-## Conserved Quantities: Energy and Momentum
-
-For a two body system:
-
-**Energy**
-
-$$ E = \frac{1}{2} ( M\_1 v\_1^2 + M\_2 v\_2^2 ) - \frac{G M\_1 M\_2}{ | \vec{r}\_1 - \vec{r}\_2 | } $$
-
-**Angular Momentum**
-
-$$ | \vec{L} | = | M\_1 \vec{r}\_1 \times \vec{v}\_1 + M\_2 \vec{r}\_2 \times \vec{v}\_2 | $$
-
-*Energy and angular momentum cannot be created or destroyed.*
+we can also choose a different solver than the Euler's for higher accuracy!
 
 ---
 
-## Conserved Quantities: Energy and Momentum
+## Numerical Solutions: Can we do better?
 
-These are constants of motion:
+Let's re-look at the Euler's Method for gravitation:
 
-**Energy**
+$ \vec{r}\_{i+1} = \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t$
 
-$$ E = \frac{1}{2} ( M\_1 v\_1^2 + M\_2 v\_2^2 ) - \frac{G M\_1 M\_2}{ | \vec{r}\_1 - \vec{r}\_2 | } = -\frac{G M\_1 M\_2}{2 a}$$
-
-**Angular Momentum**
-
-$$ | \vec{L} | = | M\_1 \vec{r}\_1 \times \vec{v}\_1 + M\_2 \vec{r}\_2 \times \vec{v}\_2 | = \mu r\_p v\_p$$
-
-*Energy and angular momentum cannot be created or destroyed.*
-
-notes: here $\mu$ is the reduced mass
-
-these are submitted without proof - I'll link to some resources for the curious on the webpage, but this is something you have seen or will see more of in your physics classes
+$ \vec{v}\_{i+1} = \vec{v}(t + \Delta t) = \vec{v}(t) + a\_g(\vec{r},t) \Delta t$
 
 ---
 
-# Two-body motion in Python once again!
+## Numerical Solutions: Can we do better?
+
+Let's re-look at the Euler's Method for gravitation:
+
+$ \vec{r}\_{i+1} = \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t + \mathcal{O}(\Delta t^2)$
+
+$ \vec{v}\_{i+1} = \vec{v}(t + \Delta t) = \vec{v}(t) + a\_g(\vec{r},t) \Delta t + \mathcal{O}(\Delta t^2)$
+
+notes: in reality, we have errors on the order of $\Delta t^2$ 
+
+where does this come from?
 
 ---
 
+## Numerical Solutions: Can we do better?
 
-* Other solvers - 4th order by hand
+Let's re-look at the Euler's Method for gravitation:
 
-Day 3
-* why we can't solve the multibody problem analtyically
-* multibody problem in 2D
-* Kepler's planets
+$ \vec{r}\_{i+1} = \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t + \mathcal{O}(\Delta t^2)$
 
-Day 4
-* multibody problem in 3D
-* galaxies
+$ \vec{v}\_{i+1} = \vec{v}(t + \Delta t) = \vec{v}(t) + a\_g(\vec{r},t) \Delta t + \mathcal{O}(\Delta t^2)$
 
-Day 5
-* Other solvers - python packages? 
-* We can skip this day if we run out of time
+**Calculus aside:**
+
+Taylor expansion: $f(x + h) = f(x) + f'(x)h + f''(x) \frac{h^2}{2!} + f'''(x) \frac{h^3}{3!} + ...$
+
+For a time series:
+
+$ \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{r}'(t) \Delta t + \vec{r}''(t) \frac{\Delta t^2}{2!} + \vec{r}'''(t)\frac{\Delta t^3}{3!} + ...$
+
+$ \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t + \vec{a}(t) \frac{\Delta t^2}{2!} + \vec{a}'(t)\frac{\Delta t^3}{3!} + ...$
+
+
+notes: if you haven't had calculus yet, don't worry about this part, but basically, any function, in this case position as a function of time can be broken down as a series of derivatives multiplied by $\Delta t$ - you see we take derivatives up to the derivative of the acceleration here in this case
+
+we increase the accuracy of our simulations by taking *higher order terms*
+
+There are many ways of doing this with a variety of solvers.  We'll first try with the *Hermite Solver*
+
+---
+
+## Numerical Solutions: Can we do better?
+
+Let's re-look at the Euler's Method for gravitation:
+
+$ \vec{r}\_{i+1} = \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t + \mathcal{O}(\Delta t^2)$
+
+$ \vec{v}\_{i+1} = \vec{v}(t + \Delta t) = \vec{v}(t) + a\_g(\vec{r},t) \Delta t + \mathcal{O}(\Delta t^2)$
+
+### Hermite Solver:
+
+**The math:**
+
+main step: 
+
+$ \vec{r}\_{i+1} = \vec{r}\_i + \frac{1}{2}(\vec{v}\_{i+1} + \vec{v}\_i)\Delta t + \frac{1}{12}(\vec{a}\_{i} - \vec{a}\_{i+1}) \Delta t^2 + \mathcal{O}(\Delta t^5) $
+
+$ \vec{v}\_{i+1} = \vec{v}\_i + \frac{1}{2}(\vec{a}\_{i+1} + \vec{a}\_i)\Delta t + \frac{1}{12}(\vec{J}\_{i} - \vec{J}\_{i+1}) \Delta t^2 + \mathcal{O}(\Delta t^5) \, \, \, $  with $J = \frac{\Delta a}{\Delta t}$
+
+$ \vec{r}\_p = \vec{r}\_i + \vec{v}\_i \Delta t + \frac{1}{2} \vec{a}\_i \Delta t^2 + \frac{1}{6} \vec{J}\_i \Delta t^3 $
+
+$ \vec{v}\_p = \vec{v}\_i + \vec{a}\_i \Delta t + \frac{1}{2} \vec{J}\_i \Delta t^2 $
+
+notes: so, you can see that things have gotten a bit more complicated, but we do have orders on order of 5th order!
+
+---
+
+# Let's try this out in Python!
+
+---
+
+* Other solvers - 4th order by hand in Python
+* then super planet crash
+
+---
+
 
           </script>
         </section>
