@@ -14,6 +14,7 @@ visible: false
 
 * [Super Planet Crash](http://www.stefanom.org/spc/)
 * [Bonus: Orbits Game](http://save-point.herokuapp.com/dashboard/users.php)
+* [More on N-body Units](http://www.manybody.org/modest/heggie_split.pdf)
 
 
 <!--### Python libraries

@@ -77,12 +77,16 @@ def make_initial_v_perp(planet_initial_velocity, planet_initial_position):
         # get the magnitude of the vector
         v = planet_initial_velocity[i]
         r = planet_initial_position[i]
+        print('v before:')
+        print(v)
         magv = v.dot(v)
         magr = r.dot(r)
         planet_initial_velocity[i,0] = -planet_initial_position[i,1]
         planet_initial_velocity[i,1] = planet_initial_position[i,0]
         # now, make sure the magnitude is that of the velocity, not radial vector
         planet_initial_velocity[i] *= magv/magr
+        print('planet init vel')
+        print(planet_initial_velocity)
     return planet_initial_velocity
 
 
@@ -107,10 +111,11 @@ def convert_units(planet_masses, star_mass, planet_initial_position, planet_init
 
 
 # do the calculation
-def do_hermite(star_mass, planet_masses, planet_initial_position, planet_initial_velocity):
+def do_hermite(star_mass, planet_masses, planet_initial_position,
+               planet_initial_velocity, tfinal=20.5, Nsteps = 880):
  
-    planet_initial_velocity = make_initial_v_perp(planet_initial_velocity,
-                                                  planet_initial_position)
+    #planet_initial_velocity = make_initial_v_perp(planet_initial_velocity,
+    #                                              planet_initial_position)
 
     masses, initial_positions, initial_velocities = convert_units(planet_masses,
                                                                   star_mass,
@@ -140,8 +145,8 @@ def do_hermite(star_mass, planet_masses, planet_initial_position, planet_initial
     v = v - CenterOfMassVelocity(v,m) # CoM does not move
 
 
-    tfinal = 20.5 # so, this is in weird N-body units: [l/sqrt( G*(M)/l )] where M = sum of all masses ~ star_mass
-    Nsteps = 880 # number of steps over for our integration
+    #tfinal = 20.5 # so, this is in weird N-body units: [l/sqrt( G*(M)/l )] where M = sum of all masses ~ star_mass
+    #Nsteps = 880 # number of steps over for our integration
     r_res = np.zeros((N,3,Nsteps))
     v_res = np.zeros((N,3,Nsteps))
 
