@@ -7,6 +7,13 @@ visible: false
 
 ## Downloads
 
+* [Integrators Article](downloads/integrators.pdf)
+
+## Links
+
+* [Super Planet Crash](http://www.stefanom.org/spc/)
+* [Bonus: Orbits Game](http://save-point.herokuapp.com/dashboard/users.php)
+
 
 <!--### Python libraries
 

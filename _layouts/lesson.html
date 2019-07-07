@@ -18,14 +18,14 @@ layout: default
 	{% endif %}
         {% endif %}
         {% endfor %}
-        {% assign pdfs = site.static_files | where: "extname", ".pdf" %}
+<!--        {% assign pdfs = site.static_files | where: "extname", ".pdf" %}
         {% for pdf in pdfs %}
         {% if pdf.path contains page.dir %}
         <li>PDF {{pdf.basename}}: 
          (<a href="{{pdf.path | relative_url }}">view</a>
         </li>
         {% endif %}
-        {%endfor%}
+        {%endfor%}-->
 	{% assign notebooks = site.static_files | where: "extname", ".ipynb" %}
         {% for nb in notebooks %}
         {% if nb.path contains page.dir %}
