@@ -1,5 +1,5 @@
 ---
-title: Lecture 3, Part 1 - Onto N-body!
+title: Lecture 3 - Onto N-body!
 layout: lecture
 visible_lec: true
 visible_n: true
@@ -87,3 +87,17 @@ notes: try with a 2 body, 3 body... etc
 
 try to make a stable system with each number of bodies and see what it takes
 
+---
+
+Day 3
+* multibody problem in 2D
+* how to save data -> read and write
+* Kepler's planets
+
+Day 4
+* multibody problem in 3D
+* galaxies
+
+Day 5
+* Other solvers - python packages? 
+* We can skip this day if we run out of time

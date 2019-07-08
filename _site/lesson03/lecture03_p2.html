@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>Lecture 3, Part 1 - Onto N-body!</title>
+<title>Lecture 3, Part 2 - Kepler's Orbits</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/white.min.css">
@@ -116,88 +116,88 @@
            data-separator-notes="notes?:"
            >
           <script type="text/template">
-# Enough with 2-body motion: N-body!
+# Kepler's Data - Simulating Real Planets
 
 ---
 
-## Why no 3+ body solution?
+## Simulations of our Solar System
 
-There are [some solutions, but nothing universal.](https://arxiv.org/pdf/1508.02312.pdf)
+<img src="images/slides1/day3_coding.001.jpeg" alt="slide1" width="800"/>
 
-And they can get mathematically complicated:
+notes: here is a figure from a paper showing several realizations of the orbit of mercury
 
-![](https://i.stack.imgur.com/2DPJi.jpg)
-
----
-
-## Recall:
-
-A bit more about planets:
-
-<img src="images/kepler2015.jpg" alt="planets" width="800"/>
-
-notes: notice that this is actually an older figure and there are actually many more planets that we've found with the Kepler telescope than is plotted here
-
-On the y-axis here we have plotted the size in earth-radii of these planets found in a *log* scale - so at the top we are plotting objects that have sizes about the size of jupiter
-
-On the bottom we have plotted the orbital time in days, again in a log scale.  So the earth would be right about *here*
-
-You can see that there is a gab in the plot there and you might wonder if this is because Earths are rare.  But in fact its likely a function of how we measure these things - with Kepler we are looking for "dips" in the brightness of stars due to planets...
+all of these initial conditions - placement, initial eccentricity, etc - are all within what we think are likely for an early mercury
 
 ---
 
-## Recall:
+## Simulations of our Solar System
 
-A bit more about planets:
+<img src="images/slides1/day3_coding.002.jpeg" alt="slide1" width="800"/>
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/Td_YeAdygJE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-more info: http://astro.uchicago.edu/~fabrycky/kepler/
-
-notes: you can see this more with this nice visualization of planetary systems here - it seems like there are a lot of big, close in things, but again, this is likely because of the way we are measuring things
+notes: we can see in some cases the eccentricity grows infinitely - meaning it goes from an elliptical orbit to a parabolic or hyperbolic orbit
 
 ---
 
-## Recall:
+## Instability of Planetary Systems
 
-How can we test this hypothesis that we are "missing" Earth-like planets with our telescope?
- * Is the Solar System unusual?  Unstable?
- * How easy is it to "make" other habitable planetary systems?
- 
-Simulate planetary systems on the computer!
- 
-notes: to make educated guesses about what kinds of planetary systems might be plausable we can model them on computers 
+<img src="images/slides1/day3_coding.003.jpeg" alt="slide1" width="800"/>
 
-We can see for how long, how many millions and billions of years, a particular system might live by seeing if any planets fall into the sun or are thrown out of a planetary system of a given configuration
-
-We'll in fact do this in this class!
-
-notice - lets talk about galaxies when we get to them
+notes: from our investigations and games like super planet crash, we learned that more massive planets tend to destabalize systems
 
 ---
 
-## Enough with 2-body motion: N-body!
+## Instability of Planetary Systems
 
-But first, let's play a game:
+<img src="images/slides1/day3_coding.004.jpeg" alt="slide1" width="800"/>
 
-[Super Planet Crash](http://www.stefanom.org/spc/) - http://www.stefanom.org/spc/
-
-Bonus game (if you get done): [Orbits Game](http://save-point.herokuapp.com/dashboard/users.php)
-
-notes: make note of what makes a stable system and what makes an unstable system
+notes: you also may have found that if you try to put planets close together, that can cause some instability
 
 ---
 
-# Let's use our Hermite solver to make some stable orbits! (in 2D)
+## Instability of Planetary Systems
 
-1. Try with 2, then 3 then... bodies
-1. Is energy conserved?
-1. Bonus: make an animation showing were, if at all, energy is lost
+<img src="images/slides1/day3_coding.005.jpeg" alt="slide1" width="800"/>
 
-notes: try with a 2 body, 3 body... etc
+notes: here you can read the bottom axis as the "seperation between planets" basically
 
-try to make a stable system with each number of bodies and see what it takes
+this is showing how eccentric the planet is vs. how far apart you can make things - if you have very eccentric orbits, you're system is naturally less stable and so you can't cram in planets very close together.
 
+---
+
+## Instability of Planetary Systems - Real Systems
+
+The Kepler Telescope:
+
+<img src="https://exoplanets.nasa.gov/system/downloadable_items/345_Keper_EOF_By_The_Numbers_Mission_Stats.jpg" width="800"/>
+
+notes: as we've mentioned before, a lot of what we know about other planetary systems comes from the Kepler's telescope
+
+now we are going to use actual data from the Kepler telescope to simulate real live planetary systems!
+
+---
+
+# Kepler Systems in Python - reading and writing data!
+
+notes: we'll also talk a bit about how to read and write data in python so you don't have to keep running simulations all the time
+
+this is especially important for data viz next week - you'll want to have some things saved and ready to go
+
+also, if you want to compare simulations - it's nice not to have to re-run a bunch
+
+---
+
+Day 3
+* how to save data -> read and write
+* Kepler's planets
+* adding in and plotting errors in data parameters
+
+Day 4
+* multibody problem in 3D
+* galaxies
+
+Day 5
+* Other solvers - python packages? 
+* We can skip this day if we run out of time
 
           </script>
         </section>
