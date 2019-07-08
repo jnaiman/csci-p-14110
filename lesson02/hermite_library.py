@@ -112,8 +112,17 @@ def convert_units(planet_masses, star_mass, planet_initial_position, planet_init
 
 # do the calculation
 def do_hermite(star_mass, planet_masses, planet_initial_position,
-               planet_initial_velocity, tfinal=20.5, Nsteps = 880):
- 
+               planet_initial_velocity, tfinal=20.5, Nsteps = 880,
+               threeDee = False):
+    # for 2d
+    if not threeDee:
+        # make sure we are doing motion in x/y plane
+        for i in range(0,len(planet_masses)):
+            planet_initial_position[i,2] = 0.0
+            planet_initial_velocity[i,2] = 0.0
+
+
+    
     #planet_initial_velocity = make_initial_v_perp(planet_initial_velocity,
     #                                              planet_initial_position)
 
