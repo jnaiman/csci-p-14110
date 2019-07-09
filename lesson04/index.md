@@ -15,5 +15,6 @@ visible: false
 
 ## Links
 
+* [Online 3D solar system interactive animation - https://theskylive.com/3dsolarsystem](https://theskylive.com/3dsolarsystem)
 
 
