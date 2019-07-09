@@ -9,9 +9,28 @@ G = 6.674e-8 # gravitational constant in cm^3 g^-1 s^-2
 
 #---------------------------------------------------
 
-def convert_kepler_data(planet_data):
+def convert_kepler_data(planet_data, select_random_ecc=False):
 
     ecc = planet_data['ecc']
+    #print('ecc')
+    #print(planet_data['ecc'])
+    # shall we select a random eccentricity?
+    if select_random_ecc:
+        ecc_save = []
+        for i in range(len(ecc)):
+            # for empty values
+            u = planet_data['ecc'][i]+planet_data['eeccU'][i]
+            l = planet_data['ecc'][i]+planet_data['eeccL'][i]
+            if (u > 1): u = 1.0
+            if (l < 0): l = 0.0
+            ecc_save.append( (u - l) * np.random.random_sample() + l )
+            if ecc_save[-1] < 0: ecc_save[-1] = 0.0
+            #if ecc_save[-1] > 1: ecc_save[-1] = 1.0
+            #print(planet_data['ecc'][i],u,l)
+        ecc = ecc_save
+        #print(ecc)
+
+    
     a = planet_data['a']
     
     star_mass = np.mean(planet_data['sMass'])#*MassOfSun # say star's mass = average of all measurements
@@ -67,4 +86,4 @@ def convert_kepler_data(planet_data):
     planet_initial_position = np.array(planet_initial_position)
     planet_initial_velocity = np.array(planet_initial_velocity)
 
-    return star_mass, planet_masses, planet_initial_position, planet_initial_velocity
+    return star_mass, planet_masses, planet_initial_position, planet_initial_velocity, ecc
