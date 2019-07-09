@@ -129,6 +129,18 @@ we know it exists because of how it changes the rotation of stars in our galaxy 
 
 ---
 
+## Three dimensional simulations - Galaxies
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/RH7S_ajUniM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+notes: in reality, we need to include extra things like gas with which stars form, feedback from black holes, supernovae explosions, etc for a realistic simulation of a galaxy
+
+here is an example from the group I've worked with called IllustrisTNG that modeled a big swath of the Universe to make a whole bunch of galaxies
+
+*point out stuffs*
+
+---
+
 # Three dimensional simulations in Python!
 
 notes: let's look over some starter files for attacking these 3D problems in Python 
