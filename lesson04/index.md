@@ -13,13 +13,13 @@ visible: false
 * [Kepler 11 System Data](downloads/kepler11data.txt)
 * [Kepler 101 System Data](downloads/kepler101data.txt)
 
-* [convert_galaxy_data.py](convert_galaxy_data.py)
+* <a href="convert_galaxy_data.py" download>convert_galaxy_data.py</a>
 
 ### Galaxy snapshot files - different resolutions
 
-* [low res - galaxySnaps/snap_001_fac1n3.txt](galaxySnaps/snap_001_fac1n3.txt)
-* [mid res - galaxySnaps/snap_001_fac1n2.txt](galaxySnaps/snap_001_fac1n2.txt)
-* [high res - galaxySnaps/snap_001_fac1n1.txt](galaxySnaps/snap_001_fac1n1.txt)
+* <a href="galaxySnaps/snap_001_fac1n3.txt" download>low res - galaxySnaps/snap_001_fac1n3.txt</a>
+* <a href="galaxySnaps/snap_001_fac1n2.txt" download>mid res - galaxySnaps/snap_001_fac1n2.txt</a>
+* <a href="galaxySnaps/snap_001_fac1n1.txt" download>high res - galaxySnaps/snap_001_fac1n1.txt</a>
 
 ## Links
 
