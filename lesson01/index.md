@@ -52,7 +52,12 @@ Optional reading/activities:
 1. [Reading from Lumen Learning](https://courses.lumenlearning.com/waymakercollegealgebra/chapter/equations-of-ellipses/)
 1. [Intro to Conic sections from Khan Academy](https://www.khanacademy.org/math/precalculus/conics-precalc)
    * [Subsection: Khan Academy Intro to Ellipses](https://www.khanacademy.org/math/precalculus/conics-precalc/center-and-radii-of-an-ellipse/v/conic-sections-intro-to-ellipses)
+
+## Physics
+
 1. [Physics Crash Course - intro to linear motion](https://www.youtube.com/watch?v=ZM8ECpBuQYE)
 1. [Intro to Circular Motion and Gravitation](https://www.khanacademy.org/science/ap-physics-1/ap-centripetal-force-and-gravitation)
    * [Subsection: Angular Motion Variables](https://www.khanacademy.org/science/ap-physics-1/ap-centripetal-force-and-gravitation/introduction-to-uniform-circular-motion-ap/v/angular-motion-variables)
    * [Subsection: Newton's Laws of Gravitation](https://www.khanacademy.org/science/ap-physics-1/ap-centripetal-force-and-gravitation/newtons-law-of-gravitation-ap/v/introduction-to-gravity)
+1. [Another take on Circular Motion and Gravitation](https://www.khanacademy.org/science/physics/centripetal-force-and-gravitation)
+1. [Newton's First Law](https://www.khanacademy.org/science/ap-physics-1/ap-forces-newtons-laws/newtons-first-law-mass-and-inertia-ap/v/newton-s-1st-law-of-motion)
