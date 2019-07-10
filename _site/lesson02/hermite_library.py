@@ -133,7 +133,7 @@ def do_hermite(star_mass, planet_masses, planet_initial_position,
 
     N=len(masses) # number of bodies
     m = np.ones(N)/N
-    m[N-1] = 1.0 # normalize by star's mass
+    m[N-1] = 1.0 # normalize by the last mass in the list
     for i in range(0,N-1):
         m[i]= masses[i]/masses[N-1]
 
@@ -201,6 +201,8 @@ def do_hermite_galaxies(masses, initial_positions,
     m[N-1] = 1.0 # normalize by star's mass
     for i in range(0,N-1):
         m[i]= masses[i]/masses[N-1]
+        
+    #print('I am here')
 
     # ok, now renormalize the positions by the "typical" length scale
     l = 0.0
@@ -233,6 +235,7 @@ def do_hermite_galaxies(masses, initial_positions,
     Phi[0] = PotentialEnergy(r,m)
     KE[0]  = KineticEnergy(v,m)
     for i in range(1,Nsteps):
+        #print(' on step ', i)
         (r_res[:,:,i],v_res[:,:,i]) = HermiteUpdate(dt, r_res[:,:,i-1], v_res[:,:,i-1], m)
         time[i] = time[i-1] + dt
         Phi[i] = PotentialEnergy(r_res[:,:,i],m)
@@ -242,6 +245,7 @@ def do_hermite_galaxies(masses, initial_positions,
     # back into physical units
     #r_res *= l/AUinCM
     r_res *= l # into AU
+    r_res /= 2.063e+8 # into kpc
 
     # for 2nd particle
     x_h = r_res[1,0,:]

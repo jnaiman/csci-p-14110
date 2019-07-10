@@ -13,6 +13,14 @@ visible: false
 * [Kepler 11 System Data](downloads/kepler11data.txt)
 * [Kepler 101 System Data](downloads/kepler101data.txt)
 
+* [convert_galaxy_data.py](convert_galaxy_data.py)
+
+### Galaxy snapshot files - different resolutions
+
+* [low res - galaxySnaps/snap_001_fac1n3.txt](galaxySnaps/snap_001_fac1n3.txt)
+* [mid res - galaxySnaps/snap_001_fac1n2.txt](galaxySnaps/snap_001_fac1n2.txt)
+* [high res - galaxySnaps/snap_001_fac1n1.txt](galaxySnaps/snap_001_fac1n1.txt)
+
 ## Links
 
 * [Online 3D solar system interactive animation - https://theskylive.com/3dsolarsystem](https://theskylive.com/3dsolarsystem)
