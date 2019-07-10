@@ -16,5 +16,8 @@ visible: false
 ## Links
 
 * [Online 3D solar system interactive animation - https://theskylive.com/3dsolarsystem](https://theskylive.com/3dsolarsystem)
+* [More plotting of 3D examples with matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.12-three-dimensional-plotting.html)
 
-
+### Other exoplanets
+* [Exoplanet orbit database](http://exoplanets.org/)
+* [astroquery API](https://astroquery.readthedocs.io/en/latest/exoplanet_orbit_database/exoplanet_orbit_database.html)

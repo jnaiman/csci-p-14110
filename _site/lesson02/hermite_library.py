@@ -187,3 +187,68 @@ def do_hermite(star_mass, planet_masses, planet_initial_position,
     e_h = Phi + KE
 
     return r_res, v_res, t_h, e_h
+
+
+# do the calculation
+# masses in Msun
+# initial_positions in AU
+# initial_velocities in km/s
+def do_hermite_galaxies(masses, initial_positions,
+                       initial_velocities, tfinal=20.5, Nsteps = 880):
+
+    N=len(masses) # number of bodies
+    m = np.ones(N)/N
+    m[N-1] = 1.0 # normalize by star's mass
+    for i in range(0,N-1):
+        m[i]= masses[i]/masses[N-1]
+
+    # ok, now renormalize the positions by the "typical" length scale
+    l = 0.0
+    for i in range(0,N):
+        l += np.sqrt( initial_positions[i,0]**2.+initial_positions[i,1]**2.+initial_positions[i,1]**2. )
+
+    # l = average distance
+    l /= N
+
+    r = initial_positions/l
+    r -= CenterOfMass(r,m)
+
+
+    # note: since G is in "real" units, we multiply l and initial velocities by "real" units
+    v = initial_velocities*kmincm/np.sqrt( G*masses.sum()/(l*AUinCM) )
+    v = v - CenterOfMassVelocity(v,m) # CoM does not move
+
+
+    #tfinal = 20.5 # so, this is in weird N-body units: [l/sqrt( G*(M)/l )] where M = sum of all masses ~ star_mass
+    #Nsteps = 880 # number of steps over for our integration
+    r_res = np.zeros((N,3,Nsteps))
+    v_res = np.zeros((N,3,Nsteps))
+
+    dt = tfinal/(Nsteps-1)  # fixed time steps
+    time = np.zeros(Nsteps)
+    r_res[:,:,0] = r.copy()
+    v_res[:,:,0] = v.copy()
+    Phi= np.zeros(Nsteps)
+    KE = np.zeros(Nsteps)
+    Phi[0] = PotentialEnergy(r,m)
+    KE[0]  = KineticEnergy(v,m)
+    for i in range(1,Nsteps):
+        (r_res[:,:,i],v_res[:,:,i]) = HermiteUpdate(dt, r_res[:,:,i-1], v_res[:,:,i-1], m)
+        time[i] = time[i-1] + dt
+        Phi[i] = PotentialEnergy(r_res[:,:,i],m)
+        KE[i]  = KineticEnergy(v_res[:,:,i],m)
+
+
+    # back into physical units
+    #r_res *= l/AUinCM
+    r_res *= l # into AU
+
+    # for 2nd particle
+    x_h = r_res[1,0,:]
+    y_h = r_res[1,1,:]
+
+    t_h = time*(l*AUinCM)/np.sqrt(G*masses.sum()/(l*AUinCM)) # units of time
+
+    e_h = Phi + KE
+
+    return r_res, v_res, t_h, e_h # AU, km/s, seconds, normalized

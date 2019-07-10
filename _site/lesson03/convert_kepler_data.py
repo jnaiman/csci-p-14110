@@ -9,7 +9,12 @@ G = 6.674e-8 # gravitational constant in cm^3 g^-1 s^-2
 
 #---------------------------------------------------
 
-def convert_kepler_data(planet_data, select_random_ecc=False):
+# convert kepler data into 
+# positions in AU
+# velocities in km/s
+# star mass in Msun
+# planet masses in MJupiter
+def convert_kepler_data(planet_data, select_random_ecc=False, use_inclination_3d=False):
 
     ecc = planet_data['ecc']
     #print('ecc')
@@ -45,9 +50,9 @@ def convert_kepler_data(planet_data, select_random_ecc=False):
     # to calculate initial positions and velocities we are assuming that
     # each orbit is approximately elliptical and that the total mass of the 
     # system ~ the mass of the star
-    for i in range(0,len(planet_masses)):
-        planet_initial_position[i,:] = [-a[i]*(1.0 - ecc[i]), 0., 0.] # in AU
-        planet_initial_velocity[i,:] = [0.0,-np.sqrt( G*star_mass*MassOfSun*(1.0-ecc[i])/(a[i]*AUinCM) )/kmincm, 0.]
+    #for i in range(0,len(planet_masses)):
+    #    planet_initial_position[i,:] = [-a[i]*(1.0 - ecc[i]), 0., 0.] # in AU
+    #    planet_initial_velocity[i,:] = [0.0,-np.sqrt( G*star_mass*MassOfSun*(1.0-ecc[i])/(a[i]*AUinCM) )/kmincm, 0.]
 
 
     # SOLUTION #2: A MORE COMPLICATED ALTERNATIVE SOLUTION:
@@ -57,6 +62,14 @@ def convert_kepler_data(planet_data, select_random_ecc=False):
     planet_initial_position[0,:] = [-a[0]*(1.0 - ecc[0]), 0., 0.] # in AU
     planet_initial_velocity[0,:] = [0.0, -np.sqrt( G*star_mass*MassOfSun*(1.0-ecc[0])/(a[0]*AUinCM) )/kmincm, 0.]
     for i in range(1, len(planet_masses)):
+        if use_inclination_3d:
+            sigma = planet_data['Incl'][i]#-3
+            #print('Inclination angle = ', sigma)
+            sin_sigma = np.sin(sigma * np.pi/180.)
+            cos_sigma = np.cos(sigma * np.pi/180.)
+        else:
+            sin_sigma = 1.0
+            cos_sigma = 0.0
         dt = np.abs(planet_data['tTime'][i] - planet_data['tTime'][0])
         # what fraction of the orbital time is this?
         fdt = dt/planet_data['Porb'][i]
@@ -64,10 +77,14 @@ def convert_kepler_data(planet_data, select_random_ecc=False):
         #print(fdt, theta)
         # now assume the orbit is r(theta) like for analytical, and that its circular enough that v ~ const
         r = a[i]*(1.0 - ecc[i])
-        planet_initial_position[i,:] = [r*np.cos(theta * np.pi/180.0), r*np.sin(theta * np.pi/180.0), 0.0]
+        planet_initial_position[i,:] = [r*np.cos(theta * np.pi/180.0)*sin_sigma, 
+                                        r*np.sin(theta * np.pi/180.0)*sin_sigma, 
+                                        r*cos_sigma]
         # here we use v~const and rotate the initial velocity vector to be tangent to planet_initial_position
-        vx = -r*np.sin(theta * np.pi/180.0)
-        vy = r*np.cos(theta * np.pi/180.0)
+        vx = -r*np.sin(theta * np.pi/180.0)*sin_sigma
+        vy = r*np.cos(theta * np.pi/180.0)*sin_sigma
+        # note: here we keep no z-component since it doesn't matter - 
+        #   see: https://math.stackexchange.com/questions/137362/how-to-find-perpendicular-vector-to-another-vector
         vmag = np.sqrt( G*star_mass*MassOfSun*(1.0-ecc[i])/(a[i]*AUinCM) )/kmincm
         # renormalize to velocity vector's magnitude
         planet_initial_velocity[i,:] = [vx/np.sqrt(vx*vx+vy*vy)*vmag, vy/np.sqrt(vx*vx+vy*vy)*vmag, 0.0]
