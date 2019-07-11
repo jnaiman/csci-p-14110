@@ -5,6 +5,16 @@ visible_lec: true
 visible_n: true
 ---
 
+## Some hints about stability
+
+* We know that a vector perpendicular to $(x,y)$ has components $(-y,x)$. So, first we reconstruct our velocity vectors so that have components $(-r\_y, r\_x)$ for each position vector $(r\_x, r\_y)$.
+* Then we renormalize each velocity vector such that it has the same magnitude as the original velocity vectors.
+* Play with each initial velocity by changing $v\_x$/$v\_y$ slightly until you have a (fairly) stable orbit.
+* Then add in another body with a position and velocity that includes a z component. Make sure you don't renormalize this as well when you do the above 3 steps for the original stable-ish system!
+
+
+---
+
 # Today
 
 <img src="images/into3d/into3d.001.jpeg" alt="slide1" width="800"/>
@@ -147,12 +157,3 @@ notes: let's look over some starter files for attacking these 3D problems in Pyt
 
 and we'll discuss extentions you can choose to work on or not!
 
----
-
-Day 4
-* multibody problem in 3D
-* hints about stability (might be end of lesson 03)
-
-Day 5
-* Other solvers - python packages? 
-* We can skip this day if we run out of time
