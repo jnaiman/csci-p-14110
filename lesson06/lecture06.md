@@ -32,6 +32,10 @@ illustration can be motivated by experts as well, but it can be problematic when
 
 Naiman et al. 2017, Borkiewicz et al. 2018
 
+notes: so last week we talked about the processes of simulating physical phenomena with a computer, something that I did for a large part of my postdoc at the center for astrophysics here at Harvard
+
+now we'll talk about another subject that is near and dear to my heart -data viz!
+
 ---
 
 ### My background
@@ -61,6 +65,14 @@ Naiman et al. 2017, Borkiewicz et al. 2018
 
 ---
 
+## How this week is going to look
+
+* Intro lecture/activity on a viz concept
+* Short programming activity
+* Use ideas-of-the-day to visualize your scientific data
+
+---
+
 ## Timed activity! (~2 minutes)
 
 On a piece of paper or in notes on your computer:
@@ -68,7 +80,7 @@ On a piece of paper or in notes on your computer:
 * What are the most memorable movies you saw over the last year?
 * Do you prefer cats or dogs?
 * How would you quantify your experience in visualization?
-* How many hours do you spend online in classes each week?
+* How many hours do you spend on school work each week?
 
 notes:
 We're going to use these pieces of data to explore how we might approach
@@ -81,38 +93,29 @@ about these types of data, and how we approach visualizing them.
 
 ---
 
-## Breakout Groups: We will use these minimally
+## Breakout Groups: 
 
 ### Group #1:
 
 Break into groups of 2-3 folks:
 
-(1) Discuss some things you learned
+(1) Share one thing you learned last week that you're excited to apply to data visualization this week. 
 
-(2) visualize the results from the data you wrote down previously: can use the *whiteboard* or a program of your choosing.
-
-Remember to screen shot your visualizations to share
-in Breakout Group #2.
+(2) visualize the results from the data you wrote down previously - you can use your hands, a piece of paper, your computer or anything else you can come up with!
 
 notes:
-We will use breakout groups sparingly, but its important that you all
-get to know eachother a little bit & realize there are humans
-here!
 
 We'll do this for ~5 minutes, maybe longer depending on where
 people are.
 
 ---
 
-## Breakout Groups: We will use these minimally
+## Breakout Groups: 
 
-### Breakout Group #2:
+### Group #2: Combine your group with another group
 
-(1) introduce yourself!
-
-(2) Then:
-* Present your screenshot to the rest of your group.
-* The rest of the group will try to guess what your visualization is trying to convey.
+* Present your viz to the other group.
+* The other group will try to guess what your visualization is trying to convey.
 * Discuss how well the group did with their guesses & why you think that is.
 * What things did they like about your visualization?  What things would they change?
 
@@ -120,48 +123,25 @@ There are no hard and fast "right" or "wrong" answers at this point, so don't wo
 
 ---
 
-## Download Anaconda!
+## Class outline: Syllabus
 
-[anaconda.com/download](anaconda.com/download)
+### Computational Physics Week
 
----
+ * Day 1: Introduction, syllabus, examples, and some basics about Astro, Physics, Programming
+ * Day 2: Gravity, calculating 2-body orbits, more programming
+ * Day 3: Numerical and analytical solutions of orbits for 2-body problem
+ * Day 4: Multi-body problem in 2D
+ * Day 5: Multi-body problem in 3D
+ 
+### Data Visualization Week
 
-## Syllabus
+ * Day 1: Intro to data viz, simple 2D movies
+ * Day 2: Visualization concepts overview, 2D & 3D movies
+ * Day 3: Graphical concepts, "good" vs. "bad" viz, 3D movies and interactions
+ * Day 4: Web-viz, 3D online movies
+ * Day 5: Review, finalization of projects, viz party!
 
- * Week 1 (Jan 17): Introduction, syllabus, examples, and some basics
- * Week 2 (Jan 24): Operational palette, structured python, and files
- * Week 3 (Jan 31): Quantitative plots, plot components
- * Week 4 (Feb 7): Histograms and distributions
- * Week 5 (Feb 14): R and ggplot
- * Week 6 (Feb 21): Images, color, colormaps
- * Week 7 (Feb 28): Comparisons between datasets
-
-notes:
-This is a rough syllabus!  These are many of the topics we will cover, but
-based on how the course proceeds and how folks respond, we may shorten or
-lengthen different topics.
-
-The organization here is designed to start out slow, dealing with how to
-program python for visualization, understanding how data is laid out, which
-operations we can apply to that data, and then moving on to representing data
-in different ways.
-
----
-
-## Syllabus
-
- * Week 8 (Mar 7): Comparisons between different datasets
- * Week 9 (Mar 14): Network visualization
- * Week 10 (Mar 28): Principles of interactive visualization
- * Week 11 (Apr 4): Interactive visualization with Python
- * Week 12 (Apr 11): Scientific visualization
- * Week 13 (Apr 18): Advanced topics
- * Week 14 (Apr 25): Group presentations
-
-notes:
-Toward the end of class we are going to have a slightly more free-form set of
-discussion points.  Your final projects will be somewhat open-ended, requiring
-more group work and collaboration than the preceding assignments.
+notes: so this is where we are - we did the computation physics part! Now its time to make some pretty things!
 
 ---
 
@@ -172,7 +152,7 @@ perspective should change to that of a _producer_ of visualizations.
 You should be comfortable reading AND writing imagery.
 
 notes:
-We will be discussing this as the semester goes on, but the principal outcome I
+We will be discussing this as the course goes on, but the principal outcome I
 want you to take away from this class is understanding how to transform data
 into its visual representation, and to take that understanding with you as you
 observe visualizations presented to you.
@@ -181,26 +161,7 @@ By developing visualizations, you will grow to understand the choices that
 influence those visualizations, and you will bring that with you while
 consuming information visually.
 
----
-
-# The Things I Want You To Take Away
-
- * You should know the basics of how to manipulate data -- aggregations,
-   filterings, and other operations.
- * I want you to know _some_ of the packages that are out there to visualize
-   data.  These will mostly be Python-based, with a couple in Javascript.
- * You won't learn how to use dashboarding software (e.g. Tableau) in detail. Instead, we
-   will focus on the different operations that go into dashboarding software.
- * By the end of the course, you will have had the opportunity to look at and
-   build visualizations in several different domains and understand how to
-   interpret, critique and improve them.
-
-notes:
-This course *will* teach you some things about how to code, how to build
-visualizations, but we're going to focus much more on learning about how to
-construct visualizations and why we make the choices that we do.  If we choose
-one way to present data, does that convey information more readily?  Or does it
-get in the way of the underlying meaning?
+Here we will focus on scientfic visualizations, but we'll touch a bit on another type of visualization - *info viz* 
 
 ---
 
@@ -212,143 +173,7 @@ get in the way of the underlying meaning?
 
 ---
 
-## Structure of Class
-
- * Topic introduction and lecture (~60 minutes)
- * Hands-on, collaborative coding
- * Wrap-up
-
-(Today will be a little lecture heavy)
-
-notes:
-This structure will likely be deviated from during the course, but in general
-we will start with lecture, take a break, then continue with collaborative or
-hands-on exercises using group coding.
-
-During the group coding, I might lead the class in some visualization in
-Python, Javascript, or something else.  During this section, I expect that
-students will *follow along* with what is going on -- typing in the specific
-commands, and maybe even trying different things as we go.  It is not meant to
-simply be a "performance" of coding, but instead an opportunity to learn.
-
----
-
-## Plagiarism
-
- * Plagiarism is about copying ideas.
- * Cite all code you utilize from elsewhere.
-
-notes:
-When programming, I expect that you will do things like search on the internet
-to find help with a given problem.  This is fine.
-
-But, you *must* cite where any code snippets came from.  And you *must* note if
-you are working with other people in the group!
-
-Using snippets of code is fine -- but you may not copy large-scale amounts of
-code from other work (for example, other visualizations) and pass it off as
-your own.  Always cite, and be reasonable in what you utilize.
-
----
-
-## Our tools
-
- * Python, with some R and Javascript along the way
- * Jupyter and Jupyter notebooks (maybe on a Jupyterhub)
- * The occasional usage of a shell such as bash
- * Once in a while some git, and GitHub
- * Slack
-
-notes:
-You will be expected to write code in Python, and to learn the very basics of
-Javascript.  Your projects may be turned in via git.  We will also utilize
-Slack for class communication.
-
----
-
-## Jupyterhub when it is working...
-
-![](images/jh_arch.svg)
-
-notes:
-Jupyterhub is a software system for launching multiple independent notebooks
-that can share access to data and installed software.  Ours is administered by
-the iSchool.
-
----
-
-## Jupyterhub Guidelines
-
- * [jupyterhub.ischool.illinois.edu](https://jupyterhub.ischool.illinois.edu/)
- * Please store your notebooks on- and off-site
-<!-- * Submissions will be via `nbgrader`-->
-<!-- * Data will be available at `/home/shared/spr18-is590dv/data/`-->
-<!-- * Previous lectures will be in `/home/shared/spr18-is590dv/fall2018/`-->
- * You will have access to conda, etc, but I may rebuild images to add packages.
- * There will be shared data directories, but again, this depends on jupyterhub
- being online.
-
-notes:
-It is possible that your JupyterHub instance may be lost -- don't store mission
-critical data there without a backup.  It should be possible to share data
-between people on the system, but I won't pretend to know the right way to do
-that.
-
----
-
-## Slack
-
-We will be sharing a slack channel with the in-person class, so feel free to
-converse with them as well!
-
- * Team channel at `https://is590dv-spring2019.slack.com`
-   * `#general` : General announcements
-   * `#assignments` : Help with assignments
-   * `#help` : General help with Python, Javascript, visualization, etc
-   * `#_classroom-lectures` : Folks in the live lecture will post questions here during class
-   * `#online_specific_chat` : Can be used to ask online specific questions, but all "in class"
-   questions should be posted in the Blackboard Collaborate chat, or asked over a mic
-
----
-
-## Slack (cont)
-
- * Use the `@` sign appropriately: `@[person]`, `@here`, `@channel`
- * Web client, standalone client and mobile devices can access this team.
- * At the end of the semester, the team will be discontinued.
- * Please think carefully before direct messaging if you could ask in a public
-   forum instead.
- * Conduct will be held to same standards as any educational venue.
-
-As always, you can also post questions to the Moodle forum as well.
-
-notes:
-Please use slack as much as you need!  You can use it to share items and
-articles with the class, to collaborate, to discuss and ask questions and get
-feedback.  However, please do behave in a professional fashion.
-
----
-
-## Github
-
- * Course repo is at [UIUC-iSchool-DataViz/spring2019online](https://github.com/UIUC-iSchool-DataViz/spring2019online/)
- * Automatically built to [uiuc-ischool-dataviz.github.io/spring2019online/](https://uiuc-ischool-dataviz.github.io/spring2019online/)
- * When/if JupyterHub is up and running: Lecture notes will be placed there, and available in your JupyterHub
-   instances in `shared/sp19-is590dv/spring2019online`
- * Copy the notebooks to your directory before using them.
- * Supplemental materials can be found at [UIUC-iSchool-DataViz/support-files](https://github.com/UIUC-iSchool-DataViz/support-files)
-
-notes:
-All the materials for this course will be stored in github, and are available
-under a very permissive license.  It is largely written in markdown and
-automatically compiled to web pages when changes are made.
-
-You are invited to clone the repo, fork and submit changes (typos, etc!), and
-to use any information in it in the future.
-
----
-
-## This week
+## This intro class
 
  * Why do we visualize?
  * What types of data do we visualize?
@@ -429,11 +254,17 @@ laugh / There are lots of things you can compare on a graph"
 
 <img src="images/traesApp.png" alt="drawing" height="500"/>
 
+notes: notice here that while we are going to focus of "visual" visualations in this class, there are actually many other ways to transmit information that we are not going to focus on but are equally important
+
+for example, this is an app a collegue of mine made that allows for the blind and visually impared to experience the last US solar eclipse with touch and sound
+
 ---
 
 # We can't visualize everything
 
 <img src="images/traesApp2.png" alt="drawing" height="500"/>
+
+check out eclipse sound scaples *dot* com for more info on this
 
 ---
 
@@ -482,6 +313,8 @@ Step 1: Look at the cross
 Step 2: Close left eye, keep looking at the cross
 
 Step 3: Slowly move your head toward & away from screen until dot disappears
+
+notes: you may want to actually do this on your own computer screen by importing these lecture slides
 
 ---
 
@@ -548,6 +381,8 @@ notes:
 *Whenever* you build a visualization you need to think about the context that
 you can assume on the part of your viewer.
 
+ask questions like - what does my viewer know? what might they already think about the topic I'm presenting them?
+
 ---
 
 # Tenet 1:
@@ -560,9 +395,18 @@ collection, organization and representation of data.
 
 ---
 
+# Tenet 1:
+
+"Visualizing data" is not a strict subset of "making an image."
+
+It involves:
  * Collection of the data
  * Organization of that data
  * Representation of that data
+
+notes:
+We will approach visualization as encompassing several different stages in the
+collection, organization and representation of data.
 
 ---
 
@@ -572,7 +416,7 @@ We tell lies to visualize, but we _must_ be honest.
 
 ---
 
-### "The Principle of Proportional Ink" - callingbullshit.org
+### "The Principle of Proportional Ink" - callingbull****.org
 ![](images/proportionalInk.png)
 
 notes:
@@ -583,9 +427,8 @@ So let's first talk about how misleading visualizations can be. This 3D pie char
 ### "Spurious Correlations" - tylervigen.com
 <img src="images/spurious.png" alt="drawing" width="800"/>
 
-notes:
-you can have a lot of absurd fun with data - but when data is presented in a visualization, people often believe the authority of it even if it's outlandish. 
-Side note: This guy has some good ideas of where to find sample datasets for upcoming homework assignments too!
+notes: you can have a lot of absurd fun with data - but when data is presented in a visualization, people often believe the authority of it even if it's outlandish. 
+also know: This guy has some good ideas of where to find sample datasets if you want to do more info viz!
 
 ---
 
@@ -652,27 +495,6 @@ Does anyone know why it's generally accepted to show the y-axis like this, witho
 
 ---
 
-<!-- .slide: data-background-image="images/stitch_bg.png" data-background-size="contain"-->
-
-notes:
-This is a screenshot from the movie "Lilo and Stitch" where the little girl Lilo is graphing how much evil is in the alien Stitch. It borrows from a familiar visual - the thermometer. But how could this visualization be misinterpreted? How is it different from a thermometer?
-
----
-
-<!-- .slide: data-background-image="images/stitch_nobg.png" data-background-size="contain"-->
-
-notes:
-The angle can be misleading. So can the relative width of the head vs the feet. The surface area is not consistent from top to bottom. Also there are empty areas in the mouth and eyes!
-
----
-
-<!-- .slide: data-background-image="images/stitch_nobg_tilted.png" data-background-size="contain"-->
-
-notes:
-If we rotate the image so that the red liquid is level, do we get a different impression for how much bad is in Stitch?
-
----
-
 <iframe width="1024" height="576"
 src="https://www.youtube.com/embed/D-uBv6jB7r0" frameborder="0"
 allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -720,7 +542,7 @@ Map5 - percentage of votes by county, weighted by population
 
 ---
 
-## Getting started in Python
+## Getting started on Viz in Python
 
 *Open up Python & get started coding!*
 
@@ -733,48 +555,3 @@ Map5 - percentage of votes by county, weighted by population
  1. Visualization is a series of steps that we take to produce a different
     representation of data.
 
----
-
-## Assignment 1
-
- * Identify three visualizations in pop culture -- *not* academic literature.
-   This could be, for instance, from:
-   * Movies / TV / Music videos
-   * Everyday life
-   * Advertisements
- * Describe each one in detail
-   * Where did the data come from?
-   * Is the data quantitative, qualitative, categorical, etc?
-   * How was the data processed before being displayed?
-   * What method was used to display that data?
- * Replicate the visualization with different, but similarly “shaped,” data
-   * By hand is acceptable
-   * Computational methods should include source code
-
-PLUS: an intake survey - https://goo.gl/forms/omTDQFvEpK5CwFIU2
-
-<small>Example: https://uiuc-ischool-dataviz.github.io/spring2019online/week01/example_assignment.html</small>
-
----
-
-## Assignment 1
-
- * Identify three visualizations in pop culture -- *not* academic literature.
-   This could be, for instance, from:
-   * Movies / TV / Music videos
-   * Everyday life
-   * Advertisements
- * Describe each one in detail
-   * Where did the data come from?
-   * Is the data quantitative, qualitative, categorical, etc?
-   * How was the data processed before being displayed?
-   * What method was used to display that data?
- * <span style="color:red">Replicate the visualization with different, but similarly “shaped,” data</span>
-   * By hand is acceptable
-   * Computational methods should include source code
-
-PLUS: an intake survey - https://goo.gl/forms/omTDQFvEpK5CwFIU2
-
-<small>Example: https://uiuc-ischool-dataviz.github.io/spring2019online/week01/example_assignment.html</small>
-
----
