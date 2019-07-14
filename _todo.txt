@@ -1,0 +1,31 @@
+DAY1
+----
+X - 2D movies -> saving
+X - pandas
+X- plot formatting with an ipywidget (histogram of eccentricities)
+X- histogram binning with ipywdiget (hist of ecc)
+HW: the "make a plot like a plot" 
+
+DAY2
+----
+- ipywidgets -> more extensive intro of all things
+- heat map interactive ecc vs something -> plot analytical orbits
+   -> could be star mass, star radius or something?
+HW: plot heatmap of 2 other things?
+
+DAY3
+----
+- 3D stuff in jupyter
+- 3D animations -> to save
+- 3D objects
+
+DAY4
+----
+- how planets look vs. their surfaces
+- designing for VR
+
+DAY5
+----
+- extensions -> few fun things - Idyll, Houdini, etc
+- finishing up projects
+- viz party!
