@@ -25,6 +25,19 @@ illustration can be motivated by experts as well, but it can be problematic when
 
 ---
 
+# Terminology
+
+1. Science Viz
+1. Info Viz
+
+notes: we'll cover broadly two types of viz - scientific and info viz.
+
+The scientific viz part will cover making cool movies and online things with your simualtions
+
+The info viz part will cover "supporting" data from sources connected to the Kepler data.
+
+---
+
 ### My background
 #### ytini.com
 
