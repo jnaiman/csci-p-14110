@@ -10,10 +10,10 @@ DAY2
 ----
 X- ipywidgets -> more extensive intro of all things
 X- ipywidgets -> plotting analytical orbits, example & exercise
-- heat map interactive ecc vs something -> plot analytical orbits
-   -> could be star mass, star radius or something?
-   -> this uses bqplot
-- lecture topic: grammar of graphics
+X - heat map interactive ecc vs something -> plot analytical orbits
+X   -> could be star mass, star radius or something?
+X   -> this uses bqplot
+- lecture topic: grammar of graphics (parts of week 6 lecture)
 HW: plot heatmap of 2 other things?
 
 DAY3
