@@ -87,5 +87,78 @@ REST = REpresentational State Transfer - web architecture that keeps clients and
 
 ---
 
+## Doing Stuff with Data
+
+Now that we understand a few ways that data can be stored, let's do some things
+to it.
+
+---
+
+<div class="left">
+![](images/palette.jpg)<!-- .element: style="height: 20em;" -->
+</div>
+
+<div class="right" style="font-size: 150%;">
+<div style="height: 4.0em;"></div>
+You have a palette of operations to apply.
+</div>
+
+---
+
+## Filtering Operations
+
+ * Relationships:
+   * Equality, inequality
+   * Quantitative value (less than, greater than)
+   * Intersection, disjoint
+ * Subsampling
+   * Regular sampling
+   * Randomized sampling
+   * Nyquist frequency
+ * Related data queries
+   * Queries on other columns at fixed row location
+   * External membership queries
+
+---
+
+## Relationships Examples
+
+ * Equality
+   * Identity
+   * Quantitative values
+ * Ordering or quantitative
+   * Less than (or equal)
+   * Greater than (or equal)
+   * "Comes before" and "Comes after"
+ * Set-based operations
+   * "Is a member"
+   * "Is not a member"
+   * "Shares members"
+   * "Shares no members"
+
+---
+
+## Examples
+
+### Equality
+
+```
+value == "hello"
+value == 10
+```
+
+### Ordering and Quantitative
+
+```
+value < 30
+value > July 1, 2010
+```
+
+### Set-Based
+
+```
+value in ("red", "blue")
+value not in (3.141, 2.7)
+```
 
 
