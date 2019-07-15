@@ -130,7 +130,8 @@
 ## This lecture
 
  * Data organization (quick)
- * Stuff
+ * Doing stuff with data
+ * Dimensions of representation
 
 </br>
 </br>
@@ -205,6 +206,10 @@ to it.
 
 ---
 
+# Doing stuff with data
+
+---
+
 <div class="left">
 ![](images/palette.jpg)<!-- .element: style="height: 20em;" -->
 </div>
@@ -272,8 +277,165 @@ value in ("red", "blue")
 value not in (3.141, 2.7)
 ```
 
+---
+
+## Examples
+
+### Equality
+
+```
+value == "hello"
+value == 10
+```
+
+### Ordering and Quantitative
+
+```
+value < 30
+value > July 1, 2010
+```
+
+### Set-Based
+
+```
+value in ("red", "blue")
+value not in (3.141, 2.7)
+```
+
+We will often *mask* data to select just what we want to show.
+
+---
+
+</br>
+</br>
+</br>
+
+# Dimensions of representation
+
+i.e. how can we represent data in visualizations?
+
+---
+
+## Representing Quantities
+
+We can encode the values associated with a data point by modifying how we
+express it.  To do so, we need to be able to identify the different components
+of representation, and how we can scale between them.
+
+---
+
+## Dimensions of Representation
+
+Given a single datum on a visualization, we can control several different
+components of its representation.
+
+ * Position
+
+<!-- .slide: data-background-image="images/dimensions_1.svg" data-background-size="auto 50%" data-background-position="right 20% bottom 50%"-->
+
+---
+
+## Dimensions of Representation
+
+Given a single datum on a visualization, we can control several different
+components of its representation.
+
+ * Position
+ * Color
+
+<!-- .slide: data-background-image="images/dimensions_2.svg" data-background-size="auto 50%" data-background-position="right 20% bottom 50%"-->
+
+---
+
+## Dimensions of Representation
+
+Given a single datum on a visualization, we can control several different
+components of its representation.
+
+ * Position
+ * Color
+ * Size
+
+<!-- .slide: data-background-image="images/dimensions_3.svg" data-background-size="auto 50%" data-background-position="right 20% bottom 50%"-->
+
+---
+
+## Dimensions of Representation
+
+Given a single datum on a visualization, we can control several different
+components of its representation.
+
+ * Position
+ * Color
+ * Size
+ * Shape
+
+<!-- .slide: data-background-image="images/dimensions_4.svg" data-background-size="auto 50%" data-background-position="right 20% bottom 50%"-->
+
+---
+
+## Dimensions of Representation
+
+Given a single datum on a visualization, we can control several different
+components of its representation.
+
+ * Position
+ * Color
+ * Size
+ * Shape
+ * Relationship
+
+<!-- .slide: data-background-image="images/dimensions_5.svg" data-background-size="auto 50%" data-background-position="right 20% bottom 50%"-->
+
+---
+
+## Dimensions of Representation
+
+Given a single datum on a visualization, we can control several different
+components of its representation.
+
+ * Position
+ * Color
+ * Size
+ * Shape
+ * Relationship
+ * Motion
+
+<!-- .slide: data-background-image="images/dimensions_6.gif" data-background-size="auto 50%" data-background-position="right 20% bottom 50%"-->
+
+---
 
 
+<video width="1024" height="576" controls="controls">  
+    <source src="./images/jeff.mp4"  />   
+    <!-- <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"> -->     
+    Nav doesn't support html5 video
+</video>
+
+Link - https://www.youtube.com/watch?v=kY-pUxKQMUE
+
+---
+
+[This plot](http://iopscience.iop.org/article/10.1088/0004-637X/763/1/38/meta#apj455166f4)
+might be a bit too busy.
+
+<img src="images/toomuch.png" height="600">
+
+Article Link - https://iopscience.iop.org/article/10.1088/0004-637X/763/1/38
+
+---
+
+Someone on [Reddit](https://www.reddit.com/r/dataisugly/comments/8msftx/the_marvel_that_is_3d_stacked_scatter_pie_columns) designed a 3D Stacked Scatter Pie Column plot ... as an example of what not to do.
+
+<img src="images/scatterpie.png" height="600">
+
+---
+
+## Take away: think carefully about what you choose to add to your viz!
+
+---
+
+# Let's add another layer of complexity to our plots by adding in some interactivity in Python!
           </script>
         </section>
       </div>
