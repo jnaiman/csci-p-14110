@@ -195,9 +195,9 @@ We will often *mask* data to select just what we want to show.
 
 ---
 
-</br>
-</br>
-</br>
+<br />
+<br />
+<br />
 
 # Dimensions of representation
 

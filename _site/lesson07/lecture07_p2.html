@@ -223,6 +223,8 @@ note: so when we select with our brush in the first plot we can show what is sel
 note: as a "practical" example, we can for example make cuts in things like the
 duration of UFO sitings for all years
 
+this is from a dataset that can be found on the grad-level viz course linked in lesson 06
+
 ---
 
 ## Interactivity: Linking & Brushing with UFO data
@@ -331,21 +333,24 @@ scales we can utilize:
 
 ## Marks
 
-bqplot has several different marks we can explore.  We will utilize a few more
+bqplot has several different ```marks``` we can explore.  We will utilize a few 
 today:
 
- * `HeatMap`
+ * ~~`HeatMap`~~
  * `GridHeatMap`
- * `Bars`
- * `Graph`
+ * ~~`Bars`~~
+ * ~~`Graph`~~
+ * `Lines`
 
 ([documentation](https://bqplot.readthedocs.io/en/latest/_generate/bqplot.marks.Mark.html))
+
+notes: we won't cover the ones that are crossed out explictly, but they are available on bqplot
 
 ---
 
 ## bqplot interaction
 
-As noted in the previous class, bqplot widgets are all based on ipywidgets.  This
+`bqplot` widgets are all based on `ipywidgets`.  This
 means we use the same systems for describing the two.
 
 We add an interaction to a given figure via the `interaction` keyword argument
@@ -365,6 +370,8 @@ We will be able to use these different interaction methods:
  * `HandDraw`
  * `PanZoom`
  * `Tooltip`
+
+notes: we will use just a "selection" tool in our heatmap to make a dashboard, but there are many fun things you can do with bqplot!
 
 ---
 
