@@ -118,6 +118,10 @@
           <script type="text/template">
 ## This lecture
 
+ * ~~Data organization (quick)~~
+ * ~~Doing stuff with data~~
+ * ~~Dimensions of representation~~
+
 
 ## If time permits
 
@@ -383,37 +387,12 @@ notes: we will use just a "selection" tool in our heatmap to make a dashboard, b
 
 ---
 
-## Last Week's Assignment
-
-Your assignment from last week was:
-
-<!-- * Using traitlets, widgets and bqplot, build a notebook that:
-   1. Uses the UFO datasets
-   2. Allows changing the x and y fields on a scatter plot from the UFO dataset
-   3. Displays tooltips when hovering over individual items
- * Build a second widget that displays binned, aggregate values where you can change:
-   1. The field to "bin"
-   2. The method of aggregation (sum, mean, min, max, count)
-   3. The number of bins-->
-   
- * Viz #1: Using traitlets, widgets and bqplot, build a notebook that:
-   1. Uses the UFO dataset (see week 4) or the buildings dataset
-   2. Creates a scatter plot that you can interact with (pan & zoom, or other)
-   3. Explain why you implemented the interactivity you did - how does it help visualize what you want it to visualize?
- * Viz #2: Work through the Wealth of Nations plot we *nearly* finished in class
-   1. Change at least 3 aspects of this visualization
-   2. Explain why you made the choices you did - how does this help visualize some aspect of this dataset that the original visualization does not?
-
----
-
 ## Today's Python Programming:
 
 Starting with these ideas, we'll progressively enhance.
 
- * Create heat maps of the sightings
- * Select based on states (do not use map marks yet)
- * Manually create "bins" for aggregation
- * Use different scales for dates, times, locations
+ * Create heat maps of eccentricities and radia of Kepler data
+ * Plot analytical orbits linked to the user's choices on this heatmap
 
 We'll use these to build up a _dashboard_ for our data.
 
@@ -445,23 +424,6 @@ To Python!
 
 ---
 
-## Assignment 6
-
- * Build a dashboard for the buildings data.
- * Left component:
-    * Grid heat map
-    * Rows are congressional district
-    * Columns are the governmental department
-    * Values are sum of total square footage for that set of criteria
- * Right component:
-    * line plot
-    * x is the year
-    * y is total square footage *acquired* that year
- * These two should be *linked* so that you can select cells and that will
-   update the square footage plot.
- * Things to think about:
-    * Can you keep the x and y ranges static on the line plot?
-    * Can you change the style?
 
           </script>
         </section>
