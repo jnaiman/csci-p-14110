@@ -13,22 +13,27 @@ X- ipywidgets -> plotting analytical orbits, example & exercise
 X - heat map interactive ecc vs something -> plot analytical orbits
 X   -> could be star mass, star radius or something?
 X   -> this uses bqplot
-- lecture topic: grammar of graphics (parts of week 6 lecture)
+X - lecture topic: grammar of graphics (parts of week 6 lecture)
 HW: plot heatmap of 2 other things?
 
 DAY3
 ----
+X - lecture topic: week 12
 - 3D stuff in jupyter
 - 3D animations -> to save
 - 3D objects
 
 DAY4
 ----
+
+- lecture topic: graphics concepts from week 13
 - how planets look vs. their surfaces
 - designing for VR
+- lecture topic: viz for self, peers, others
 
 DAY5
 ----
+- lecture topic: what to look into for web publishing
 - extensions -> few fun things - Idyll, Houdini, etc
 - finishing up projects
 - viz party!
