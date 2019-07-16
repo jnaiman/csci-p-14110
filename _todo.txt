@@ -19,9 +19,10 @@ HW: plot heatmap of 2 other things?
 DAY3
 ----
 X - lecture topic: week 12
-- 3D stuff in jupyter
-- 3D animations -> to save
-- 3D objects
+- ipyvolume - quick example from docs
+- ipyvolume with quivers and numerical data
+- 3D animations -> to save, give them time do save their own & play
+- 3D objects - if time, example volume rendering
 
 DAY4
 ----

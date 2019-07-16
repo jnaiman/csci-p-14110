@@ -9,3 +9,4 @@ Today we will starting thinking in 3D, and about the rendering of images in gene
 
 ## More Resources
 
+ * [ipyvolume docs](https://ipyvolume.readthedocs.io/en/latest/)
