@@ -32,8 +32,9 @@ X - lecture topic: graphics concepts from week 13 (module)
 X - lecture topic: mapping surfaces (module) for planets
 X - how planets look vs. their surfaces
 - designing for VR
-- programming - planets, galaxy - stills
+X - programming - planets - stills
 - programming - (module) - change color of planet texture (extra)
+- programming - (module) - uploading galaxy models (extra)
 - lecture topic: viz for self, peers, others (could be day 5, modulaize)
 - lecture topic (module): 3d movies
 - programming (module): 3d movies - galaxies and planets
