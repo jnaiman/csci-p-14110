@@ -23,6 +23,7 @@ X - ipyvolume - quick example from docs
 X - ipyvolume with quivers and numerical data
 X - 3D animations -> to save, give them time do save their own & play
 X - Saving to html, linking to bqplot
+X - deploying to the web (optional)
 - 3D objects - if time, example volume rendering
 
 DAY4
