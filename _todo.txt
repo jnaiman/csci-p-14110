@@ -38,5 +38,6 @@ DAY5
 ----
 - lecture topic: what to look into for web publishing
 - extensions -> few fun things - Idyll, Houdini, etc
+- how to make/modify new texture maps
 - finishing up projects
 - viz party!

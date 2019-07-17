@@ -421,3 +421,19 @@ There is a big yt community at Harvard as well as the iSchool at University of I
 
 ---
 
+## A note about RGB color wheels
+
+<img src="http://dawnsbrain.com/wp-content/uploads/2009/03/rgb-color-wheel-lg.jpg" width="600"/>
+
+notes: you'll often see colors expressed by triplet (some times 4) colors
+
+these are RGB sequences or combinations of Red-Green-Blue colors
+
+basically RGB combinations make up all the colors you see on this colorwheel and is a useful shorthand to encode colors
+
+sometimes instead of 0-255 for levels you'll see this encoded as 0-1 but it means the same thing for our purposes
+
+
+
+
+
