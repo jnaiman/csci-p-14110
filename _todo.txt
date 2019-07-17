@@ -19,14 +19,14 @@ HW: plot heatmap of 2 other things?
 DAY3
 ----
 X - lecture topic: week 12
-- ipyvolume - quick example from docs
-- ipyvolume with quivers and numerical data
-- 3D animations -> to save, give them time do save their own & play
+X - ipyvolume - quick example from docs
+X - ipyvolume with quivers and numerical data
+X - 3D animations -> to save, give them time do save their own & play
+X - Saving to html, linking to bqplot
 - 3D objects - if time, example volume rendering
 
 DAY4
 ----
-
 - lecture topic: graphics concepts from week 13
 - how planets look vs. their surfaces
 - designing for VR
