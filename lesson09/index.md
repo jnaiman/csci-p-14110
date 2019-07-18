@@ -32,3 +32,5 @@ Don't forget to [sign up right here](https://sketchfab.com) to be able to upload
  * If you want try this out but don't want to spend the time to run the models you can download some saved files from <a href="galaxyFiles/galaxyFiles.zip" download>a simulation right here</a> that includes dark matter and star particles.  Make sure you unzip!
  * Also download <a href="galaxyFiles/solverlibs.py" download>this Python library here</a> to be able to read in this dataset.
  
+**Bonus**: Try with [this larger dataset](galaxyFiles/large_galaxy_data.zip) with many different particle types.  Again, parsing this harder dataset is left up to you!
+ 

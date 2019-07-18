@@ -40,8 +40,8 @@ X - programming - (module) - uploading galaxy models (extra)
 DAY5
 ----
 X - lecture topic: what to look into for web publishing
-- lecture topic (module): 3d movies
-- programming (module): 3d movies - galaxies and planets
+X - lecture topic (module): 3d movies
+X - programming (module): 3d movies - galaxies and planets
 X - extensions -> few fun things - Idyll, Houdini, etc
 X - finishing up projects
 - viz party!
