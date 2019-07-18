@@ -34,7 +34,7 @@ X - how planets look vs. their surfaces
 - designing for VR
 X - programming - planets - stills
 - programming - (module) - change color of planet texture (extra)
-- programming - (module) - uploading galaxy models (extra)
+X - programming - (module) - uploading galaxy models (extra)
 - lecture topic: viz for self, peers, others (could be day 5, modulaize)
 - lecture topic (module): 3d movies
 - programming (module): 3d movies - galaxies and planets
@@ -43,6 +43,5 @@ DAY5
 ----
 - lecture topic: what to look into for web publishing
 - extensions -> few fun things - Idyll, Houdini, etc
-- how to make/modify new texture maps
 - finishing up projects
 - viz party!
