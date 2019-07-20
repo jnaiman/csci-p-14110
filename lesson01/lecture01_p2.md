@@ -20,7 +20,7 @@ notes:
 
 ## Astronomy, cont.
 
-To check the accuracy of our simulations of physics we actually need to know some physics.  
+Knowing some coding is great, but to check the accuracy of our simulations of physics we actually need to know some physics.  
 
 We can make almost infintely complicated simulations, but let's start with something simple - how gravity causes things to orbit one another.
 
@@ -175,9 +175,13 @@ and same for the acceleration
 
 For reference - the Kinematic Equations:
 
-$$ \langle \vec{v} \rangle = \vec{v}\_{initial} + \langle \vec{a} \rangle \times t $$
+<!--$$ \langle \vec{v} \rangle = \vec{v}\_{initial} + \langle \vec{a} \rangle \times t $$-->
 
-$$ \langle \vec{x} \rangle = \vec{x}\_{initial} + \langle \vec{v} \rangle \times t + \frac{1}{2} \langle \vec{a} \rangle \times t^2 $$
+$$ \vec{v}\_{final} = \vec{v}\_{initial} + \langle \vec{a} \rangle \times t $$
+
+<!--$$ \langle \vec{x} \rangle = \vec{x}\_{initial} + \langle \vec{v} \rangle \times t + \frac{1}{2} \langle \vec{a} \rangle \times t^2 $$-->
+
+$$  \vec{x}\_{final} = \vec{x}\_{initial} + \vec{v}\_{initial} \times t + \frac{1}{2} \langle \vec{a} \rangle \times t^2 $$
 
 notes: while we won't use these a lot explicitly, you either have seen them in physics already or will see them soon!
 
