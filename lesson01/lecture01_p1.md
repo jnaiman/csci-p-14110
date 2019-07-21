@@ -17,11 +17,11 @@ visible_n: true
 
 12-3PM M/T/W/Th/F
 
-Jill Naiman - `jnaiman@illinois.edu`
+Jill Naiman - `jnaiman@illinois.edu` or `jill.naiman@cfa.harvard.edu`
 
- * Office Hours: TBD
+ * Office Hours: ~3pm to ~4pm in Annenberg Dining Hall
 
-TA: TBD
+TA: Adrianna Perez
 
 Class webpage: https://jnaiman.github.io/csci-p-14110/ (more on this a little later)
 
@@ -389,8 +389,8 @@ feedback.  However, please do behave in a professional fashion.
  * Day 1: Introduction, syllabus, examples, and some basics about Astro, Physics, Programming
  * Day 2: Gravity, calculating 2-body orbits, more programming
  * Day 3: Numerical and analytical solutions of orbits for 2-body problem
- * Day 4: Multi-body problem in 2D
- * Day 5: Multi-body problem in 3D
+ * Day 4: Multi-body problem in 2D/3D
+ * Day 5: Multi-body problem in 3D & Other solvers
 
 ---
 
@@ -401,16 +401,16 @@ feedback.  However, please do behave in a professional fashion.
  * Day 1: Introduction, syllabus, examples, and some basics about Astro, Physics, Programming
  * Day 2: Gravity, calculating 2-body orbits, more programming
  * Day 3: Numerical and analytical solutions of orbits for 2-body problem
- * Day 4: Multi-body problem in 2D
- * Day 5: Multi-body problem in 3D
+ * Day 4: Multi-body problem in 2D/3D
+ * Day 5: Multi-body problem in 3D & Other solvers
  
 ### Data Visualization Week
 
- * Day 1: Intro to data viz, simple 2D movies
- * Day 2: Visualization concepts overview, 2D & 3D movies
- * Day 3: Graphical concepts, "good" vs. "bad" viz, 3D movies and interactions
- * Day 4: Web-viz, 3D online movies
- * Day 5: Review, finalization of projects, viz party!
+ * Day 1: Intro to data viz, simple 2D movies, interactivity
+ * Day 2: Info viz and more on interactivity in 2D
+ * Day 3: Plotting in 3D in Python interactively
+ * Day 4: Graphic concepts, web-viz, 3D geometries
+ * Day 5: 3D movies online, finalization of projects, viz party!
 
 notes: this schedule is a little "loose" - i.e. we have some time to go 
 into more/less details on things that folks are not into/super interested in
@@ -459,11 +459,21 @@ See that i've got "half" in quotes - this is because somedays (like today) will 
 
 ---
 
-## Assignments
+## Assignments: **Posted on Canvas**
 
- * Daily, assigned in class, collected following class
+ * Daily, assigned in class, collected following class 
  * These will consist of prose, math, reading, and coding assignments
  * There will also be a few online videos with quizzes (on the Canvas webpage)
+
+---
+
+## Assignments: **Posted on Canvas**
+
+ * Daily, assigned in class, collected following class 
+ * These will consist of prose, math, reading, and coding assignments
+ * There will also be a few online videos with quizzes (on the Canvas webpage)
+ 
+Some assignments or parts of assignments are meant to be done on your own, others can be done collaboratively - but make sure you turn in work that is in your own words!
 
 ---
 
@@ -513,6 +523,19 @@ automatically compiled to web pages when changes are made.
 
 You are invited to clone the repo, fork and submit changes (typos, etc!), and
 to use any information in it in the future.
+
+---
+
+# Speaking of that course webpage...
+
+[https://jnaiman.github.io/csci-p-14110/](https://jnaiman.github.io/csci-p-14110/)
+
+notes: *go to webpage*
+
+1. Main page - populated with overall references & lessons for each day
+1. Syllabus
+1. Lesson 1 page: each day will be different, this day has some installation notes & videos, extra resources for the topics we'll be covering today and tomorrow
+1. at the end of each page there is the "Materials" section - this is where you can see the lecture slides and any notebooks we create during class
 
 ---
 
@@ -586,7 +609,7 @@ notice how small the orbits of the inner planets like earth and mars are compare
 
 A reminder of where we are:
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/df/3_Solar_Interstellar_Neighborhood_%28ELitU%29.png" width="800"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/df/3_Solar_Interstellar_Neighborhood_%28ELitU%29.png" width="600"/>
 
 notes: if we zoom out even further, we see that our solar system that is orbiting our local star, the Sun is just one of several stars nearby, here just focusing on the brightest ones
 
@@ -596,7 +619,7 @@ notes: if we zoom out even further, we see that our solar system that is orbitin
 
 A reminder of where we are:
 
-<img src="https://www.universetoday.com/wp-content/uploads/2013/10/milky_way.jpg" width="800"/>
+<img src="https://www.universetoday.com/wp-content/uploads/2013/10/milky_way.jpg" width="600"/>
 
 notes: if we zoom out even further we find that these local group of stars is actually collected in an object called a "galaxy", and our galaxy is called the "Milky Way"
 
@@ -620,7 +643,7 @@ notes: this is what it looks like if you've never had an opportunity to see it b
 
 A reminder of where we are:
 
-<img src="https://i.4pcdn.org/tg/1395685391422.png" width="800"/>
+<img src="https://i.4pcdn.org/tg/1395685391422.png" width="600"/>
 
 notes: if we zoom out even further we find that that our milky way is surrounded by a lot of little, relatively star-less galaxies called "dwarf galaxies" and it has a neighbor called the Andromeda galaxy
 
@@ -632,7 +655,7 @@ Our Milky Way will actually collide with the Andromeda galaxy in about 4.5 billi
 
 A reminder of where we are:
 
-<img src="https://compote.slate.com/images/2b8d91da-37b4-4710-bb3f-40d9ef227de4.jpg" width="800"/>
+<img src="https://compote.slate.com/images/2b8d91da-37b4-4710-bb3f-40d9ef227de4.jpg" width="700"/>
 
 notes: and if we keep zooming out we see that there are actually trillions of galaxies in the Universe!  This is an actual image taken with the Hubble space telelscope of a very very small little bit of the sky and all of these points of light are actually galaxies
 
@@ -642,7 +665,7 @@ notes: and if we keep zooming out we see that there are actually trillions of ga
 
 A bit more about planets:
 
-<img src="images/kindsOfPlanets.jpg" alt="planets" width="800"/>
+<img src="images/kindsOfPlanets.jpg" alt="planets" width="600"/>
 
 notes: so, lets step back in in scale and look back again at planets in a bit more detail
 
@@ -656,7 +679,7 @@ There are 2 basic types of planets - terresstrial that are rocky and earth-like,
 
 A bit more about planets:
 
-<img src="images/kepler2015.jpg" alt="planets" width="800"/>
+<img src="images/kepler2015.jpg" alt="planets" width="650"/>
 
 notes: notice that this is actually an older figure and there are actually many more planets that we've found with the Kepler telescope than is plotted here
 

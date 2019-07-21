@@ -27,6 +27,8 @@ For reference, I will use some Unix-like commands.  We'll only cover a few, but 
  
 Make sure to press ```SHIFT+ENTER``` after each line. You should see a simple line plot appear.
 
+You can also follow along using the [notebook listed on today's lesson webpage](myFirstProgram.ipynb).
+
 ## Mac OSX
 
 Movie of this process:

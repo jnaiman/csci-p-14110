@@ -316,7 +316,7 @@ notes: there are two other of Kepler's laws
 
 <img src="http://ffden-2.phys.uaf.edu/webproj/211_fall_2016/Mikayla_Grunin/mikayla_grunin/Photo3.html.gif" width="500" />
 
-notes: this one, law #2, tells us something about how fast the planet moves at different parts of its orbit - near its aphelion (near the sun) it goes really fast, and at the furthest part of its orbit, perhelion it goes very slow
+notes: this one, law #2, tells us something about how fast the planet moves at different parts of its orbit - near its perihelon (near the sun) it goes really fast, and at the furthest part of its orbit, apehelion (a=away) it goes very slow
 
 ---
 

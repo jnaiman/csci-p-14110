@@ -155,11 +155,11 @@ There are no hard and fast "right" or "wrong" answers at this point, so don't wo
  
 ### Data Visualization Week
 
- * Day 1: Intro to data viz, simple 2D movies
- * Day 2: Visualization concepts overview, 2D & 3D movies
- * Day 3: Graphical concepts, "good" vs. "bad" viz, 3D movies and interactions
- * Day 4: Web-viz, 3D online movies
- * Day 5: Review, finalization of projects, viz party!
+ * Day 1: Intro to data viz, simple 2D movies, interactivity
+ * Day 2: Info viz and more on interactivity in 2D
+ * Day 3: Plotting in 3D in Python interactively
+ * Day 4: Graphic concepts, web-viz, 3D geometries
+ * Day 5: 3D movies online, finalization of projects, viz party!
 
 notes: so this is where we are - we did the computation physics part! Now its time to make some pretty things!
 
@@ -284,7 +284,7 @@ for example, this is an app a collegue of mine made that allows for the blind an
 
 <img src="images/traesApp2.png" alt="drawing" height="500"/>
 
-check out eclipse sound scaples *dot* com for more info on this
+notes: check out eclipse sound scaples *dot* com for more info on this
 
 ---
 
