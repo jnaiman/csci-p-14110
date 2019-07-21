@@ -16,7 +16,11 @@ visible: false
 * [Bonus: Orbits Game](http://save-point.herokuapp.com/dashboard/users.php)
 * [More on N-body Units](http://www.manybody.org/modest/heggie_split.pdf)
 
+## Extra Resources
+
 * [Conservation of Energy - Khan](https://www.khanacademy.org/science/physics/work-and-energy/work-and-energy-tutorial/v/conservation-of-energy)
+* [List of equations for different types of orbits](http://www.bogan.ca/orbits/kepler/orbteqtn.html)
+* [Physics Crash Course - Work, Energy (& Power)](https://www.youtube.com/watch?v=w4QFJb9a8vo)
 
 ### Derivations
 

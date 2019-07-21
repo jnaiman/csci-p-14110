@@ -53,7 +53,7 @@ $a\_i = g = 9.8 \, m/s^2$
 
 ## Euler's Method with Gravity
 
-If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet to generalize:
+If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet *or* from center of Star/Planet to us:
 
 $\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
 
@@ -63,7 +63,7 @@ $\vec{v}\_{i+1} = \vec{v}\_i + \vec{a}\_i \Delta t$
 
 ## Euler's Method with Gravity
 
-If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet to generalize:
+If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet *or* from center of Star/Planet to us:
 
 $\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
 
@@ -77,7 +77,7 @@ $\vec{a}\_i = g = 9.8 \, m/s^2$ pointed toward the center of the Earth
 
 ## Euler's Method with Gravity
 
-If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet to generalize:
+If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet *or* from center of Star/Planet to us:
 
 $\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
 
@@ -95,7 +95,7 @@ $\vec{a} = - \frac{G M\_{star}}{| \vec{r} |^2}$
 
 ## Euler's Method with Gravity
 
-If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet to generalize:
+If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet *or* from center of Star/Planet to us:
 
 $\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
 
@@ -114,7 +114,7 @@ $\vec{a} = - \frac{G M\_{star}}{| \vec{r} |^2}$ or, discretized $\vec{a}\_{i} = 
 
 ## Euler's Method with Gravity
 
-If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet to generalize:
+If we use the 3D position vector, $\vec{r}$, as the vector from the Star to the Planet *or* from center of Star/Planet to us:
 
 $\vec{r}\_{i+1} = \vec{r}\_i + \vec{v}\_i \Delta t$
 
@@ -379,6 +379,25 @@ Note the limits on $e$:
  * if $a = b$, $e = 0$ $\rightarrow$ this is a perfect circle
  
 Beware: $r(\theta)$ is trivial, but $r(t)$ and $\theta(t)$ are not easy to calculate and require numerical methods!
+
+---
+
+## Kepler's Laws for Multi-body systems?
+
+For one massive star at the center of the system, orbits can be written as:
+
+$$ r(\theta) = \frac{a (1-e^2)}{1 + e cos(\theta)} $$
+
+$$ e = \sqrt{1 - \frac{b^2}{a^2}} $$
+
+Note the limits on $e$:
+ * if $b = 0$, $e = 1$ $\rightarrow$ this is a parabola
+ * if $a = b$, $e = 0$ $\rightarrow$ this is a perfect circle
+ 
+Beware: $r(\theta)$ is trivial, but $r(t)$ and $\theta(t)$ are not easy to calculate and require numerical methods!
+
+PS: if $e > 1$ $\rightarrow$ this is a hyperbola
+
 
 ---
 
