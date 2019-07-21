@@ -1,14 +1,14 @@
 instructor: 
   name: Jill P. Naiman
   email: jnaiman@illinois.edu
-  office: TBD
-  office_hours: TBD
+  office: Annenberg Dinning Hall
+  office_hours: ~3pm to ~4pm
 tas:
   -
-    name: TBD
-    email: TBD
-    office: TBA
-    office_hours: TBA
+    name: Adrianna Perez
+    email: adrianna.perez@cfa.harvard.edu
+    office: Slack Channel
+    office_hours: Slack Channel
 course:
   name: Intro to Scientific Computing and Data Viz
   number: CSCI P-14100

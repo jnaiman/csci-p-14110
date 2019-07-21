@@ -3,8 +3,6 @@ layout: syllabus
 title: Syllabus
 ---
 
-# DRAFT
-
 # Course Description
 
 This course is an introduction to programming methods as they pertain to numerical solutions to the astrophysics problem of motion under the influence of multiple gravitating bodies and the visualization of this information. The increasing prevalence of massive data sets and falling computational barriers have rendered computational modeling and data visualization necessary in most of the contemporary sciences. With this in mind, this course prepares students to select and properly undertake commonly encountered modeling and visualizing tasks. The course first teaches relevant concepts from programming using hands-on activities. Students then apply their new programming skills to guided problems of orbital motions of multiple planetary systems (like that around our Sun and other stars) and end the course with both two and three dimensional interactive movies of their datasets.	
@@ -17,7 +15,7 @@ Because there are many ways to approach a problem, there are thus many ways to l
 A good working knowledge of geometry, trigonometry, and algebra. Students must bring a full-sized laptop computer (not a netbook) to each class meeting. No previous programming experience is required.
 
 ## Course Schedule
-Days will be split into two parts, with the first spent on astrophysical or data visualization concepts and the second spent on programming with these concepts.  All days except the first day of the first week will follow this basic structure.	
+Days will be split roughly into two parts, with the first spent on astrophysical or data visualization concepts and the second spent on programming with these concepts.  	
 
 Below is a draft schedule - subject to slight changes depending on class pace/interests.
 
@@ -28,11 +26,11 @@ Below is a draft schedule - subject to slight changes depending on class pace/in
 | Day 3 | Compare 2 body analytically and numerically
 | Day 4 | The Multi-body problem in 2D - planetary simulations <br> Different numerical solvers
 | Day 5 | The Multi-body problem in 3D - planetary and galactic simulations
-| Day 6 | What is data visualization? What is scientific visualization? <br> Simple 2D movies
-| Day 7 | Overview of visualization concepts - audience, colors/textures/sizes, scientific integrity <br> 2D and 3D Movies
-| Day 8 | "Good" vs. "Bad" visualizations <br> Graphical concepts <br> 3D Movies and interactions
-| Day 9 | Online, sharable visualizations <br> Online interactive 3D Movies with Sketchfab
-| Day 10 | Review, finalization of visualizations <br> Viz party!
+| Day 6 | What is sci/data viz? Lying with data. <br> Simple 2D movies, data manipulation with Pandas, interactivity
+| Day 7 | Data organization, filtering <br> more interactivity, info-viz (grammar-of-graphics, bqplot, linked data views if time)
+| Day 8 | Representations of data, Graphical concepts <br> 3D plotting in Python & widgets <br> Optional: deploying to the web
+| Day 9 | 3D grapchics concepts <br> Online interactive 3D geometry with Sketchfab
+| Day 10 | Types of viz (know your audience!) <br> Where to go from here, finalize projects and Viz party!
 
 # Learning Outcomes
 
