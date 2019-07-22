@@ -1,124 +1,135 @@
 ---
-title: Lecture 2, Part 2 - Higher order solvers
+title: Lecture 1, Part 3 - Gravity and Circular Motion
 layout: lecture
 visible_lec: true
 visible_n: true
 ---
 
-## Numerical Solutions: Can we do better?
+# From circular motion to gravitational orbits.
 
-<img src="images/loop_animation.png" width="700" />
+notes: so we mentioned what might happen if there is acceleration during circular motion
 
-notes: as we saw, our simulations are not numerically stable - i.e. they do not conserve mass and momentum
+There are really 2 types - there can be acceleration tangential to the radius - this will drive the circular motion faster and faster
 
-this is a feature of *all* numerical models
+there can also be acceleration parallel to the radius to move the object in and out
 
-but we can play some numerical tricks to make our solutions more accurate
-
----
-
-## Numerical Solutions: Can we do better?
-
-<img src="images/loop_animation.png" width="700" />
-
-Increase accuracy with:
- 1. smaller time steps
- 1. a *higher order* solver
- 
-notes: we saw that we could increase the accuracy of our solutions by increasing the number of steps per period or 
-decreasing the time step length
-
-we can also choose a different solver than the Euler's for higher accuracy!
+in fact, acceleration perpendicular to the motion/parallel to the radius is essential to maintain circular motion
 
 ---
 
-## Numerical Solutions: Can we do better?
+## A Quick Physics Crash Course: Angular Motion, cont
 
-Let's re-look at the Euler's Method for gravitation:
+<iframe width="800" height="450" src="https://www.youtube.com/embed/rwOv5HfBazQ?rel=0&autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-$ \vec{r}\_{i+1} = \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t$
+notes: lets look at this again, see how they plot both the velocity vectors and the acceleration vectors, and the acceleration points inwards?
 
-$ \vec{v}\_{i+1} = \vec{v}(t + \Delta t) = \vec{v}(t) + a\_g(\vec{r},t) \Delta t$
-
----
-
-## Numerical Solutions: Can we do better?
-
-Let's re-look at the Euler's Method for gravitation:
-
-$ \vec{r}\_{i+1} = \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t + \mathcal{O}(\Delta t^2)$
-
-$ \vec{v}\_{i+1} = \vec{v}(t + \Delta t) = \vec{v}(t) + a\_g(\vec{r},t) \Delta t + \mathcal{O}(\Delta t^2)$
-
-notes: in reality, we have errors on the order of $\Delta t^2$ 
-
-where does this come from?
+This makes sense in terms of something called "Newton's law" the first, which basically just says that an object will move in a straight line unless there is a "force" to change its direction or the magnitude of its velocity
 
 ---
 
-## Numerical Solutions: Can we do better?
+## A Quick Physics Crash Course: Angular Motion, cont
 
-Let's re-look at the Euler's Method for gravitation:
+<img src="https://image.slidesharecdn.com/newtonslawofmotion-180215162757/95/newtons-law-of-motion-6-638.jpg?cb=1518712151" width="600" />
 
-$ \vec{r}\_{i+1} = \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t + \mathcal{O}(\Delta t^2)$
-
-$ \vec{v}\_{i+1} = \vec{v}(t + \Delta t) = \vec{v}(t) + a\_g(\vec{r},t) \Delta t + \mathcal{O}(\Delta t^2)$
-
-**Calculus aside:**
-
-Taylor expansion: $f(x + h) = f(x) + f'(x)h + f''(x) \frac{h^2}{2!} + f'''(x) \frac{h^3}{3!} + ...$
-
-For a time series:
-
-$ \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{r}'(t) \Delta t + \vec{r}''(t) \frac{\Delta t^2}{2!} + \vec{r}'''(t)\frac{\Delta t^3}{3!} + ...$
-
-$ \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t + \vec{a}(t) \frac{\Delta t^2}{2!} + \vec{a}'(t)\frac{\Delta t^3}{3!} + ...$
-
-
-notes: if you haven't had calculus yet, don't worry about this part, but basically, any function, in this case position as a function of time can be broken down as a series of derivatives multiplied by $\Delta t$ - you see we take derivatives up to the derivative of the acceleration here in this case
-
-we increase the accuracy of our simulations by taking *higher order terms*
-
-There are many ways of doing this with a variety of solvers.  We'll first try with the *Hermite Solver*
+notes: ok, I just used a new word, what is this "force" thing?
 
 ---
 
-## Numerical Solutions: Can we do better?
+## A Quick Physics Crash Course: Angular Motion, cont
 
-Let's re-look at the Euler's Method for gravitation:
+<img src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/222/2014/12/20103410/Figure_11_01_03a.jpg" width="500" />
 
-$ \vec{r}\_{i+1} = \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t + \mathcal{O}(\Delta t^2)$
+notes: basically, this force is what is allowing for circular motion at all 
 
-$ \vec{v}\_{i+1} = \vec{v}(t + \Delta t) = \vec{v}(t) + a\_g(\vec{r},t) \Delta t + \mathcal{O}(\Delta t^2)$
+In the video we saw before, its the tension on the string that allows for circular motion
 
-### Hermite Solver:
-
-**The math:**
-
-main step: 
-
-$ \vec{r}\_{i+1} = \vec{r}\_i + \frac{1}{2}(\vec{v}\_{i+1} + \vec{v}\_i)\Delta t + \frac{1}{12}(\vec{a}\_{i} - \vec{a}\_{i+1}) \Delta t^2 + \mathcal{O}(\Delta t^5) $
-
-$ \vec{v}\_{i+1} = \vec{v}\_i + \frac{1}{2}(\vec{a}\_{i+1} + \vec{a}\_i)\Delta t + \frac{1}{12}(\vec{J}\_{i} - \vec{J}\_{i+1}) \Delta t^2 + \mathcal{O}(\Delta t^5) \, \, \, $  with $J = \frac{\Delta a}{\Delta t}$
-
-$ \vec{r}\_p = \vec{r}\_i + \vec{v}\_i \Delta t + \frac{1}{2} \vec{a}\_i \Delta t^2 + \frac{1}{6} \vec{J}\_i \Delta t^3 $
-
-$ \vec{v}\_p = \vec{v}\_i + \vec{a}\_i \Delta t + \frac{1}{2} \vec{J}\_i \Delta t^2 $
-
-notes: so, you can see that things have gotten a bit more complicated, but we do have orders on order of 5th order!
+here $a_c$ is the "centripetal force" - the force needed to keep something going in circular motion
 
 ---
 
-# Let's try this out in Python!
+## A Quick Physics Crash Course: Angular Motion, cont
+
+Another relation (won't prove here):
+
+$a_c = \frac{v^2}{r} = r \omega^2$
+
+notes: I won't go through the derivation here, but we can relate the acceleration inward to the angular velocity and/or linear velocity
+
+this sort of makes sense - if you spin something faster (v) then the "pulling" acceleration inward would need to be stronger 
 
 ---
 
-## Enough with 2-body motion: N-body!
+## A Quick Physics Crash Course: Angular Motion, cont
 
-But first, let's play a game:
+<img src="http://hyperphysics.phy-astr.gsu.edu/hbase/imgmec/tstr.gif" width="500" />
 
-[Super Planet Crash](http://www.stefanom.org/spc/) - http://www.stefanom.org/spc/
+notes: while we won't do it here, you can actually calculate this tension force on the string based on the mass of the thing moving (m) and its tangential velocity (v)
 
-Bonus game (if you get done): [Orbits Game](http://save-point.herokuapp.com/dashboard/users.php)
+notice that this T is not the same "T" as in the period - we only have so many letters sadly
 
+you can think about how it is harder to hold onto something the faster you spin it around your head!  This is the same idea - the FORCE in this case is you holding onto the thing.
+
+---
+
+## A Quick Physics Crash Course: Gravity
+
+Gravity is the force "holding" objects to the Earth as they orbit.
+
+<img align="left" src="http://bigbangcosmology.files.wordpress.com/2008/01/image015.jpg" width="400" />
+
+<img aligh="right" src="https://eschooltoday.com/science/forces/images/GRAVITATIONAL-FORCE.jpg" width="400" />
+
+---
+
+## A Quick Physics Crash Course: Gravity
+
+Gravity is the force "holding" objects to the Earth as they orbit.
+
+<img align="left" src="http://bigbangcosmology.files.wordpress.com/2008/01/image015.jpg" width="400" />
+
+<img aligh="right" src="https://eschooltoday.com/science/forces/images/GRAVITATIONAL-FORCE.jpg" width="400" />
+
+
+$\vec{F} = - \frac{G M\_1 M\_2}{| \vec{r}\_1 - \vec{r}\_2 |^2} \hat{r} $
+
+$G$ is "Newtonian constant of gravitation" 
+
+$\hat{r}$ points between $\vec{r}\_1$ and $\vec{r}\_2$
+
+notes: M1 and M2 are the different masses, usually in kg or g, or lbs
+
+---
+
+## A Quick Physics Crash Course: Gravity
+
+Newton's Second Law
+
+<img src="http://lsacarissac.weebly.com/uploads/1/8/6/1/18610832/7761966.png?316" width="400" />
+
+$$\vec{F} = - \frac{G M\_1 M\_2}{| \vec{r}\_1 - \vec{r}\_2 |^2} \hat{r} $$
+
+notes: this gravitational force that pulls in stuff towards the earth, this acts like the string tension in our examples before
+
+---
+
+## A few facts about Newton
+
+<img src="https://backgrounddownload.com/wp-content/uploads/2018/09/origin-background-of-isaac-newton-5.jpg" width="800" />
+
+---
+
+## A Quick Physics Crash Course: Gravity
+
+**Let's measure the force of gravity with Python!**
+
+<div align="center">
+<iframe align="center" width="560" height="315" src="https://www.youtube.com/embed/xQ4znShlK5A?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</div>
+
+Warning: strobe lights
+
+
+notes: you can watch this on your own - there are flashing strobe lights and I know some folks can have sensitivities, you don't need to watch to do the next part of the course
 
