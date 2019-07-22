@@ -1,5 +1,5 @@
 ---
-title: Lecture 2, Part 2 - Higher order solvers
+title: Lecture 2, Part 5 - Higher order solvers
 layout: lecture
 visible_lec: true
 visible_n: true

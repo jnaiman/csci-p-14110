@@ -1,5 +1,5 @@
 ---
-title: Lecture 1, Part 3 - Gravity and Circular Motion
+title: Lecture 2, Part 2 - Gravity and Circular Motion
 layout: lecture
 visible_lec: true
 visible_n: true

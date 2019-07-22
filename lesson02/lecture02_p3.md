@@ -1,5 +1,5 @@
 ---
-title: Lecture 1, Part 4 - Kepler's Laws, Ellipses and Orbital Motion
+title: Lecture 2, Part 3 - Kepler's Laws, Ellipses and Orbital Motion
 layout: lecture
 visible_lec: true
 visible_n: true
