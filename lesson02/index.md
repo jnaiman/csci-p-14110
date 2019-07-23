@@ -46,9 +46,7 @@ Below are some extra resources to learn about the topics we discussed.  Some wil
 
 ## Extra Resources
 
-* [Conservation of Energy - Khan](https://www.khanacademy.org/science/physics/work-and-energy/work-and-energy-tutorial/v/conservation-of-energy)
-* [List of equations for different types of orbits](http://www.bogan.ca/orbits/kepler/orbteqtn.html)
-* [Physics Crash Course - Work, Energy (& Power)](https://www.youtube.com/watch?v=w4QFJb9a8vo)
+Below is *really* only if you are curious - feel free to refer back to them after you've had a calculus class as well!
 
 ### Derivations
 
