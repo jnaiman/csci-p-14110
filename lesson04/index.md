@@ -1,6 +1,6 @@
 ---
 layout: lesson
-visible: false
+visible: true
 ---
 
 # Lesson 4 - Multi-body Problem
@@ -28,7 +28,7 @@ visible: false
 
 ### Articles
 
-* [Integrators Article](downloads/integrators.pdf)
+* [Integrators Article](../lesson02/downloads/integrators.pdf) - this article describes the fundamental problems to solving the motions of multiple gravitating systems and discusses several solvers (including ones we've looked at in this class).  (Calculus is involved.)
 
 
 ## Links
@@ -41,6 +41,6 @@ visible: false
 * [More plotting of 3D examples with matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.12-three-dimensional-plotting.html)
 
 ### Other exoplanets
-* [Exoplanet Archive - see "Data $\rightarrow$ Confirmed Planets" option (hover over "Data")](https://exoplanetarchive.ipac.caltech.edu/)
+* [Exoplanet Archive - see "Data --> Confirmed Planets" option (hover over "Data")](https://exoplanetarchive.ipac.caltech.edu/)
 * [Exoplanet orbit database (deprecated, but with plots)](http://exoplanets.org/)
 * [astroquery API](https://astroquery.readthedocs.io/en/latest/exoplanet_orbit_database/exoplanet_orbit_database.html)

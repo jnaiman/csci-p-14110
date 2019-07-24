@@ -7,7 +7,7 @@ visible_n: true
 
 ## Numerical Solutions: Can we do better?
 
-<img src="images/loop_animation.png" width="700" />
+<img src="../lesson03/images/loop_animation.png" width="700" />
 
 notes: as we saw, our simulations are not numerically stable - i.e. they do not conserve mass and momentum
 
@@ -19,7 +19,7 @@ but we can play some numerical tricks to make our solutions more accurate
 
 ## Numerical Solutions: Can we do better?
 
-<img src="images/loop_animation.png" width="700" />
+<img src="../lesson03/images/loop_animation.png" width="700" />
 
 Increase accuracy with:
  1. smaller time steps
@@ -109,16 +109,53 @@ notes: so, you can see that things have gotten a bit more complicated, but we do
 
 ---
 
-# Let's try this out in Python!
+## Hermite Solver: OMG
+
+**The math:**
+
+main step: 
+
+$ \vec{r}\_{i+1} = \vec{r}\_i + \frac{1}{2}(\vec{v}\_{i+1} + \vec{v}\_i)\Delta t + \frac{1}{12}(\vec{a}\_{i} - \vec{a}\_{i+1}) \Delta t^2 + \mathcal{O}(\Delta t^5) $
+
+$ \vec{v}\_{i+1} = \vec{v}\_i + \frac{1}{2}(\vec{a}\_{i+1} + \vec{a}\_i)\Delta t + \frac{1}{12}(\vec{J}\_{i} - \vec{J}\_{i+1}) \Delta t^2 + \mathcal{O}(\Delta t^5) \, \, \, $  with $J = \frac{\Delta a}{\Delta t}$
+
+$ \vec{r}\_p = \vec{r}\_i + \vec{v}\_i \Delta t + \frac{1}{2} \vec{a}\_i \Delta t^2 + \frac{1}{6} \vec{J}\_i \Delta t^3 $
+
+$ \vec{v}\_p = \vec{v}\_i + \vec{a}\_i \Delta t + \frac{1}{2} \vec{J}\_i \Delta t^2 $
+
+notes: at this point you might be a little nervous that we are going to plug this whole thing into Python again
 
 ---
 
-## Enough with 2-body motion: N-body!
+## Hermite Solver: OMG
 
-But first, let's play a game:
+**The math:**
 
-[Super Planet Crash](http://www.stefanom.org/spc/) - http://www.stefanom.org/spc/
+main step: 
 
-Bonus game (if you get done): [Orbits Game](http://save-point.herokuapp.com/dashboard/users.php)
+$ \vec{r}\_{i+1} = \vec{r}\_i + \frac{1}{2}(\vec{v}\_{i+1} + \vec{v}\_i)\Delta t + \frac{1}{12}(\vec{a}\_{i} - \vec{a}\_{i+1}) \Delta t^2 + \mathcal{O}(\Delta t^5) $
 
+$ \vec{v}\_{i+1} = \vec{v}\_i + \frac{1}{2}(\vec{a}\_{i+1} + \vec{a}\_i)\Delta t + \frac{1}{12}(\vec{J}\_{i} - \vec{J}\_{i+1}) \Delta t^2 + \mathcal{O}(\Delta t^5) \, \, \, $  with $J = \frac{\Delta a}{\Delta t}$
+
+$ \vec{r}\_p = \vec{r}\_i + \vec{v}\_i \Delta t + \frac{1}{2} \vec{a}\_i \Delta t^2 + \frac{1}{6} \vec{J}\_i \Delta t^3 $
+
+$ \vec{v}\_p = \vec{v}\_i + \vec{a}\_i \Delta t + \frac{1}{2} \vec{J}\_i \Delta t^2 $
+
+**The Idea:** Modular programming
+
+`matplotlib.pyplot` is the plotting library we've been using to simplify how we make images.
+
+We will now use several numerical solver libraries to simplify how we do numerical simulations.
+
+notes: while this might seem like we are "cheating" some how in reality - this is very common.
+
+there is no reason to re-invent the wheel! Large numerical simulations are done by different people working on different aspects of the code, and putting the whole thing together at the end
+
+we will use this idea for doing numerical simulations from now on
+
+(but it *is* good that we at least started by writing our own to understand how it works!)
+
+---
+
+# Let's try this out in Python!
 

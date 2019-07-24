@@ -15,7 +15,7 @@ visible_n: true
 
 ---
 
-# Today
+# Continuing on...
 
 <img src="images/into3d/into3d.001.jpeg" alt="slide1" width="800"/>
 
@@ -23,7 +23,7 @@ notes: today we are finally moving into doing some 3D simulations
 
 ---
 
-# Today
+# Continuing on...
 
 <img src="images/into3d/into3d.002.jpeg" alt="slide1" width="800"/>
 
@@ -31,7 +31,7 @@ notes: hurray!  this is very exciting for our previously 2D selves
 
 ---
 
-# Today
+# Continuing on...
 
 <img src="images/into3d/into3d.002.jpeg" alt="slide1" width="800"/>
 

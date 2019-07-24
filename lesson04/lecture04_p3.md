@@ -11,7 +11,7 @@ visible_n: true
 
 ## Simulations of our Solar System
 
-<img src="images/slides1/day3_coding.001.jpeg" alt="slide1" width="800"/>
+<img src="../lesson03/images/slides1/day3_coding.001.jpeg" alt="slide1" width="800"/>
 
 notes: here is a figure from a paper showing several realizations of the orbit of mercury
 
@@ -21,7 +21,7 @@ all of these initial conditions - placement, initial eccentricity, etc - are all
 
 ## Simulations of our Solar System
 
-<img src="images/slides1/day3_coding.002.jpeg" alt="slide1" width="800"/>
+<img src="../lesson03/images/slides1/day3_coding.002.jpeg" alt="slide1" width="800"/>
 
 notes: we can see in some cases the eccentricity grows infinitely - meaning it goes from an elliptical orbit to a parabolic or hyperbolic orbit
 
@@ -29,7 +29,7 @@ notes: we can see in some cases the eccentricity grows infinitely - meaning it g
 
 ## Instability of Planetary Systems
 
-<img src="images/slides1/day3_coding.003.jpeg" alt="slide1" width="800"/>
+<img src="../lesson03/images/slides1/day3_coding.003.jpeg" alt="slide1" width="800"/>
 
 notes: from our investigations and games like super planet crash, we learned that more massive planets tend to destabalize systems
 
@@ -37,7 +37,7 @@ notes: from our investigations and games like super planet crash, we learned tha
 
 ## Instability of Planetary Systems
 
-<img src="images/slides1/day3_coding.004.jpeg" alt="slide1" width="800"/>
+<img src="../lesson03/images/slides1/day3_coding.004.jpeg" alt="slide1" width="800"/>
 
 notes: you also may have found that if you try to put planets close together, that can cause some instability
 
@@ -45,7 +45,7 @@ notes: you also may have found that if you try to put planets close together, th
 
 ## Instability of Planetary Systems
 
-<img src="images/slides1/day3_coding.005.jpeg" alt="slide1" width="800"/>
+<img src="../lesson03/images/slides1/day3_coding.005.jpeg" alt="slide1" width="800"/>
 
 notes: here you can read the bottom axis as the "seperation between planets" basically
 
