@@ -12,7 +12,7 @@ Slack site is: [https://cscip14110sum-arr8217.slack.com](https://cscip14110sum-a
 Below, you will find the materials for each lesson, as well as a syllabus that
 includes contact information and a course outline.
 
-
+Homework resubmission policy: if you want to re-submit a new answer for a graded HW, you can earn up to 1/2 of the points back (for example: if you missed 4 points you can earn up to 2 back on your resubmission).
 
 # References
 
