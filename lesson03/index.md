@@ -10,19 +10,6 @@ Extra notes:
  * [Part1_programming_analyticalVSNumeric_lesson03.pdf](Part1_programming_analyticalVSNumeric_lesson03.pdf)
  * [Part2_programming_full2Body_lesson02_notes.pdf](Part2_programming_full2Body_lesson02_notes.pdf)
 
-## Downloads
-
-* [Integrators Article](downloads/integrators.pdf)
-* [Hermite Library - hermite_library.py](hermite_library.py)
-
-* [Kepler 11 System Data](downloads/kepler11data.txt)
-* [Kepler 101 System Data](downloads/kepler101data.txt)
-
-## Links
-
-* [Super Planet Crash](http://www.stefanom.org/spc/)
-* [Bonus: Orbits Game](http://save-point.herokuapp.com/dashboard/users.php)
-* [More on N-body Units](http://www.manybody.org/modest/heggie_split.pdf)
 
 ## Resources
 

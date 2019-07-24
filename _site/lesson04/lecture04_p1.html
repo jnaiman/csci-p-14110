@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>Lecture 4, Part 1 - Multibody Motion in 3D</title>
+<title>Lecture 4, Part 1 - Higher order solvers</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/white.min.css">
@@ -116,157 +116,122 @@
            data-separator-notes="notes?:"
            >
           <script type="text/template">
-## Some hints about stability
+## Numerical Solutions: Can we do better?
 
-* We know that a vector perpendicular to $(x,y)$ has components $(-y,x)$. So, first we reconstruct our velocity vectors so that have components $(-r\_y, r\_x)$ for each position vector $(r\_x, r\_y)$.
-* Then we renormalize each velocity vector such that it has the same magnitude as the original velocity vectors.
-* Play with each initial velocity by changing $v\_x$/$v\_y$ slightly until you have a (fairly) stable orbit.
-* Then add in another body with a position and velocity that includes a z component. Make sure you don't renormalize this as well when you do the above 3 steps for the original stable-ish system!
+<img src="images/loop_animation.png" width="700" />
 
+notes: as we saw, our simulations are not numerically stable - i.e. they do not conserve mass and momentum
 
----
+this is a feature of *all* numerical models
 
-# Today
-
-<img src="images/into3d/into3d.001.jpeg" alt="slide1" width="800"/>
-
-notes: today we are finally moving into doing some 3D simulations
+but we can play some numerical tricks to make our solutions more accurate
 
 ---
 
-# Today
+## Numerical Solutions: Can we do better?
 
-<img src="images/into3d/into3d.002.jpeg" alt="slide1" width="800"/>
+<img src="images/loop_animation.png" width="700" />
 
-notes: hurray!  this is very exciting for our previously 2D selves
+Increase accuracy with:
+ 1. smaller time steps
+ 1. a *higher order* solver
+ 
+notes: we saw that we could increase the accuracy of our solutions by increasing the number of steps per period or 
+decreasing the time step length
 
----
-
-# Today
-
-<img src="images/into3d/into3d.002.jpeg" alt="slide1" width="800"/>
-
-Start thinking about a system you want to visualize...
-
-notes: now is a good time to start thinking about some systems you want to visualize
-
-if you have a system you like - save this system to a text file for reading in later
-
-remember: you can always save another one you like better if you get there!  its more important to have something saved than what you think might be your *final* solution
+we can also choose a different solver than the Euler's for higher accuracy!
 
 ---
 
-## Three dimensional simulations
+## Numerical Solutions: Can we do better?
 
-Options:
-* add 3D component to planets
-* galaxy simulations
+Let's re-look at the Euler's Method for gravitation:
 
-notes: so, we will have a few options now - you can stick with planetary systems, if that is your jam, and start to move your simulations into 3d
+$ \vec{r}\_{i+1} = \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t$
 
-we'll talk about other solvers for systems like Rebound that will do the solar system for us, but for now you can start adding these things *by hand*
+$ \vec{v}\_{i+1} = \vec{v}(t + \Delta t) = \vec{v}(t) + a\_g(\vec{r},t) \Delta t$
 
 ---
 
-## Three dimensional simulations - Planets
+## Numerical Solutions: Can we do better?
 
-<img src="images/solarsystem3d.png" width="700" />
+Let's re-look at the Euler's Method for gravitation:
 
-The solar system is actually a 3D system!
+$ \vec{r}\_{i+1} = \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t + \mathcal{O}(\Delta t^2)$
 
-[https://theskylive.com/3dsolarsystem](https://theskylive.com/3dsolarsystem)
+$ \vec{v}\_{i+1} = \vec{v}(t + \Delta t) = \vec{v}(t) + a\_g(\vec{r},t) \Delta t + \mathcal{O}(\Delta t^2)$
 
-notes: this link is also on the index page
+notes: in reality, we have errors on the order of $\Delta t^2$ 
 
-also also - this is an example of an interactive 3D online viz... keep this in mind for next week
-
----
-
-## Three dimensional simulations - Galaxies
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg" width="800" />
-
-notes: another natural type of 3D object is a galaxy
-
-seen here is a "spiral" galaxy which is actually a relatively flat object - sort of like a disk in space
+where does this come from?
 
 ---
 
-## Three dimensional simulations - Galaxies
+## Numerical Solutions: Can we do better?
 
-<img src="http://en.es-static.us/upl/2019/01/galaxy-merger-mice-e1547088077596.jpg" width="800" />
+Let's re-look at the Euler's Method for gravitation:
 
-notes: however, an important part of galaxy evolution are *galaxy mergers* which are very 3-dimensional events
+$ \vec{r}\_{i+1} = \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t + \mathcal{O}(\Delta t^2)$
 
----
+$ \vec{v}\_{i+1} = \vec{v}(t + \Delta t) = \vec{v}(t) + a\_g(\vec{r},t) \Delta t + \mathcal{O}(\Delta t^2)$
 
-## Three dimensional simulations - Galaxies
+**Calculus aside:**
 
-<img src="http://www2.iap.fr/users/volonter/m2.jpg" width="800" />
+Taylor expansion: $f(x + h) = f(x) + f'(x)h + f''(x) \frac{h^2}{2!} + f'''(x) \frac{h^3}{3!} + ...$
 
-notes: its *these* sorts of things your every day computational physicist wants to be able to model
+For a time series:
 
-we won't get the types of galaxies we see today in the universe without them!
+$ \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{r}'(t) \Delta t + \vec{r}''(t) \frac{\Delta t^2}{2!} + \vec{r}'''(t)\frac{\Delta t^3}{3!} + ...$
 
----
+$ \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t + \vec{a}(t) \frac{\Delta t^2}{2!} + \vec{a}'(t)\frac{\Delta t^3}{3!} + ...$
 
-## Three dimensional simulations - Galaxies
 
-<img src="https://milkyway.cs.rpi.edu/download/images/MW_cartoon.png" width="700" />
+notes: if you haven't had calculus yet, don't worry about this part, but basically, any function, in this case position as a function of time can be broken down as a series of derivatives multiplied by $\Delta t$ - you see we take derivatives up to the derivative of the acceleration here in this case
 
-notes: galaxies are actually make up of a few different components - here the "bulge" which sits in the middle is greatly aggerated, as is the size of the sun
+we increase the accuracy of our simulations by taking *higher order terms*
 
-this is a cartoon of our own Milky Way galaxy and you can see some features - there are some "dwarf galaxies" around our Milky way, and there is a "stream" of material that has been stripped from one called Saggatarius Dwarf is it has collided with our Milky Way and is likely in the process of merging with our Milky Way
-
-the "SDSS Data Wedge" just refers to the observational window of a particular mission that got to look at one of these "streams"
-
-outside this there is a dark matter halo
+There are many ways of doing this with a variety of solvers.  We'll first try with the *Hermite Solver*
 
 ---
 
-## Three dimensional simulations - Galaxies
+## Numerical Solutions: Can we do better?
 
-<img src="https://mcdonaldobservatory.org/sites/default/files/images/news/gallery/PIE-CHART.jpg" width="800" />
+Let's re-look at the Euler's Method for gravitation:
 
-notes: this dark matter stuff is actually the dominate form of matter in the Universe
+$ \vec{r}\_{i+1} = \vec{r}(t + \Delta t) = \vec{r}(t) + \vec{v}(t) \Delta t + \mathcal{O}(\Delta t^2)$
 
-the stuff that makes up you and I comes from what we call "baryons" and is only roughly 4% of the Universe
+$ \vec{v}\_{i+1} = \vec{v}(t + \Delta t) = \vec{v}(t) + a\_g(\vec{r},t) \Delta t + \mathcal{O}(\Delta t^2)$
 
-There is also this stuff called "dark energy" that we are going to ignore for now, but its even more mysterious than dark matter!
+### Hermite Solver:
 
----
+**The math:**
 
-## Three dimensional simulations - Galaxies
+main step: 
 
-<img src="https://mk0astronomynow9oh6g.kinstacdn.com/wp-content/uploads/2015/11/Triangulum_II_620x400.jpg" width="600"/>
+$ \vec{r}\_{i+1} = \vec{r}\_i + \frac{1}{2}(\vec{v}\_{i+1} + \vec{v}\_i)\Delta t + \frac{1}{12}(\vec{a}\_{i} - \vec{a}\_{i+1}) \Delta t^2 + \mathcal{O}(\Delta t^5) $
 
-Dark matter is *dark* in the sense that we can't see it with light rays, but we can only *deduce* its existance from its gravitational effects on galaxies.
+$ \vec{v}\_{i+1} = \vec{v}\_i + \frac{1}{2}(\vec{a}\_{i+1} + \vec{a}\_i)\Delta t + \frac{1}{12}(\vec{J}\_{i} - \vec{J}\_{i+1}) \Delta t^2 + \mathcal{O}(\Delta t^5) \, \, \, $  with $J = \frac{\Delta a}{\Delta t}$
 
-notes: dark matter gets its name because we cannot see it!
+$ \vec{r}\_p = \vec{r}\_i + \vec{v}\_i \Delta t + \frac{1}{2} \vec{a}\_i \Delta t^2 + \frac{1}{6} \vec{J}\_i \Delta t^3 $
 
-if we did it would look like the dominant form of matter in a galaxy as you can see from this image
+$ \vec{v}\_p = \vec{v}\_i + \vec{a}\_i \Delta t + \frac{1}{2} \vec{J}\_i \Delta t^2 $
 
-we know it exists because of how it changes the rotation of stars in our galaxy - so we have to be sure to include it in our simulations!
-
----
-
-## Three dimensional simulations - Galaxies
-
-<iframe width="800" height="450" src="https://www.youtube.com/embed/RH7S_ajUniM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-notes: in reality, we need to include extra things like gas with which stars form, feedback from black holes, supernovae explosions, etc for a realistic simulation of a galaxy
-
-here is an example from the group I've worked with called IllustrisTNG that modeled a big swath of the Universe to make a whole bunch of galaxies
-
-*point out stuffs*
+notes: so, you can see that things have gotten a bit more complicated, but we do have orders on order of 5th order!
 
 ---
 
-# Three dimensional simulations in Python!
+# Let's try this out in Python!
 
-notes: let's look over some starter files for attacking these 3D problems in Python 
+---
 
-and we'll discuss extentions you can choose to work on or not!
+## Enough with 2-body motion: N-body!
+
+But first, let's play a game:
+
+[Super Planet Crash](http://www.stefanom.org/spc/) - http://www.stefanom.org/spc/
+
+Bonus game (if you get done): [Orbits Game](http://save-point.herokuapp.com/dashboard/users.php)
+
 
 
           </script>
