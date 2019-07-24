@@ -1,5 +1,5 @@
 ---
-title: Lecture 3, Part 2 - Kepler's Orbits
+title: Lecture 3, Part 5 - Kepler's Orbits
 layout: lecture
 visible_lec: true
 visible_n: true

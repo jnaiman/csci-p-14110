@@ -1,5 +1,5 @@
 ---
-title: Lecture 2, Part 4 - Full Two Body Motion
+title: Lecture 3, Part 2 - Full Two Body Motion
 layout: lecture
 visible_lec: true
 visible_n: true

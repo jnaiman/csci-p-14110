@@ -1,5 +1,5 @@
 ---
-title: Lecture 3, Part 1 - Onto N-body!
+title: Lecture 3, Part 4 - Onto N-body!
 layout: lecture
 visible_lec: true
 visible_n: true
