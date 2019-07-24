@@ -1,9 +1,14 @@
 ---
 layout: lesson
-visible: false
+visible: true
 ---
 
 # Lesson 3 - Multi-body Planetary Problem
+
+Extra notes:
+
+ * [Part1_programming_analyticalVSNumeric_lesson03.pdf](Part1_programming_analyticalVSNumeric_lesson03.pdf)
+ * [Part2_programming_full2Body_lesson02_notes.pdf](Part2_programming_full2Body_lesson02_notes.pdf)
 
 ## Downloads
 
