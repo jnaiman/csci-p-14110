@@ -362,6 +362,33 @@ def do_euler_2body(M1, M2, r_0, v_0, n_steps, delta_t):
 # e_h
 # 3*planets - r_h
 # 3*planets - v_h
+def read_hermite_solution_from_file(filename):
+
+    myout = np.genfromtxt(filename, 
+                          delimiter=",")
+    
+    # get shapes of things
+    nObjects = int((myout.shape[1]-2)/(3+3))
+    r_h = np.zeros([nObjects, 3, myout.shape[0]])
+    v_h = np.zeros([nObjects, 3, myout.shape[0]])
+    
+    t_h = myout[:,0]
+    e_h = myout[:,1]
+    for i in range(r_h.shape[0]):
+        r_h[i,0,:] = myout[:,2+i*r_h.shape[1]]
+        r_h[i,1,:] = myout[:,2+i*r_h.shape[1]+1]
+        r_h[i,2,:] = myout[:,2+i*r_h.shape[1]+2]
+
+    # now, v_h's
+    #print('break')
+    for i in range(r_h.shape[0]):
+        v_h[i,0,:] = myout[:,2+r_h.shape[1]*r_h.shape[0] +i*r_h.shape[1]]
+        v_h[i,1,:] = myout[:,2+r_h.shape[1]*r_h.shape[0] +i*r_h.shape[1]+1]
+        v_h[i,2,:] = myout[:,2+r_h.shape[1]*r_h.shape[0] +i*r_h.shape[1]+2]
+
+    return t_h, e_h, r_h, v_h
+        
+
 def save_hermite_solution_to_file(filename, t_h, e_h, r_h, v_h):
     # reshape out array
     # t_h, e_h, 3*#planets, 3*#planets
