@@ -9,6 +9,7 @@ visible: true
 
  * [Part1_programming_hermite_notes_lesson02.pdf](Part1_programming_hermite_notes_lesson02.pdf)
  * [Part2_hermite_in2d_nbody.pdf](Part2_hermite_in2d_nbody.pdf)
+ * [Part3_programming_readWriteData_keplersData_lesson03.pdf](Part3_programming_readWriteData_keplersData_lesson03.pdf)
 
 ## Downloads
 
