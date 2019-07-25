@@ -8,6 +8,7 @@ visible: true
 ## Notes
 
  * [Part1_programming_hermite_notes_lesson02.pdf](Part1_programming_hermite_notes_lesson02.pdf)
+ * [Part2_hermite_in2d_nbody.pdf](Part2_hermite_in2d_nbody.pdf)
 
 ## Downloads
 
