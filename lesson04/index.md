@@ -5,6 +5,10 @@ visible: true
 
 # Lesson 4 - Multi-body Problem
 
+## Notes
+
+ * [Part1_programming_hermite_notes_lesson02.pdf](Part1_programming_hermite_notes_lesson02.pdf)
+
 ## Downloads
 
 ### Python Libraries
