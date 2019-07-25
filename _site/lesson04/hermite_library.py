@@ -148,7 +148,10 @@ def do_hermite(star_mass, planet_masses, planet_initial_position,
     r = initial_positions/l
     r -= CenterOfMass(r,m)
 
-
+    #print('tfinal before is ', tfinal)
+    tfinal = tfinal/((l*AUinCM)/np.sqrt(G*masses.sum()/(l*AUinCM)))
+    #print('tfinal is ', tfinal)
+    
     # note: since G is in "real" units, we multiply l and initial velocities by "real" units
     v = initial_velocities*kmincm/np.sqrt( G*masses.sum()/(l*AUinCM) )
     v = v - CenterOfMassVelocity(v,m) # CoM does not move
@@ -194,7 +197,7 @@ def do_hermite(star_mass, planet_masses, planet_initial_position,
 # initial_positions in AU
 # initial_velocities in km/s
 def do_hermite_galaxies(masses, initial_positions,
-                       initial_velocities, tfinal=20.5, Nsteps = 880):
+                       initial_velocities, tfinal=20.5*1e8, Nsteps = 880):
 
     N=len(masses) # number of bodies
     m = np.ones(N)/N
@@ -211,6 +214,10 @@ def do_hermite_galaxies(masses, initial_positions,
 
     # l = average distance
     l /= N
+
+    # let's convert to n-body units
+    #t_h = time*(l*AUinCM)/np.sqrt(G*masses.sum()/(l*AUinCM)) # units of time
+    tfinal = tfinal/(l*AUinCM)/np.sqrt(G*masses.sum()/(l*AUinCM))
 
     r = initial_positions/l
     r -= CenterOfMass(r,m)
@@ -254,5 +261,97 @@ def do_hermite_galaxies(masses, initial_positions,
     t_h = time*(l*AUinCM)/np.sqrt(G*masses.sum()/(l*AUinCM)) # units of time
 
     e_h = Phi + KE
+    # normalize
+    e_h = e_h/e_h[0]
 
     return r_res, v_res, t_h, e_h # AU, km/s, seconds, normalized
+
+
+
+# Euler's method 2D calculations
+def calcAcc(mj, ri, rj):
+    mag_r = np.sqrt( (ri[0]-rj[0])**2 \
+                    +(ri[1]-rj[1])**2 )
+    mag_a = -G*mj/mag_r**2
+    # unit vector points from particle 1 -> particle 2
+    unitVector = (ri - rj)/mag_r
+    # return
+    return mag_a*unitVector
+
+# energy
+def calcE(m1, m2, r1, r2, v1, v2):
+    mag_r = np.sqrt( (r1-r2).dot(r1-r2) )
+    return 0.5*(m1*v1.dot(v1) + m2*v2.dot(v2)) - G*m1*m2/mag_r
+
+# angular momentum
+def calcL(m1, m2, r1, r2, v1, v2):
+    #print(r1, v1, np.cross(r1,v1))
+    L = m1*np.cross(r1,v1) + m2*np.cross(r2,v2)
+    #mag_L = np.sqrt( L.dot(L) )
+    # for 2D
+    mag_L = np.sqrt(L*L)
+    return mag_L
+
+# this only works for 2 bodies, but it does the euler solution
+# M1 = in solar masses
+# M2 = in solar masses
+# r_0 = in AU
+# v_0 in km/s
+def do_euler_2body(M1, M2, r_0, v_0, n_steps, delta_t):
+    # conversions
+    M1 = M1*MassOfSun
+    M2 = M2*MassOfSun
+    v_0 = v_0*kmincm
+    r_0 = r_0*AUinCM
+
+    # Do the Euler's calculation
+    ri = r_0
+    vi = v_0
+
+    # initial value
+    r = [r_0]
+    v = [v_0]
+    E = [calcE(M1,M2, ri[0,:], ri[1,:], vi[0,:],vi[1,:])]
+    L = [calcL(M1,M2, ri[0,:], ri[1,:], vi[0,:],vi[1,:])]
+    t = [0] # time = 0
+
+    for i in range(n_steps):
+        # use function to grab ag on particle 1
+        ag1 = calcAcc(M2, ri[0,:], ri[1,:])
+        ag2 = calcAcc(M1, ri[1,:], ri[0,:])
+
+        # for ease, let's create a acceleration vector
+        ag = np.array([ag1, ag2])
+
+        # update new position and velocity
+        ri1 = ri + vi*delta_t
+        vi1 = vi + ag*delta_t
+
+        # append to r vector
+        r.append(ri1)
+        v.append(vi1)
+
+        # add E, L, t
+        t.append(t[-1]+delta_t)
+        newE = calcE(M1,M2, ri[0,:], ri[1,:], vi[0,:],vi[1,:])
+        newL = calcL(M1,M2, ri[0,:], ri[1,:], vi[0,:],vi[1,:])
+        E.append(newE)
+        L.append(newL)
+
+        # replace stuff
+        ri = ri1
+        vi = vi1
+
+    # format outputs
+    # r to array
+    r = np.array(r)
+    v = np.array(v)
+    #print(type(r))
+    E = np.array(E)
+    L = np.array(L)
+    # in percentages
+    startE = E[0]; startL = L[0]
+    E = (E - E[0])/startE
+    L = (L - L[0])/startL
+
+    return r/AUinCM, v/kmincm, t, E # AU, km/s, seconds, normalized
