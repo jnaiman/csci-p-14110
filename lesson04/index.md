@@ -3,7 +3,7 @@ layout: lesson
 visible: true
 ---
 
-# Lesson 4 - Multi-body Problem
+# Lesson 4 - Multi-body Problem: A better solution
 
 ## Notes
 

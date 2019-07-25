@@ -3,7 +3,7 @@ layout: lesson
 visible: true
 ---
 
-# Lesson 3 - Multi-body Planetary Problem
+# Lesson 3 - 2Body Problem Numerical Solutions
 
 Extra notes:
 
