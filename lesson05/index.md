@@ -1,6 +1,6 @@
 ---
 layout: lesson
-visible: false
+visible: true
 ---
 
 # Lesson 5 - Kepler's Planets, Orbits in 3D & Other Python Solvers: Choose your own adventure
@@ -8,6 +8,9 @@ visible: false
 ## Main Lecture Materials
 
 Today we'll continue our simulations in 2D and we'll start thinking in 3D as well.  There are links to other solvers as well, but they are not required if you like the ```Hermite``` one!
+
+Motivation: [Online 3D solar system interactive animation - https://theskylive.com/3dsolarsystem](https://theskylive.com/3dsolarsystem)
+
 
 ### Python Libraries
 
@@ -27,7 +30,6 @@ Today we'll continue our simulations in 2D and we'll start thinking in 3D as wel
 * <a href="galaxySnaps/snap_001_fac1n3.txt" download>low res - galaxySnaps/snap_001_fac1n3.txt</a>
 * <a href="galaxySnaps/snap_001_fac1n2.txt" download>mid res - galaxySnaps/snap_001_fac1n2.txt</a>
 * <a href="galaxySnaps/snap_001_fac1n1.txt" download>high res - galaxySnaps/snap_001_fac1n1.txt</a>
-
 
 
 ## Other Python Solvers
