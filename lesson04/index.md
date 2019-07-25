@@ -17,12 +17,13 @@ visible: true
 **Note: put these in the same directory as your .pynb notebooks.**
 
 * <a href="hermite_library.py" download>hermite_library.py</a>
+* <a href="convert_kepler_data.py" download>convert_kepler_data.py</a>
 * <a href="convert_galaxy_data.py" download>convert_galaxy_data.py</a>
 
 ### Data
 
-* [Kepler 11 System Data](downloads/kepler11data.txt)
-* [Kepler 101 System Data](downloads/kepler101data.txt)
+ * <a href="downloads/kepler11data.txt" download>Kepler 11 System Data</a>
+ * <a href="downloads/kepler101data.txt" download>Kepler 101 System Data</a>
 
 #### Galaxy snapshot files - different resolutions
 

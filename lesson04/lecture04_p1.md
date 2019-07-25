@@ -7,7 +7,8 @@ visible_n: true
 
 ## Numerical Solutions: Can we do better?
 
-<img src="../lesson03/images/loop_animation.png" width="700" />
+<!--<img src="../lesson03/images/loop_animation.png" width="700" />-->
+<img src="../lesson03/myAnimation.gif">
 
 notes: as we saw, our simulations are not numerically stable - i.e. they do not conserve mass and momentum
 

@@ -355,3 +355,33 @@ def do_euler_2body(M1, M2, r_0, v_0, n_steps, delta_t):
     L = (L - L[0])/startL
 
     return r/AUinCM, v/kmincm, t, E # AU, km/s, seconds, normalized
+
+
+# order is:
+# t_h
+# e_h
+# 3*planets - r_h
+# 3*planets - v_h
+def save_hermite_solution_to_file(filename, t_h, e_h, r_h, v_h):
+    # reshape out array
+    # t_h, e_h, 3*#planets, 3*#planets
+    myout = np.zeros([len(t_h),1+1+r_h.shape[0]*r_h.shape[1]+v_h.shape[0]*v_h.shape[1]])
+
+    myout[:,0] = t_h
+    myout[:,1] = e_h
+    for i in range(r_h.shape[0]):
+        #print(2+i*r_h.shape[1],2+i*r_h.shape[1]+1, 2+i*r_h.shape[1]+2)
+        myout[:,2+i*r_h.shape[1]] = r_h[i,0,:]
+        myout[:,2+i*r_h.shape[1]+1] = r_h[i,1,:]
+        myout[:,2+i*r_h.shape[1]+2] = r_h[i,2,:]
+
+    # now, v_h's
+    #print('break')
+    for i in range(r_h.shape[0]):
+        #print(2+r_h.shape[1]*r_h.shape[0] +i*r_h.shape[1], 2+r_h.shape[1]*r_h.shape[0] +i*r_h.shape[1]+1, 
+        #     2+r_h.shape[1]*r_h.shape[0] +i*r_h.shape[1]+2)
+        myout[:,2+r_h.shape[1]*r_h.shape[0] +i*r_h.shape[1]] = v_h[i,0,:]
+        myout[:,2+r_h.shape[1]*r_h.shape[0] +i*r_h.shape[1]+1] = v_h[i,1,:]
+        myout[:,2+r_h.shape[1]*r_h.shape[0] +i*r_h.shape[1]+2] = v_h[i,2,:]
+
+    np.savetxt(filename, myout, delimiter=',') 
