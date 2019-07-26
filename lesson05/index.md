@@ -36,6 +36,10 @@ Motivation: [Online 3D solar system interactive animation - https://theskylive.c
 * <a href="galaxySnaps/snap_001_fac1n2.txt" download>mid res - galaxySnaps/snap_001_fac1n2.txt</a>
 * <a href="galaxySnaps/snap_001_fac1n1.txt" download>high res - galaxySnaps/snap_001_fac1n1.txt</a>
 
+### Reading
+
+* [This paper by Piet Hut](hutspaper.pdf) talks about the evolution of numerical simulations in science.
+
 
 ## Other Python Solvers
 
