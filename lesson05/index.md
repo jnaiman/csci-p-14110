@@ -14,6 +14,7 @@ Motivation: [Online 3D solar system interactive animation - https://theskylive.c
 ### Notes:
 
 * [Part1_programming_readWriteData_keplersData_lesson05.pdf](Part1_programming_readWriteData_keplersData_lesson05.pdf)
+* [Part2_planetsIn3D_lesson05.pdf](Part2_planetsIn3D_lesson05.pdf)
 
 
 ### Python Libraries

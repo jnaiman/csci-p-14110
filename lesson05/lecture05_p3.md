@@ -1,5 +1,5 @@
 ---
-title: Lecture 5, Part 3 - Galaxy Multibody Motion in 3D
+title: Optional - Galaxy Multibody Motion in 3D
 layout: lecture
 visible_lec: true
 visible_n: true
