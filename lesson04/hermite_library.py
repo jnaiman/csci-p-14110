@@ -217,7 +217,7 @@ def do_hermite_galaxies(masses, initial_positions,
 
     # let's convert to n-body units
     #t_h = time*(l*AUinCM)/np.sqrt(G*masses.sum()/(l*AUinCM)) # units of time
-    tfinal = tfinal/(l*AUinCM)/np.sqrt(G*masses.sum()/(l*AUinCM))
+    tfinal = tfinal/((l*AUinCM)/np.sqrt(G*masses.sum()/(l*AUinCM)))
 
     r = initial_positions/l
     r -= CenterOfMass(r,m)
