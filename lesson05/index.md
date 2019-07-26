@@ -11,6 +11,10 @@ Today we'll continue our simulations in 2D and we'll start thinking in 3D as wel
 
 Motivation: [Online 3D solar system interactive animation - https://theskylive.com/3dsolarsystem](https://theskylive.com/3dsolarsystem)
 
+### Notes:
+
+* [Part1_programming_readWriteData_keplersData_lesson05.pdf](Part1_programming_readWriteData_keplersData_lesson05.pdf)
+
 
 ### Python Libraries
 
