@@ -9,6 +9,21 @@ visible_n: true
 
 ---
 
+# Current list of accomplishments
+
+ * Physics
+   * Circular motion
+   * Gravity
+ * Math
+   * Ellipses
+ * Programming
+   * Flow control
+   * Plotting
+   * Numerical solvers
+   * Modular programming
+   
+---
+
 # Terminology
 
  * Visualization
