@@ -21,10 +21,167 @@ visible_n: true
    * Plotting
    * Numerical solvers
    * Modular programming
-   
+
 ---
 
-# Terminology
+## Modular programming
+
+ * in HW: had to "figure out" what part of the code to change to play with gravitational laws other than $F\_g \propto 1/r^2$
+ * Also aren't we lucky to have a $1/r^2$-law for gravity!
+ 
+notes: we practiced modular programming on the HW where had to "find" were we had to change a function
+
+---
+
+## Physics aside: the extra credit part of the HW
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Spacetime_lattice_analogy.svg/440px-Spacetime_lattice_analogy.svg.png">
+
+Gravity doesn't actually pull things toward one another, but massive objects actually warp space-time around themselves.
+
+---
+
+## Physics aside: the extra credit part of the HW
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Newton_versus_Schwarzschild_trajectories.gif">
+
+notes: here is the animation of a two body orbit in a strong gravitational field (i.e. a massive object where a planet is orbiting close to it) in the newtonian and "post newtonian" approximation that you simulated in the extra credit
+
+you can see that the 2nd orbit "precesses" like the orbit of mercury does, though mercury's is not as pronounced
+
+Mercury's orbit is a great test of GR it turns out!
+
+---
+
+## Physics aside: the extra credit part of the HW
+
+<img src="https://eventhorizontelescope.org/files/eht/files/20190410-78m-4000x2330.jpg?m=1554877823">
+
+note: of course we have other tests of GR as well, like this first picture of a black hole
+
+this one is a super massive BH at the center of a nearby galaxy and the ring is the disk of mater swearling around it - its asymmetric here because of the warping of space-time as well
+
+the center is bigger than our solar system and is where gravity is so strong that even light cannot escape and so it looks black!
+
+---
+
+## Comments on reading for HW
+
+ * Spans "start" and current computational physics efforts
+
+note: I use the "start" here in quotes because in reality astrophysicists have been use programs to solve physics problems since the early 1900's, but we are only in a position now where we can actually start solving large scale problems
+
+---
+
+## Comments on reading for HW
+
+ * Spans "start" and current computational physics efforts
+ * Moore's "Law"
+ 
+<img src="images/hutsMooresLaw.png" width="700">
+
+notes: the first article also mention's moore's law
+
+here "law" is in quotes since its not something that is like the law of gravitation that can be proven with experiements, its just a generic relation
+
+here its shown as the number of particles that can be simulated vs time
+
+---
+
+## Comments on reading for HW
+
+ * Spans "start" and current computational physics efforts
+ * Moore's "Law"
+
+<img src="http://www.extremetech.com/wp-content/uploads/2015/04/MooresLaw2.png" width="750">
+
+notes: while this is specifically for n-body simualations, it comes up a lot in different computational problems and comes from a fundemental limitation to how we can design computers
+
+here we see different phases in which different materials make up computers
+
+"Moore's Law" is the era of about 1960-present day in which we are making computer chips (ICs) out of silicon.  We are reaching the end of this era - basically we can only make silicon parts so small.  What happens after when we move into the era of human-brain sized computing?  We don't know yet!  stay tuned!
+
+---
+
+## Comments on reading for HW
+
+ * Spans "start" and current computational physics efforts
+ * Moore's "Law"
+
+<img src="http://www.hyttfors.com/wp-content/uploads/2010/08/Internet-Evolution.png" width="750">
+
+notes: while not everything in computing follows moore's law exactly, much of what we can do - be it computatial physics or just posting and commenting on cat videos - relates very strongly with our processing power
+
+---
+
+## Comments on reading for HW
+
+ * Spans "start" and current computational physics efforts
+ * Moore's "Law"
+ * Computational power
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/High_Performance_Computing_Center_Stuttgart_HLRS_2015_10_Cray_XC40_Hazel_Hen.jpg" width="750">
+
+notes: we now have the ability to compute large things in physics, but we still need things like super computers to do it, here is the Hazel Hen supercomputer in germany that was used to run some simulations I've been a part of
+
+why such large computers? hazel hen has 185,088 compute nodes, so essentially, about 25,000 of my laptops (which, with hyperthreading has 8 cores and I had to order extra special). And it still took about 6 months for us to finish our simulation with a few billion particles.
+
+---
+
+## Comments on reading for HW
+
+ * Spans "start" and current computational physics efforts
+ * Moore's "Law"
+ * Computational power
+
+<img src="images/allComputational.png" width="750">
+
+notes: so why so big?  well because we aren't just simulating gravity, we have to do alot of other things as well
+
+we also have to manage communication between large and small scale things - like how small things like winds from stars affect large things like galaxy evolution, so we need fast communication between all of our processors as well
+
+here is another example of a "modular" programming style - there are different sorts of elements to the simulation I worked on, I just worked on one tiny bit - the return of elements from stars back into the Universe, but there are these papers (and many others) that worked on other aspects one needs!
+
+---
+
+## Comments on reading for HW
+
+ * Spans "start" and current computational physics efforts
+ * Moore's "Law"
+ * Computational power - problem of scales
+
+<source src="./images/zoomtrimmed.mp4"/>
+
+
+
+---
+
+## Comments on reading for HW
+
+ * Spans "start" and current computational physics efforts
+ * Moore's "Law"
+ * Computational power
+ * What is dark enegy?
+
+Short answer: we don't know!
+
+---
+
+... longer answer:
+
+<img src="https://physicsforme.files.wordpress.com/2011/10/perlmutter4.jpg" width="700">
+
+notes: basically, we don't know what it is, but we know that its there
+
+we can go out an measure how quickly things are expanding away from us as the Universe expands from something called "the big bang" which was the beginning of the universe when everything was a tiny infinitely small dot
+
+we can observe that this expansion is *accelerating* and therefore there must be another form of enery somewhere in the universe pushing things apart
+
+again, we have no idea what it is (though there are some theories, one even left over from Einstein's work!) but we can see its effects
+
+---
+
+# A note on Viz Terminology
 
  * Visualization
  * Information Visualization
