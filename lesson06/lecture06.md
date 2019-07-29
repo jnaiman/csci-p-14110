@@ -43,7 +43,7 @@ Gravity doesn't actually pull things toward one another, but massive objects act
 
 ## Physics aside: the extra credit part of the HW
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Newton_versus_Schwarzschild_trajectories.gif">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Newton_versus_Schwarzschild_trajectoteries.gif">
 
 notes: here is the animation of a two body orbit in a strong gravitational field (i.e. a massive object where a planet is orbiting close to it) in the newtonian and "post newtonian" approximation that you simulated in the extra credit
 
@@ -149,10 +149,18 @@ here is another example of a "modular" programming style - there are different s
  * Spans "start" and current computational physics efforts
  * Moore's "Law"
  * Computational power - problem of scales
+   * ex: star/galaxy sizes is factor ~ $10^{12}$ ("terra"), we can do ~$10^{9}$ now
 
-<source src="./images/zoomtrimmed.mp4"/>
+<!--<source src="./images/zoomtrimmed.mp4"/>-->
+<source src="http://www.illustris-project.org/movies/illustris_movie_zoomin.mp4" />
 
+notes: if this doesn't work, have page open
 
+another problem with simulating realtiy is one of scales - if you want to get things right, you have to be able to simulate the very small as well as the very large
+
+for example, if we want to see stars form correctly, we have to similulate them individually, but this is at a much smaller scale and with a much smaller timestep then things that happen on the large scale - this means we need about a terra-star amout were we can only do a few billion (or 10^9) at the moment, so we are a ways off
+
+you can do things like do different time steps at different places in your simulation and have them "sync up" on occasion, but this still doesn't solve the problem of size scales
 
 ---
 
@@ -178,6 +186,10 @@ we can go out an measure how quickly things are expanding away from us as the Un
 we can observe that this expansion is *accelerating* and therefore there must be another form of enery somewhere in the universe pushing things apart
 
 again, we have no idea what it is (though there are some theories, one even left over from Einstein's work!) but we can see its effects
+
+---
+
+# Onto viz!
 
 ---
 
@@ -524,45 +536,6 @@ Step 3: Slowly move your head toward & away from screen until dot disappears
 
 ---
 
-## I need a volunteer!
-
-notes:
-(This part is a bit of a stunt.  Sorry.)
-
----
-
-*Read these numbers:*
-
-| | |
-|:-|-:|
-| 2007-01-01 | 14233.2 |
-| 2007-04-01 | 14422.3 |
-| 2007-07-01 | 14569.7 |
-| 2007-10-01 | 14685.3 |
-| 2008-01-01 | 14668.4 |
-| 2008-04-01 | 14813.0 |
-| 2008-07-01 | 14843.0 |
-| 2008-10-01 | 14549.9 |
-| 2009-01-01 | 14383.9 |
-
-notes:
-See what I mean?  It's a stunt.  You're supposed to hear these, or look at the
-numbers, and not have as clear an impression.  It also takes a lot longer.
-
----
-
-![](images/fredgraph.png)
-
-notes:
-You might immediately notice a few things about this image, but one item that
-we will talk about as class goes on is that often visualizations can have a
-consistent style.  FRED in particular has a "branding" that is quite obvious,
-even without the logo.
-
-Also, the data we read was in the last sort of gray area of this graph.
-
----
-
 # Who are you visualizing for?
 
 * For yourself?
@@ -624,28 +597,12 @@ also know: This guy has some good ideas of where to find sample datasets if you 
 
 ---
 
-<!-- .slide: data-background-image="images/barCharts.png" data-background-size="contain" -->
-
-notes:
-Each of these bar chart examples are meant to show the same data. But you can see how they're a bit problematic.
-
----
-
 <!-- .slide: data-background-image="images/gunDeaths.jpg" data-background-size="contain" -->
 
 notes:
 Now here's an example that's more brazen. I'll give you a minute to analyze this and tell me what's wrong with this graph.
 
 Some people will claim the Y-axis should always start from the bottom - at zero - to avoid confusion.
-
----
-
-<!-- .slide: data-background-image="images/keelingCurve.svg" data-background-size="contain" -->
-
-notes:
-however, the Keeling Curve is an interesting counter-argument. This is the famous graph that was the original evidence for global warming, showing the rate at which atmospheric carbon dioxide was growing. 
-
-Does anyone know why it's generally accepted to show the y-axis like this, without it starting at the zero axis?
 
 ---
 
@@ -720,6 +677,9 @@ and context, see his page http://www-personal.umich.edu/~mejn/election/2008/ .
  * [Map 5](http://www-personal.umich.edu/~mejn/election/2008/countycartpurple1024.png)
 
 notes:
+
+MAY SKIP
+
 These are great, but some criticisms might be that the color red is more apparent to the human eye than the color blue. And in the population-to-area adjusted maps, it's difficult to read for people used to geographic accuracy.
 
 Map1 - this is just a geographical map of red and blue
