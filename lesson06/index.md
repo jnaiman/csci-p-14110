@@ -15,11 +15,17 @@ with our data.
  * [FRED](https://fred.stlouisfed.org)
  * [Example Vega-Lite plot](https://vega.github.io/editor/#/gist/vega-lite/matthewturk/e3808b4172b7f80141788b45236831ca/dc65ec026c5cedc267a2da47d6fa4268d2b18bcb/movies-hconcat.json)
  
+## Notes
+
+ * [Part1_programming_simple2dMovies_lesson06.pdf](Part1_programming_simple2dMovies_lesson06.pdf)
+ * [Part2_programming_dataProcessing_pandas_lesson06.pdf](Part2_programming_dataProcessing_pandas_lesson06.pdf)
+ 
 ## Libraries and downloads
 
  * [hermite_library.py](hermite_library.py)
  * [animations_library.py](animations_library.py)
  * [myPlanetSystem_kepler101_solution1.txt](myPlanetSystem_kepler101_solution1.txt)
+ * [Kepler confirmed planet data](data/planets_2019.07.12_17.16.25.csv)
 
 ### More Resources
 
