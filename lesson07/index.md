@@ -1,6 +1,6 @@
 ---
 layout: lesson
-visible: false
+visible: true
 ---
 
 # Lesson 7 - Info Viz Examples

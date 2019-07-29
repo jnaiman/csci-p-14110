@@ -125,6 +125,10 @@ You have a palette of operations to apply.
    * Queries on other columns at fixed row location
    * External membership queries
 
+notes: these are a lot of fancy words, but essentially we've already done this before - when we only plotted the eccentricity from the kepler data?  That was plotting a sort of equality
+
+we also subsampled our data to make movies
+
 ---
 
 ## Relationships Examples
@@ -167,6 +171,10 @@ value in ("red", "blue")
 value not in (3.141, 2.7)
 ```
 
+notes: again, these are a lot of fancy words, but we've already done this a lot before
+
+we've done things based on equality and inequity in if-then statements
+
 ---
 
 ## Examples
@@ -193,6 +201,10 @@ value not in (3.141, 2.7)
 ```
 
 We will often *mask* data to select just what we want to show.
+
+notes: there are various ways to talk about it, but I usually use the term "masking" to talk about 
+
+we'll do some quick examples
 
 ---
 
