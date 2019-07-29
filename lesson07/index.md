@@ -9,6 +9,10 @@ Today we will cover more on [widgets in python](https://ipywidgets.readthedocs.i
 
 If we have time, we will build a [dashboard](https://www.klipfolio.com/resources/articles/what-is-data-dashboard) with a [Bloomberg tool called bqplot](https://www.techatbloomberg.com/blog/bringing-interactivity-data-bqplot/).
 
+## Notes
+
+* [Part1_programming_moreOnWidgets_lesson07.pdf](Part1_programming_moreOnWidgets_lesson07.pdf)
+
 ## More Resources
 
 * [ipywidgets docs](https://ipywidgets.readthedocs.io/en/latest/)
