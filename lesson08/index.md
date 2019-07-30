@@ -9,6 +9,11 @@ Today we will starting thinking in 3D, and about the rendering of images in gene
 
 We will make heavy use of [ipyvolume](https://ipyvolume.readthedocs.io/en/latest/).
 
+## Libraries
+
+ * [solverlibs.py](solverlibs.py)
+ * [flip_colors.py](flip_colors.py)
+
 ## Data
 
 ### Optional: Galaxies
