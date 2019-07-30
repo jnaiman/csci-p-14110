@@ -13,7 +13,8 @@ We will make heavy use of [ipyvolume](https://ipyvolume.readthedocs.io/en/latest
 
 ### Optional: Galaxies
 
- * 
+ * [Single, Low-res galaxy simulation file](data/outarrsnap_001_fac1n3.txt)
+ * [Zipped Galaxy Time-data file (77Mb)](http://www.astroblend.com/ba2016/extra_resources/galaxyFiles.zip)
 
 ## More Resources
 
