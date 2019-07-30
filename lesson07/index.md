@@ -12,6 +12,7 @@ If we have time, we will build a [dashboard](https://www.klipfolio.com/resources
 ## Notes
 
 * [Part1_programming_moreOnWidgets_lesson07.pdf](Part1_programming_moreOnWidgets_lesson07.pdf)
+* [Part2_programming_heatMap_lesson07.pdf](Part2_programming_heatMap_lesson07.pdf)
 
 ## More Resources
 
