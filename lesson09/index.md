@@ -15,7 +15,7 @@ Make sure you download:
 
 Don't forget to [sign up right here](https://sketchfab.com) to be able to upload models.
 
-### If you want to use VR today:
+### If you want to use VR ~~today~~ tomorrow:
 
  * Check out the [google cardboard instructions on Sketchfab](https://help.sketchfab.com/hc/en-us/articles/212756403-Mobile-VR-Cardboard-Daydream-) and also learn about how to [navigate around your scene](https://help.sketchfab.com/hc/en-us/articles/211244446-VR-Navigation).
 
