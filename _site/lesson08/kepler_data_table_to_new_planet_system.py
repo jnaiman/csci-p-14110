@@ -23,6 +23,8 @@ def read_convert_new_system(filename, name):
     # if no tTime set to zero
     tTime[np.isnan(tTime)] = 0.0
 
+    ecc[np.isnan(ecc)] = 0.0
+
     # now convert to kepler data dictionary
     # only entries we really need to use in the convert_kepler_data function
     kepler_data = {}
