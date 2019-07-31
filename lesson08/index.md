@@ -24,6 +24,12 @@ We will make heavy use of [ipyvolume](https://ipyvolume.readthedocs.io/en/latest
 
  * [Single, Low-res galaxy simulation file](data/outarrsnap_001_fac1n3.txt)
  * [Zipped Galaxy Time-data file (77Mb)](http://www.astroblend.com/ba2016/extra_resources/galaxyFiles.zip)
+ 
+### Optional: New Kepler Systems
+
+ * [kepler_data_table_to_new_planet_system.py](kepler_data_table_to_new_planet_system.py) is a library used to convert the Kepler planet data table to a format `convert_kepler_data.py` can use
+ * [planets_2019.07.30_19.22.04.csv](planets_2019.07.30_19.22.04.csv) is a new list of Kepler planets
+ * also see the Optional ipynb notebook file to see how to use this
 
 ## More Resources
 
