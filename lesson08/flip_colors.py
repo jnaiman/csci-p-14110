@@ -12,5 +12,7 @@ def flip_colors(color,r):
 
     # order should be (times, points, colors)
     colors = np.transpose(colors, (0, 2, 1)) # flip the last axes
+    
+    colors = np.transpose(colors, (0, 2, 1)) # flip the last axes, again? because reasons?
 
     return colors
