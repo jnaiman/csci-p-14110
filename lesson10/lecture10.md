@@ -1,5 +1,5 @@
 ---
-title: Lecture 10 - Finishing up our viz
+title: Lecture 10 - Finishing up our viz, and Future Work
 layout: lecture
 visible_lec: true
 visible_n: true
@@ -9,9 +9,9 @@ visible_n: true
 
 **~20-30 min of lecture/programming**
 
-**~1.5-1.75 hr of finishing-up-viz work**
+**~1.5-2 hr of finishing-up-viz work**
 
-**~0.75-1 hr of viz party**
+**~0.5-1 hr of viz party**
 
 notes: the end of the class will be the opportunity for you all to show off your cool viz!  don't worry if its not done yet - one of the skills you can learn here is how to articulate what you'd like to do in the future if you had time!
 
@@ -503,7 +503,7 @@ What are the narratives of these visualizations? How are they different than jus
 
 ---
 
-## [Idyll](https://idyll-lang.org)
+## Info viz: [Idyll](https://idyll-lang.org)
 
 A web-based toolkit for storytelling with data visualizations!
 
@@ -516,7 +516,7 @@ Also check out: [https://jnaiman.github.io/](https://jnaiman.github.io/)
 
 ---
 
-## [D3.js](https://github.com/d3/d3/wiki/Gallery)
+## Info viz: [D3.js](https://github.com/d3/d3/wiki/Gallery)
 
 A JavaScript library for web-based data visualization
 
@@ -526,6 +526,25 @@ A JavaScript library for web-based data visualization
 
 <img src="images/unemploymentRate.png" width="600"/>
 
+---
+
+## Info/sci viz: [Vaex](https://vaex.io/)
+
+ * opensource components, check out [docs page](https://vaex.readthedocs.io/en/latest/installing.html) for large point datasets
+
+---
+
+## Sci viz: [Glue](https://glueviz.org/)
+
+ * linked data views for scientific data (astro emphasis)
+ * includes starting 3D exploration tools
+
+---
+
+## Sci viz: [yt](https://yt-project.org/)
+
+ * for scientific data, heavy emphasis on astro
+ * Comes with many example datasets you can grab on the [sample data hub](https://yt-project.org/data/)
 
 ---
 
@@ -534,3 +553,6 @@ A JavaScript library for web-based data visualization
  * UIUC's Data Viz course - [IS590DVO](https://uiuc-ischool-dataviz.github.io/spring2019online/)
  * Scientific Data in Houdini - [ytini](http://www.ytini.com/)
  * Blender for Scientific Data - [AstroBlend](http://www.astroblend.com/)
+
+---
+

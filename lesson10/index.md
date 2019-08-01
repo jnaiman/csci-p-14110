@@ -1,6 +1,6 @@
 ---
 layout: lesson
-visible: false
+visible: true
 ---
 
 # Lesson 10 - Viz Party Day! You made it!  Woohoo!
