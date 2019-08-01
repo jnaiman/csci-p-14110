@@ -1,9 +1,11 @@
 ---
 layout: lesson
-visible: false
+visible: true
 ---
 
 # Lesson 9 - Viz for the web with Sketchfab
+
+## NOTE: BRING PHONE CHARGER + PHONE CHARGER TOMORROW
 
 Today we'll think about how to share 3D interactive movies on the web.
 
