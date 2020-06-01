@@ -23,7 +23,7 @@ Jill Naiman - `jnaiman@illinois.edu` or `jill.naiman@cfa.harvard.edu`
 
 TA: Adrianna Perez
 
-Class webpage: https://jnaiman.github.io/csci-p-14110/ (more on this a little later)
+Class webpage: https://jnaiman.github.io/csci-p-14110_su2019/ (more on this a little later)
 
 notes: we'll go over the class webpage a little more in a few slides
 
@@ -303,7 +303,7 @@ notes: ok, we've gone over the who and the what, now lets get to the "how" - wha
 
 ## Resources:
 
-1. Class webpage: https://jnaiman.github.io/csci-p-14110/ 
+1. Class webpage: https://jnaiman.github.io/csci-p-14110_su2019/ 
    * lecture slides
    * coding "notebooks"
    * external resources
@@ -321,7 +321,7 @@ highlights:
 
 ## Resources:
 
-1. Class webpage: https://jnaiman.github.io/csci-p-14110/ 
+1. Class webpage: https://jnaiman.github.io/csci-p-14110_su2019/ 
    * lecture slides
    * coding "notebooks"
    * external resources
@@ -334,7 +334,7 @@ notes: Homework & quizzes will be turned in on the canvas webpage
 
 ## Resources:
 
-1. Class webpage: https://jnaiman.github.io/csci-p-14110/ 
+1. Class webpage: https://jnaiman.github.io/csci-p-14110_su2019/ 
    * lecture slides
    * coding "notebooks"
    * external resources
@@ -357,7 +357,7 @@ We'll go over how to install later in class, but lets all get it downloaded firs
 
 ## Resources:
 
-1. Class webpage: https://jnaiman.github.io/csci-p-14110/ 
+1. Class webpage: https://jnaiman.github.io/csci-p-14110_su2019/ 
    * lecture slides
    * coding "notebooks"
    * external resources
@@ -520,8 +520,8 @@ We'll also cover a bit of javascript, html for online viz, but that will mostly 
 
 ## Github (not required, but just FYI)
 
- * Course repo is at [https://github.com/jnaiman/csci-p-14110](https://jnaiman.github.io/csci-p-14110/)
- * Automatically built to [https://jnaiman.github.io/csci-p-14110/](https://jnaiman.github.io/csci-p-14110/)
+ * Course repo is at [https://github.com/jnaiman/csci-p-14110_su2019](https://jnaiman.github.io/csci-p-14110_su2019/)
+ * Automatically built to [https://jnaiman.github.io/csci-p-14110_su2019/](https://jnaiman.github.io/csci-p-14110_su2019/)
 
 notes:
 All the materials for this course will be stored in github, and are available
@@ -535,7 +535,7 @@ to use any information in it in the future.
 
 # Speaking of that course webpage...
 
-[https://jnaiman.github.io/csci-p-14110/](https://jnaiman.github.io/csci-p-14110/)
+[https://jnaiman.github.io/csci-p-14110_su2019/](https://jnaiman.github.io/csci-p-14110_su2019/)
 
 notes: *go to webpage*
 

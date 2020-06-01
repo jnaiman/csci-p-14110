@@ -47,7 +47,7 @@ Solve for the motion of two stars analytically (“by hand” or “with pen and
 # Course Materials
 
 There is no textbook for this course.  All course materials will be posted to
-the GitHub repository at https://github.com/jnaiman/csci-p-14110.
+the GitHub repository at https://github.com/jnaiman/csci-p-14110_su2019.
 
 As the course progresses, a list of recommended readings will be generated for
 each class.  
