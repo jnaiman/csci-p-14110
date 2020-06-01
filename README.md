@@ -28,3 +28,5 @@ Lectures can utilize the layout `lecture`, which will present them in revealjs.
 General instructions about how to build websites locally using jekyll can be found [right here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/).
 
 Key build command (to be run in repo directory): __bundle exec jekyll serve__
+
+Choose theme - dinky
